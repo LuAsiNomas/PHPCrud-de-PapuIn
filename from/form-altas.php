@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Equipo - Torneo Nacional</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/formAltas.css">
 </head>
 <body>
     <div class="form-container">
