@@ -1,33 +1,37 @@
 <div class="form">
-	<h3 class="altaTitulo">FORMULARIO DE ALTA</h3>
+	<h3 class="altaTitulo">TORNEO NACIONAL</h3>
 	<form class="altaInput" action="../server/altas.php" method="POST" enctype="multipart/form-data">
 		<div class="grupoInputs">
-			<img onclick="seleccionarArchivo()" src="../images/fotoPerfil.png" id="imgPerfil" alt="">
+			<img onclick="seleccionarArchivo()" src="" id="logo" alt="">
 			<input type="file" class="inputFile" name="foto"><br>
 		</div>
 
 		<div class="grupoInputs">
-			<input type="text" placeholder="usuario" name="usuario"><br>
+			<input type="text" placeholder="Id de equipo" name="Equipo_ID"><br>
 		</div>
 
 		<div class="grupoInputs">
-			<input type="text" placeholder="clave" name="clave"><br>
+			<input type="text" placeholder="Nombre de equipo" name="nombre_equipo"><br>
 		</div>
 
 		<div class="grupoInputs">
-			<input type="text" placeholder="Apellido" name="apellido"><br>
+			<input type="text" placeholder="Id líder" name="id_jug_lider"><br>
 		</div>
 
 		<div class="grupoInputs">
-			<input type="text" placeholder="nombre" name="nombre"><br>
+			<input type="text" placeholder="Id jugador 2" name="idjug2"><br>
 		</div>
 
 		<div class="grupoInputs">
-			<input type="date" placeholder="fecha" name="fecha"><br>
+			<input type="text" placeholder="Id jugador 3" name="idjug"><br>
+		</div>
+
+		<div class="grupoInputs">
+			<input type="text" placeholder="Provincia" name="provincia"><br>
 		</div>
 
 		<div class="btn-submit">
-			<input class="btn" type="submit" value="Grabar"><br>
+			<input class="btn" type="submit" value="REGISTRAR EQUIPO"><br>
 		</div>
 	</form>
 </div>
