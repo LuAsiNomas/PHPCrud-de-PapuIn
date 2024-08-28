@@ -4,10 +4,6 @@
 		<div class="grupoInputs">
 			<label for="userName">Seleccione un nombre de usuario:</label>
 			<div class="container-select">
-				<?php
-				include("../modelo/usuario.php");
-				echo getUsuarioUsersNames();
-				?>
 				<div id="modal" class=""></div>
 			</div>
 		</div>

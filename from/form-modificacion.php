@@ -2,9 +2,6 @@
 	<h3 class="modificarTitulo">FORMULARIO DE MODIFICACION</h3>
 	<form class="modificarInput" action="../server/modificacion.php" method="POST" enctype="multipart/form-data">
 		<div class="container-select">
-			<?php
-			echo getUsuarioUsersNamesModificar();
-			?>
 			<div id="modalModificar" class=""></div>
 		</div>
 
