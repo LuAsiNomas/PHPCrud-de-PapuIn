@@ -1,33 +1,48 @@
-<div class="form">
-	<h3 class="altaTitulo">FORMULARIO DE ALTA</h3>
-	<form class="altaInput" action="../server/altas.php" method="POST" enctype="multipart/form-data">
-		<div class="grupoInputs">
-			<img onclick="seleccionarArchivo()" src="../images/fotoPerfil.png" id="imgPerfil" alt="">
-			<input type="file" class="inputFile" name="foto"><br>
-		</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Equipo - Torneo Nacional</title>
+    <link rel="stylesheet" href="../css/formAltas.css">
+</head>
+<body>
+    <div class="form-container">
+        <h3 class="form-title">TORNEO NACIONAL</h3>
+        <form class="form-content" action="../server/altas.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <img onclick="seleccionarArchivo()" src="" id="logo" alt="Logo del equipo">
+                <input type="file" class="input-file" name="foto" required>
+            </div>
 
-		<div class="grupoInputs">
-			<input type="text" placeholder="usuario" name="usuario"><br>
-		</div>
+            <div class="form-group">
+                <input type="text" placeholder="Id de equipo" name="Equipo_ID" required>
+            </div>
 
-		<div class="grupoInputs">
-			<input type="text" placeholder="clave" name="clave"><br>
-		</div>
+            <div class="form-group">
+                <input type="text" placeholder="Nombre de equipo" name="nombre_equipo" required>
+            </div>
 
-		<div class="grupoInputs">
-			<input type="text" placeholder="Apellido" name="apellido"><br>
-		</div>
+            <div class="form-group">
+                <input type="text" placeholder="Id líder" name="id_jug_lider" required>
+            </div>
 
-		<div class="grupoInputs">
-			<input type="text" placeholder="nombre" name="nombre"><br>
-		</div>
+            <div class="form-group">
+                <input type="text" placeholder="Id jugador 2" name="idjug2" required>
+            </div>
 
-		<div class="grupoInputs">
-			<input type="date" placeholder="fecha" name="fecha"><br>
-		</div>
+            <div class="form-group">
+                <input type="text" placeholder="Id jugador 3" name="idjug3" required>
+            </div>
 
-		<div class="btn-submit">
-			<input class="btn" type="submit" value="Grabar"><br>
-		</div>
-	</form>
-</div>
+            <div class="form-group">
+                <input type="text" placeholder="Provincia" name="provincia" required>
+            </div>
+
+            <div class="form-group">
+                <input class="btn-submit" type="submit" value="REGISTRAR EQUIPO">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
