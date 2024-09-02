@@ -13,15 +13,13 @@
 
 include("../modelo/usuario.php");
 
-$use = $_POST['usuario'];
-$cla = $_POST['clave'];
-$ape = $_POST['apellido'];
+$idl = $_POST['idlider'];
+$id2 = $_POST['id2'];
+$id3 = $_POST['id3'];
 $nom = $_POST['nombre'];
-$fe = $_POST['fecha'];
-$foto = $_FILES["foto"]["tmp_name"];
-$fotoTamanio = $_FILES["foto"]["size"];
+$pro = $_POST['provincia'];
 
-$result = modificar($use, $cla, $ape, $nom, $fe, $foto, $fotoTamanio);
+$result = modificar($idl, $id2, $id3, $nom, $pro);
 
 if (!$result) {
 	echo '<div class="Rcontainer">
