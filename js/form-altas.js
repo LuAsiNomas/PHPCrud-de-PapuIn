@@ -1,13 +1,13 @@
 function seleccionarArchivo() {
-  let input = document.querySelector(".inputFile");
+  let input = document.querySelector(".input-file");
   if (input) {
     input.click();
   }
 }
 
-let input = document.querySelector(".inputFile");
+let input = document.querySelector(".input-file");
 input.addEventListener("change", function () {
-  let imgAlta = document.querySelector("#imgPerfil");
+  let imgAlta = document.querySelector("#logo");
   const archivos = input.files;
   console.dir(imgAlta);
   if (!archivos || !archivos.length) {
