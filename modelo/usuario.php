@@ -1,7 +1,7 @@
 <?php
 
 function insertar($ide, $noe, $idl, $id2, $id3, $pro){
-    if  {
+    
          $Conexion = include("conexion.php");
 
         $cadena = "INSERT INTO equipos(Equipo_ID, nombre_equipo, id_jugador_lider, idjug2, idjug3, provincia) VALUES ($ide, $noe, $idl, $id2, $id3, $pro)";
@@ -15,10 +15,6 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro){
             return substr($e, 22, 41);
         }
 
-
-    } else {
-        return false;
-    }
 }
 
 function getUsuarioUsersNames()
@@ -98,8 +94,8 @@ function deleteUser($userName)
     return $resultado;
 }
 
-function modificar($idl, $id2, $id3, $nom, $pro); {
-   {
+function modificar($idl, $id2, $id3, $nom, $pro) {
+   
     $Conexion = include("conexion.php");
 
         $cadena = "UPDATE  equipos SET idlider = '$idl', id2 = '$id2', id3 = '$id3', nombre = '$nom', WHERE provincia = '$pro'";
@@ -112,20 +108,7 @@ function modificar($idl, $id2, $id3, $nom, $pro); {
         } catch (Exception $e) {
             return substr($e, 22, 41);
         }
-    } else {
-        $Conexion = include("conexion.php");
-
-        $cadena = "UPDATE  equipos SET id3 = '$id3', nombre = '$nom', provincia = '$pro', id2 = '$id2' WHERE idlider = '$idl'";
-
-        try {
-            $resultado = mysqli_query($Conexion, $cadena);
-            if ($resultado) {
-                return true;
-            }
-        } catch (Exception $e) {
-            return substr($e, 22, 41);
-        }
-    }
+   
 }
 
 function listar()
