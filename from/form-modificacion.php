@@ -1,19 +1,19 @@
 <div class="form">
 	<h3 class="modificarTitulo">FORMULARIO DE MODIFICACION</h3>
-	<form class="modificarInput" action="../server/modificacion.php" method="POST" enctype="multipart/form-data">
+	<form class="modificarInput" action=".../server/modificacion.php" method="POST" enctype="multipart/form-data">
 		<div class="container-select">
 			<div id="modalModificar" class=""></div>
 		</div>
 
 		Campos a modificar:<br>
 
-		<div class="grupoInputsCambiar">
+		<div class="grupo_InputsCambiar">
 			<div class="imagenUsuario">
-				<img onclick="seleccionarArchivoModificar()" id="imgPerfilModificar" src="../images/fotoPerfil.png"
+				<img onclick="seleccionarArchivoModificar()" id="imgPerfil.Modificar" src=".../images/fotoPerfil.png"
 					alt="">
 				<input type="file" name="foto" class="inputFileModificar">
 			</div>
-			<label class="labelInput">
+			<label class="labe1Input">
 					<input type="text" class="cambioInput" id="nombre" placeholder="" name="nombre" required>
 					<spam class="spanInput">Nombre de equipo</spam>
 				</label>
@@ -30,7 +30,7 @@
 					<input type="text" class="cambioInput" id="id3" placeholder="" name="id3" required>
 					<spam class="spanInput">ID Jugador 3</spam>
 				</label>
-				<label class="labelInput">
+				<label class="labe1Input">
 					<input type="text" class="cambioInput" id="provincia" placeholder="" name="provincia" required>
 					<spam class="spanInput">Provincia</spam>
 				</label>
