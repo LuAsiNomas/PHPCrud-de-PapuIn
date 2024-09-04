@@ -19,8 +19,14 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 	<link
 		href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Dosis:wght@300&family=Fuggles&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="../css/menu.css">
-	<link rel="stylesheet" href="../css/formAltas.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/formAltas.css">
+
+    <script src="js/index.js"></script>
+	<script src="js/form-altas.js"></script>
+	<script src="js/form-baja.js"></script>
+	<script src="js/form-modificar.js"></script>
+	<script src="js/animacionInput.js"></script>
 
 </head>
 
@@ -41,14 +47,14 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 				<nav id="nav">
 					<ul>
 						<li><a href="#altas" id="altas-link"><span class="icono-container">Altas<img class="icono"
-										src="../images/icono-alta.png"></span></a></li>
+										src="images/icono-alta.png"></span></a></li>
 						<li><a href="#bajas" id="bajas-link"><span class="icono-container">Bajas<img class="icono"
-										src="../images/icono-baja.png"></span></a></li>
+										src="images/icono-baja.png"></span></a></li>
 						<li><a href="#modificacion" id="modificacion-link"><span
 									class="icono-container">ModificacionMe<img class="icono"
-										src="../images/icono-modificar.png"></span></a></li>
+										src="images/icono-modificar.png"></span></a></li>
 						<li><a href="#listar" id="listar-link"><span class="icono-container">Listar<img class="icono"
-										src="../images/icono-listar.png"></span></a>
+										src="images/icono-listar.png"></span></a>
 						</li>
 					</ul>
 				</nav>
@@ -57,7 +63,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 		</div>
 
 		<div class="main">
-			<div class="image-menu"><img id="menuLateral" src="../images/menu.png" alt="" /></div>
+			<div class="image-menu"><img id="menuLateral" src="images/menu.png" alt="" /></div>
 			<section class="banner">
 				<div class="container">
 					<h2 class="titulo">Administración de Usuario</h2>
@@ -68,7 +74,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 			<section id="altas" class="one dark cover">
 				<div class="container">
 					<?php
-					include("form-altas.php");
+					include("from/form-altas.php");
 					?>
 				</div>
 			</section>
@@ -77,7 +83,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 			<section id="bajas" class="two">
 				<div class="container">
 					<?php
-					include("form-bajas.php");
+					include("from/form-bajas.php");
 					?>
 				</div>
 			</section>
@@ -86,7 +92,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 			<section id="modificacion" class="three">
 				<div class="container">
 					<?php
-					include("form-modificacion.php");
+					include("from/form-modificacion.php");
 					?>
 				</div>
 			</section>
@@ -95,7 +101,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 			<section id="listar" class="four">
 				<div class="container">
 					<?php
-					include("listar.php");
+					include("from/listar.php");
 					?>
 				</div>
 			</section>
@@ -105,18 +111,14 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 				<!-- Copyright -->
 				<ul class="copyright">
 					<li>&copy; Untitled. All rights reserved.</li>
-					<li>Design: <a href="">VSLA Developer</a></li>
+					<li>Design: <a href="">Papu In.</a></li>
 					<li></li>
 				</ul>
 			</footer>
 		</div>
 	</div>
 
-	<script src="../js/menu.js"></script>
-	<script src="../js/form-altas.js"></script>
-	<script src="../js/form-baja.js"></script>
-	<script src="../js/form-modificar.js"></script>
-	<script src="../js/animacionInput.js"></script>
+	
 </body>
 
 </html>

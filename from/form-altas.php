@@ -16,10 +16,6 @@
             </div>
 
             <div class="form-group">
-                <input type="text" placeholder="Id de equipo" name="Equipo_ID" required>
-            </div>
-
-            <div class="form-group">
                 <input type="text" placeholder="Nombre de equipo" name="nombre_equipo" required>
             </div>
 
