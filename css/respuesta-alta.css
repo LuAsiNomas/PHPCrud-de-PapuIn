@@ -16,7 +16,7 @@ body {
 .Rbox {
     background-color: #fff3e0; /* Amarillo claro */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(255, 87, 34, 0.2); /* Sombra con tono rojizo */
+    box-shadow: 0 4px 8px rgba(255, 88, 34, 0.2); /* Sombra con tono rojizo */
     width: 70%;
     max-width: 600px;
     padding: 20px;
