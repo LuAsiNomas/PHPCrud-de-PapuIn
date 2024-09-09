@@ -1,11 +1,17 @@
 <?php
 
-function insertar($ide, $noe, $idl, $id2, $id3, $pro){
-    
+function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
+
+    if ($fototamaño > 0) {
+        $fp = fopen($foto, "rb");
+        $contenido = fread($fp, $fototamaño);
+        $contenido = addslashes($contenido);
+        fclose($fp);
+
          $Conexion = include("conexion.php");
 
-        $cadena = "INSERT INTO equipos(Equipo_ID, nombre_equipo, id_jugador_lider, idjug2, idjug3, provincia) VALUES ($ide, $noe, $idl, $id2, $id3, $pro)";
-        try {
+         $cadena = "INSERT INTO equipos(Equipo_ID, nombre_equipo, id_jugador_lider, idjug2, idjug3, provincia) VALUES ($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño)";
+         try {
             $resultado = mysqli_query($Conexion, $cadena);
 
             if ($resultado) {
@@ -15,6 +21,7 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro){
             return substr($e, 22, 41);
         }
 
+}
 }
 
 function getUsuarioUsersNames()
@@ -94,11 +101,18 @@ function deleteUser($userName)
     return $resultado;
 }
 
-function modificar($idl, $id2, $id3, $nom, $pro) {
+function modificar($idl, $id2, $id3, $nom, $pro, $foto, $fototamaño) {
+
+    if ($fototamaño > 0) {
+        $fp = fopen($foto, "rb");
+        $contenido = fread($fp, $fototamaño);
+        $contenido = addslashes($contenido);
+        fclose($fp);
+
    
     $Conexion = include("conexion.php");
 
-        $cadena = "UPDATE  equipos SET idlider = '$idl', id2 = '$id2', id3 = '$id3', nombre = '$nom', WHERE provincia = '$pro'";
+        $cadena = "UPDATE  equipos SET idlider = '$idl', id2 = '$id2', id3 = '$id3', nombre = '$nom', WHERE provincia = '$pro', foto = '$foto', fotomaño = '$fototamaño'";
 
         try {
             $resultado = mysqli_query($Conexion, $cadena);
@@ -109,6 +123,7 @@ function modificar($idl, $id2, $id3, $nom, $pro) {
             return substr($e, 22, 41);
         }
    
+}
 }
 
 function listar()

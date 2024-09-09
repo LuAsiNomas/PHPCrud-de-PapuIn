@@ -18,8 +18,10 @@ $id2 = $_POST['id2'];
 $id3 = $_POST['id3'];
 $nom = $_POST['nombre'];
 $pro = $_POST['provincia'];
+$foto = $_FILES['foto'];
+$fototamaño = $_FILES['fototamaño'];
 
-$result = modificar($idl, $id2, $id3, $nom, $pro);
+$result = modificar($idl, $id2, $id3, $nom, $pro, $foto, $fototamaño);
 
 if (!$result) {
 	echo '<div class="Rcontainer">
