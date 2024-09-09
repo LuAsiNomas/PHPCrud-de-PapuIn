@@ -87,12 +87,10 @@ svg {
 .bienvenida{
     margin:0px;
     display: flex;
-<<<<<<< Updated upstream
     justify-content:center;
     align-items:center;
-    height:100vh;
+    height: 100px;;
     animation: color-change 5s infinite ;
-=======
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -104,7 +102,7 @@ svg {
     width: 100%;
     background-color: rgb(253, 251, 250);
     display: flex;
-    font-size:q 1em;
+    font-size: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -559,6 +557,4 @@ svg {
         background-color: rgb(246, 226, 196);
         width: 100%;
     }
-    
->>>>>>> Stashed changes
 }
