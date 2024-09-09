@@ -1,19 +1,19 @@
 function seleccionarArchivo() {
-  let input = document.querySelector(".input-file");
-  if (input) {
-    input.click();
+  let input1 = document.querySelector(".input-file");
+  if (input1) {
+    input1.click();
   }
 }
 
 let input = document.querySelector(".input-file");
 input.addEventListener("change", function () {
-  let imgAlta = document.querySelector("#logo");
+  let imgAlta = document.querySelector("#foto");
   const archivos = input.files;
-  console.dir(imgAlta);
   if (!archivos || !archivos.length) {
     imgAlta.src = "";
     return;
   }
+  console = archivos[0];
   const primerArchivo = archivos[0];
   const objectURL = URL.createObjectURL(primerArchivo);
 
