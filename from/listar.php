@@ -3,6 +3,7 @@
 
 	<div class="tarjetaUsuario">
 		<?php
+		include('C:\xampp\htdocs\PHPCrud-de-PapuIn\modelo\usuario.php');
 		echo listar();
 		?>
 	</div>
