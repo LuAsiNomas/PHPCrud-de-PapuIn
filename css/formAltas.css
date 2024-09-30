@@ -11,7 +11,7 @@ body {
 
 /* Contenedor del formulario */
 .form-container {
-    background-color: #9b0e0e; /* Blanco para contraste */
+    background-color: #ffffff; /* Blanco para contraste */
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(255, 105, 97, 0.3); /* Sombra en tono rojo claro */
