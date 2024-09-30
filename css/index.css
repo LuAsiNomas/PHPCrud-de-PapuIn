@@ -1,94 +1,490 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
-
-
-@keyframes color-change {
+@keyframes typing {
     from {
-        background-color: cyan;
-        font-family: 'Abril Fatface', cursive;
-        font-size:0.2em;
+      width: 0;
     }
-    to { 
-        background-color: orange; 
-        color:aliceblue;
-        font-family: 'Dancing Script', cursive;
-        font-size: 1em;
-    }
-}
-
-@-webkit-keyframes stroke {
-    100% {
-      stroke-dashoffset: -400;
+    to {
+      width: 100%;
     }
   }
-  
-  @keyframes stroke {
-    100% {
-      stroke-dashoffset: -400;
+  @keyframes blink {
+    50% {
+      border-color: transparent;
     }
   }
 
-  html, body {
-    height: 100%;
-  }
-
-body {
-    background: #212121;
-    background-size: .2em 100%;
-    font: 14.5em/1 Open Sans, Impact;
-    text-transform: uppercase;
+html body{
     margin: 0;
-  }
-
-.text {
-  fill: none;
-  stroke-width: 6;
-  stroke-linejoin: round;
-  stroke-dasharray: 70 330;
-  stroke-dashoffset: 0;
-  -webkit-animation: stroke 6s infinite linear;
-  animation: stroke 6s infinite linear;
+    padding: 0;
 }
 
-.text:nth-child(5n + 1) {
-  stroke: #F2385A;
-  -webkit-animation-delay: -1.2s;
-  animation-delay: -1.2s;
-}
-.text:nth-child(5n + 2) {
-  stroke: #F5A503;
-  -webkit-animation-delay: -2.4s;
-  animation-delay: -2.4s;
+#contenedor{
+    display:flex;
 }
 
-.text:nth-child(5n + 3) {
-  stroke: #E9F1DF;
-  -webkit-animation-delay: -3.6s;
-  animation-delay: -3.6s;
+.contenedor{
+    width:100%;
 }
 
-.text:nth-child(5n + 4) {
-  stroke: #56D9CD;
-  -webkit-animation-delay: -4.8s;
-  animation-delay: -4.8s;
+.header{
+    display:none;
 }
 
-.text:nth-child(5n + 5) {
-  stroke: #3AA1BF;
-  -webkit-animation-delay: -6s;
-  animation-delay: -6s;
-}
-
-svg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.bienvenida{
-    margin:0px;
+.main{
+    margin-left: 0;
+    width:100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden;
+}
+
+#bajas{
+    height:100vh;
+    width: 100%;
+    background-color: rgb(253, 251, 250);
+    display: flex;
+    font-size:q 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#modificacion{
+    height:auto;
+    display:flex;
+    justify-content:center;
+}
+
+#modificacion .container{
+    display:flex;
+    justify-content:center;
+    width:60vw;
+}
+
+#listar{
+    height:100vh;
+    overflow-y: scroll;
+    width:80vw;
+}
+
+#footer{
+    height:30vh;
+    display:flex;
     justify-content:center;
     align-items:center;
+    width:100%;
+    margin-top:20px;
+    color:white;
+    background-color:rgba(4, 1, 21, 0.796);
+}
+
+#footer ul{
+    list-style:none;
+}
+
+@media (min-width: 800px) {
+
+.header-cambio{
+    transition:5s ease-in;
     height:100vh;
-    animation: color-change 5s infinite ;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    background-color: rgb(202, 226, 246);
+    color:rgb(6, 6, 6);
+    padding-left: 1em;
+}
+
+#nav ul{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    text-align:right;
+    padding-right:1em;
+}
+
+.image-menu{
+    align-self:flex-start;
+    height: 80px;
+    margin: 10px;
+}
+
+.image-menu img{
+    position:fixed;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+}
+
+#nav ul li{
+    padding:2em;
+}
+
+#nav ul li:hover{
+    border:1px solid rgb(4, 4, 4);
+}
+
+#nav ul li a{
+    text-decoration:none;
+    color:rgb(6, 6, 6);
+}
+
+.main-cambio{
+    margin-left: 30%;
+    display: flex;
+    width:70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden;
+}
+
+.banner{
+    height:100vh;
+    width: 100%;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    color: rgb(4, 4, 4);
+}
+
+.banner-cambio{
+    height:80vh;
+    width: 100%;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    color: rgb(4, 4, 4);
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner .container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:50vh;
+}
+
+.titulo{
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 3em;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    animation: typing 2s steps(19) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+
+.icono{
+    width:40px;
+}
+
+.icono-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+.top{
+    padding-top:80px;
+}
+
+#altas{
+    height:auto;
+    width: 100%;
+    background-color: rgb(242, 231, 222);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#altas .container{
+    background-color: rgb(246, 226, 196);
+    width: 60%;
+}
+
+#listar{
+    height:100vh;
+    overflow-y: scroll;
+    width:80vw;
+}
+}
+
+@media (min-width: 400px) and (max-width:800px){
+
+.header-cambio{
+    transition:5s ease-in;
+    height:100vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    background-color: rgb(202, 226, 246);
+    color:rgb(6, 6, 6);
+    padding:0;
+}
+
+#logo{
+    display:none;
+}
+
+#nav ul{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    text-align:right;
+    font-size:0;
+    padding-top: 100px;
+    padding-left:0;
+}
+
+.image-menu{
+    align-self:flex-start;
+    height: 80px;
+}
+
+.image-menu img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+}
+
+#menuLateral{
+    width: 80px;
+}
+
+#nav ul li{
+    padding:2em;
+}
+
+#nav ul li:hover{
+    border:1px solid rgb(4, 4, 4);
+}
+
+#nav ul li a{
+    text-decoration:none;
+    color:rgb(6, 6, 6);
+}
+
+.main-cambio{
+    margin-left: 20%;
+    display: flex;
+    width:80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden;
+}
+
+.icono{
+    width:60px;
+}
+
+.icono-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+.banner{
+    display:flex;
+    justify-content:center;
+    height:100vh;
+    width: 100%;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    color: rgb(4, 4, 4);
+}
+
+.banner-cambio{
+    display:flex;
+    justify-content:center;
+    height:80vh;
+    width: 100%;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    color: rgb(4, 4, 4);
+}
+
+.banner img{
+    width: 100%;
+}
+
+.titulo{
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2em;
+    margin: 0 auto;
+    padding-top:100px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    animation: typing 2s steps(19) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+
+#altas{
+    height:auto;
+    width: 100%;
+    background-color: rgb(242, 231, 222);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#altas .container{
+    background-color: rgb(246, 226, 196);
+    width: 100%;
+}
+
+#listar{
+    height:100vh;
+    overflow-y: scroll;
+    width:100vw;
+}
+}
+
+@media (max-width: 400px) {
+    .header-cambio{
+        transition:5s ease-in;
+        height:100vh;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 18%;
+        background-color: rgb(202, 226, 246);
+        color:rgb(6, 6, 6);
+        padding:0;
+    }
+    
+    #logo{
+        display:none;
+    }
+
+    #nav ul{
+        list-style:none;
+        display:flex;
+        flex-direction:column;
+        text-align:right;
+        font-size:0;
+        padding-top: 150px;
+        padding-left:0;
+    }
+    
+    .image-menu{
+        height: 80px;
+    }
+    
+    .image-menu img{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 40px;
+    }
+    
+    #menuLateral{
+        width: 60px;
+    }
+    
+    #nav ul li{
+        padding:2em;
+    }
+    
+    #nav ul li:hover{
+        border:1px solid rgb(4, 4, 4);
+    }
+    
+    #nav ul li a{
+        text-decoration:none;
+        color:rgb(6, 6, 6);
+    }
+    
+    .main-cambio{
+        margin-left: 10%;
+        display: flex;
+        width:90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x:hidden;
+    }
+    
+    .icono{
+        width:40px;
+        margin-top:10px;
+    }
+    
+    .icono-container{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    .banner{
+        display:flex;
+        justify-content:center;
+        height:100vh;
+        width: 100%;
+        background-image: url("../images/banner.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        color: rgb(4, 4, 4);
+    }
+    
+    .banner-cambio{
+        display:flex;
+        justify-content:center;
+        height:80vh;
+        width: 100%;
+        background-image: url("../images/banner.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        color: rgb(4, 4, 4);
+    }
+    
+    .banner img{
+        width: 100%;
+    }
+
+    .titulo{
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 2em;
+        margin: 0 auto;
+        padding-top:100px;
+        text-align: center;
+        font-family: 'Dosis', sans-serif;
+        animation: typing 2s steps(19) 1s 1 normal both, blink 1s steps(1) infinite;
+    }
+    
+    #altas{
+        height:100vh;
+        width: 100%;
+        background-color: rgb(242, 231, 222);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #altas .container{
+        background-color: rgb(246, 226, 196);
+        width: 100%;
+    }
+
+    
 }
