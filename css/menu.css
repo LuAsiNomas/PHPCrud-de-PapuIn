@@ -42,7 +42,7 @@ html body{
 #bajas{
     height:100vh;
     width: 100%;
-    background-color: rgb(44, 12, 12);
+    background-color: rgb(255, 255, 255);
     display: flex;
     font-size:q 1em;
     flex-direction: column;
@@ -199,7 +199,7 @@ html body{
 #altas{
     height:auto;
     width: 100%;
-    background-color: rgb(242, 231, 222);
+    background-color: rgb(151, 101, 60);
     display: flex;
     flex-direction: column;
     align-items: center;
