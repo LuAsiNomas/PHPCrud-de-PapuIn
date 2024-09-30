@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
 
     if ($fototamaño > 0) {
@@ -12,6 +13,21 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
 
          $cadena = "INSERT INTO equipos(Equipo_ID, nombre_equipo, id_jugador_lider, idjug2, idjug3, provincia, foto, fototamaño) VALUES ($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño)";
          try {
+=======
+function insertar($use, $cla, $ape, $nom, $fe, $foto, $fotoTamanio)
+{
+    if ($fotoTamanio > 0) {
+        $fp = fopen($foto, "rb");
+        $contenido = fread($fp, $fotoTamanio);
+        $contenido = addslashes($contenido);
+        fclose($fp);
+
+        $Conexion = include("conexion.php");
+
+        $cadena = "INSERT INTO equipos(nombre_equipo, idjug_lider, idjug2, idjug3, logo, provincia) VALUES ('$ape','$nom','$fe','$contenido','$use','$cla')";
+
+        try {
+>>>>>>> main
             $resultado = mysqli_query($Conexion, $cadena);
 
             if ($resultado) {
@@ -21,13 +37,17 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
             return substr($e, 22, 41);
         }
 
+
+    } else {
+        return false;
+    }
 }
 }
 
 function getUsuarioUsersNames()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT idlider FROM equipos ";
+    $cadena = "SELECT usuario FROM persona ";
 
     $consulta = mysqli_query($Conexion, $cadena);
     $html = "<select class='select' style='border-bottom: 1px solid black;
@@ -49,7 +69,7 @@ function getUsuarioUsersNames()
 function getUsuarioUsersNamesModificar()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT idlider FROM equipos ";
+    $cadena = "SELECT usuario FROM persona ";
 
     $consulta = mysqli_query($Conexion, $cadena);
     $html = "<select class='selectModificar' style='border-bottom: 1px solid black;
@@ -71,7 +91,7 @@ function getUsuarioUsersNamesModificar()
 function getUsuarioUserName($userName)
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT * FROM equipos WHERE idlider ='" . $userName . "'";
+    $cadena = "SELECT * FROM persona WHERE usuario ='" . $userName . "'";
     $consulta = mysqli_query($Conexion, $cadena);
     $array = array();
     while ($registro = mysqli_fetch_row($consulta)) {
@@ -83,11 +103,11 @@ function getUsuarioUserName($userName)
 function getUsuarioUserNames()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT idlider FROM equipos ";
+    $cadena = "SELECT usuario FROM persona ";
     $consulta = mysqli_query($Conexion, $cadena);
     $array = array();
     while ($registro = mysqli_fetch_row($consulta)) {
-        array_push($array, array('idlider' => $registro[0]));
+        array_push($array, array('usuario' => $registro[0]));
     }
     return $array;
 }
@@ -95,12 +115,13 @@ function getUsuarioUserNames()
 function deleteUser($userName)
 {
     $Conexion = include("conexion.php");
-    $cadena = "DELETE FROM equipos  WHERE idlider = '$userName'";
+    $cadena = "DELETE FROM persona  WHERE usuario = '$userName'";
     $resultado = mysqli_query($Conexion, $cadena);
 
     return $resultado;
 }
 
+<<<<<<< HEAD
 function modificar($idl, $id2, $id3, $nom, $pro, $foto, $fototamaño) {
 
     if ($fototamaño > 0) {
@@ -113,6 +134,19 @@ function modificar($idl, $id2, $id3, $nom, $pro, $foto, $fototamaño) {
     $Conexion = include("conexion.php");
 
         $cadena = "UPDATE  equipos SET idlider = '$idl', id2 = '$id2', id3 = '$id3', nombre = '$nom', WHERE provincia = '$pro', foto = '$foto', fotomaño = '$fototamaño'";
+=======
+function modificar($use, $cla, $ape, $nom, $fe, $foto, $fotoTamanio)
+{
+    if ($fotoTamanio > 0) {
+        $fp = fopen($foto, "rb");
+        $contenido = fread($fp, $fotoTamanio);
+        $contenido = addslashes($contenido);
+        fclose($fp);
+
+        $Conexion = include("conexion.php");
+
+        $cadena = "UPDATE  persona SET apellido = '$ape', nombre = '$nom', fecha = '$fe', foto = '$contenido', clave = '$cla' WHERE usuario = '$use'";
+>>>>>>> main
 
         try {
             $resultado = mysqli_query($Conexion, $cadena);
@@ -122,14 +156,27 @@ function modificar($idl, $id2, $id3, $nom, $pro, $foto, $fototamaño) {
         } catch (Exception $e) {
             return substr($e, 22, 41);
         }
-   
+    } else {
+        $Conexion = include("conexion.php");
+
+        $cadena = "UPDATE  persona SET apellido = '$ape', nombre = '$nom', fecha = '$fe', clave = '$cla' WHERE usuario = '$use'";
+
+        try {
+            $resultado = mysqli_query($Conexion, $cadena);
+            if ($resultado) {
+                return true;
+            }
+        } catch (Exception $e) {
+            return substr($e, 22, 41);
+        }
+    }
 }
 }
 
 function listar()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT * FROM equipos ";
+    $cadena = "SELECT * FROM equipo ";
 
     $consulta = mysqli_query($Conexion, $cadena);
     $htmlListar = "";
