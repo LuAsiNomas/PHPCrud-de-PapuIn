@@ -1,5 +1,19 @@
 <?php
 
+<<<<<<< HEAD
+function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
+
+    if ($fototamaño > 0) {
+        $fp = fopen($foto, "rb");
+        $contenido = fread($fp, $fototamaño);
+        $contenido = addslashes($contenido);
+        fclose($fp);
+
+         $Conexion = include("conexion.php");
+
+         $cadena = "INSERT INTO equipos(Equipo_ID, nombre_equipo, id_jugador_lider, idjug2, idjug3, provincia, foto, fototamaño) VALUES ($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño)";
+         try {
+=======
 function insertar($use, $cla, $ape, $nom, $fe, $foto, $fotoTamanio)
 {
     if ($fotoTamanio > 0) {
@@ -13,6 +27,7 @@ function insertar($use, $cla, $ape, $nom, $fe, $foto, $fotoTamanio)
         $cadena = "INSERT INTO equipos(nombre_equipo, idjug_lider, idjug2, idjug3, logo, provincia) VALUES ('$ape','$nom','$fe','$contenido','$use','$cla')";
 
         try {
+>>>>>>> main
             $resultado = mysqli_query($Conexion, $cadena);
 
             if ($resultado) {
@@ -26,6 +41,7 @@ function insertar($use, $cla, $ape, $nom, $fe, $foto, $fotoTamanio)
     } else {
         return false;
     }
+}
 }
 
 function getUsuarioUsersNames()
@@ -105,6 +121,20 @@ function deleteUser($userName)
     return $resultado;
 }
 
+<<<<<<< HEAD
+function modificar($idl, $id2, $id3, $nom, $pro, $foto, $fototamaño) {
+
+    if ($fototamaño > 0) {
+        $fp = fopen($foto, "rb");
+        $contenido = fread($fp, $fototamaño);
+        $contenido = addslashes($contenido);
+        fclose($fp);
+
+   
+    $Conexion = include("conexion.php");
+
+        $cadena = "UPDATE  equipos SET idlider = '$idl', id2 = '$id2', id3 = '$id3', nombre = '$nom', WHERE provincia = '$pro', foto = '$foto', fotomaño = '$fototamaño'";
+=======
 function modificar($use, $cla, $ape, $nom, $fe, $foto, $fotoTamanio)
 {
     if ($fotoTamanio > 0) {
@@ -116,6 +146,7 @@ function modificar($use, $cla, $ape, $nom, $fe, $foto, $fotoTamanio)
         $Conexion = include("conexion.php");
 
         $cadena = "UPDATE  persona SET apellido = '$ape', nombre = '$nom', fecha = '$fe', foto = '$contenido', clave = '$cla' WHERE usuario = '$use'";
+>>>>>>> main
 
         try {
             $resultado = mysqli_query($Conexion, $cadena);
@@ -139,6 +170,7 @@ function modificar($use, $cla, $ape, $nom, $fe, $foto, $fotoTamanio)
             return substr($e, 22, 41);
         }
     }
+}
 }
 
 function listar()

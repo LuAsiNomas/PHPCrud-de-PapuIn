@@ -18,8 +18,10 @@ $idl = $_POST['id_jug_lider'];
 $id2 = $_POST['idjug2'];
 $id3 = $_POST['idjug3'];
 $pro = $_POST['provincia'];
+$foto = $_FILES['foto'];
+$fototamaño = $_FILES['fototamaño'];
 
-$result = insertar($ide, $noe, $idl, $id2, $id3, $pro);
+$result = insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño);
 
 if (strlen($result) > 5) {
     echo '<div class="Rcontainer">
