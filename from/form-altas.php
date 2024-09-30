@@ -11,7 +11,7 @@
         <h3 class="form-title">TORNEO NACIONAL</h3>
         <form class="form-content" action="../server/altas.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
-                <img onclick="seleccionarArchivo()" src="../IMAGENES/mm.png" id="logo" alt="Logo del equipo">
+                <img onclick="seleccionarArchivo()" src="IMAGENES/mm.png" id="logo" alt="Logo del equipo">
                 <input type="file" class="input-file" name="foto" required>
             </div>
 
