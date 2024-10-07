@@ -54,7 +54,7 @@ body {
 }
 
 /* Estilos de los inputs */
-.input-file,
+.input-file, 
 input[type="text"] {
     width: 100%;
     padding: 0.75rem;
