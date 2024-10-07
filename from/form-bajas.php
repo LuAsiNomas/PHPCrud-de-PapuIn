@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -23,3 +23,6 @@
 		</div>
 	</form>
 </div>
+	<script src="../js/form-baja.js"></script>
+</body>
+</html>
