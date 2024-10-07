@@ -36,7 +36,7 @@
             </div>
 
             <div class="form-group">
-                <select name="Provincia" id="prov" required>
+                <select name="Provincia" class="btn-prov" required>
                     <option value="Disabled">SELECCIONAR PROVINCIA</option>
                     <option value="1">Buenos Aires</option>
                     <option value="2">Catamarca</option>
