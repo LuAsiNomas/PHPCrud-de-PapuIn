@@ -35,7 +35,7 @@ body {
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
-    color: #d84315; /* Rojo claro */
+    font-size: 40px;
     
 }
 
@@ -90,5 +90,6 @@ input::placeholder {
 
 #logo{
     width: 100px;
-    
+    padding-bottom: 20px;
+        
 }
