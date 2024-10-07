@@ -51,6 +51,8 @@ body {
     display:flex ;
     flex-direction: column;
     align-items: center;
+    
+    
 }
 
 /* Estilos de los inputs */
@@ -71,6 +73,10 @@ input::placeholder {
 /* Estilo para el botón de enviar */
 .btn-submit {
     text-align: center;
+    height: 36px;
+}
+.btn-prov{
+    height: 36px;
 }
 
 .btn-submit input[type="submit"] {
@@ -82,6 +88,7 @@ input::placeholder {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
 }
 
 .btn-submit input[type="submit"]:hover {
