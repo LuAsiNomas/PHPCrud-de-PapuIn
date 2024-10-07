@@ -38,6 +38,25 @@ body {
     font-size: 45px;
     
 }
+.decorative-left, .decorative-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+}
+
+.decorative-left {
+    left: 0;
+}
+
+.decorative-right {
+    right: 0;
+}
+
+.decorative-left img, .decorative-right img {
+    height: 100%;
+    object-fit: cover;
+}
 
 /* Estilos del formulario */
 .form-content {
