@@ -35,7 +35,7 @@ body {
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
-    font-size: 40px;
+    font-size: 45px;
     
 }
 
@@ -89,7 +89,7 @@ input::placeholder {
 }
 
 #logo{
-    width: 100px;
+    width: 130px;
     padding-bottom: 20px;
-        
+    padding-right: 15px;
 }
