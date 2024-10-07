@@ -1,7 +1,6 @@
 body {
-    font-family: 'Verdana', sans-serif;
-    background-color: #121212; /* Fondo oscuro para resaltar los colores */
-    color: #ffffff; /* Texto claro */
+    font-family: Arial, sans-serif;
+    background-color: #fff9e6; /* Amarillo muy claro */
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,7 +9,7 @@ body {
     min-height: 100vh;
 }
 
-.form {
+.formis {
     background-color: #1e1e1e; /* Fondo gris oscuro para el formulario */
     padding: 2rem;
     border-radius: 15px;
@@ -39,17 +38,6 @@ body {
     margin-bottom: 1.5rem;
 }
 
-input[type="text"],
-select {
-    width: 100%;
-    padding: 0.8rem;
-    border: 2px solid #ffca28; /* Bordes amarillos vibrantes */
-    border-radius: 8px;
-    background-color: #2e2e2e; /* Fondo oscuro para los inputs */
-    color: #ffffff;
-    font-size: 1rem;
-    box-sizing: border-box;
-}
 
 input[type="text"]:focus,
 select:focus {
