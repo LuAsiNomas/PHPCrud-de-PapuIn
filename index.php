@@ -21,6 +21,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/formAltas.css">
+	<link rel="stylesheet" href="css/footer.css">
 
     <script src="js/index.js"></script>
 	<script src="js/form-altas.js"></script>
@@ -108,12 +109,17 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 
 			<!-- Footer -->
 			<footer id="footer">
-				<!-- Copyright -->
-				<ul class="copyright">
-					<li>&copy; Untitled. All rights reserved.</li>
-					<li>Design: <a href="">Papu In.</a></li>
-					<li></li>
-				</ul>
+    			<ul class="copyright">
+        			<li>&copy; 2024 Brawl Tournament.</li>
+        			<li>All rights reserved.</li>
+    			</ul>
+    			<ul class="design-info">
+        			<li>Design by Papu In.</li>
+        			<li>Email: contacto@brawltournament.com</li>
+    			</ul>
+    			<div class="scrolling-text">
+        			<p>¡Prepárate para la batalla final en el Torneo Nacional de Brawl Stars! Regístrate ahora y compite por premios épicos.</p>
+    			</div>
 			</footer>
 		</div>
 	</div>
