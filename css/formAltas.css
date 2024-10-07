@@ -11,7 +11,7 @@ body {
 
 /* Contenedor del formulario */
 .form-container {
-    align-items: center;
+    min-width: 100%;
     background-color: #ffffff; /* Blanco para contraste */
     padding: 2rem;
     border-radius: 8px;
@@ -24,9 +24,19 @@ body {
 /* Título del formulario */
 .form-title {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    color: #d84315; /* Un rojo vibrante */
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
+    background-image: linear-gradient(90deg, #ffeb3b, #ff7043);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
     color: #d84315; /* Rojo claro */
-    font-size: 1.5rem;
+    
 }
 
 /* Estilos del formulario */
