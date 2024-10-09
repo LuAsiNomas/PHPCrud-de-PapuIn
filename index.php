@@ -43,7 +43,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 										src="images/icono-alta.png"></span></a></li>
 						<li><a href="#bajas" id="bajas-link"><span class="icono-container">Bajas<img class="icono"
 										src="images/icono-baja.png"></span></a></li>
-						<li><a href="#modificacion" id="modificacion-link"><span
+	+					<li><a href="#modificacion" id="modificacion-link"><span
 									class="icono-container">ModificacionMe<img class="icono"
 										src="images/icono-modificar.png"></span></a></li>
 						<li><a href="#listar" id="listar-link"><span class="icono-container">Listar<img class="icono"
