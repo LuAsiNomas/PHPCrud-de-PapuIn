@@ -26,7 +26,7 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
         return false;
     }
 }
-}
+
 
 function getUsuarioUsersNames()
 {
@@ -141,7 +141,7 @@ function modificar($idl, $id2, $id3, $nom, $pro, $foto, $fototamaño) {
         }
     }
 }
-}
+
 
 function listar()
 {
