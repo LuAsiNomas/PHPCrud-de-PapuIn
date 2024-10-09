@@ -1,5 +1,6 @@
 <?php
-$basarda = "basarda";
-$Conexion = mysqli_connect("localhost", "root", "", $basarda);
+$base = "basarda";
+$Conexion = mysqli_connect("localhost", "root", "", $base);
 return $Conexion;
+
 ?>
