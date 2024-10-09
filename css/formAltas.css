@@ -1,703 +1,100 @@
-.modificarTitulo{
-    text-align:center;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff9e6; /* Amarillo muy claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.modificarInput{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-
-.grupoInputsModificar{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-
-.altaTitulo{
-    text-align: center;
-}
-
-.bajaTitulo{
-    text-align: center;
-    font-size:1em;
-}
-
-@media (min-width: 800px) {
-.form{
+/* Contenedor del formulario */
+.form-container {
+    min-width: 100%;
+    background-color: #ffffff; /* Blanco para contraste */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 105, 97, 0.3); /* Sombra en tono rojo claro */
     width: 100%;
-    font-family: 'Dosis', sans-serif;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    padding:10px 10px 20px 10px;
+    max-width: 600px;
+    box-sizing: border-box;
 }
 
-
-.modal{
-    background-color:rgb(89, 87, 87,0.5);
-    position:absolute;
-    top: 1300px;
-    left:0;
-    width:100vw;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+/* Título del formulario */
+.form-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #d84315; /* Un rojo vibrante */
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
+    background-image: linear-gradient(90deg, #ffeb3b, #ff7043);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 45px;
+    
 }
 
-.container-modal{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    width: 300px;
-    font-size:12px;
-    border:1px solid black;
-    margin:10px;
-    padding: 20px;
-    background-color:white;
-}
-
-.btn-modal{
-    background-color:white;
-    color:black;
-    width: 100px;
-    border:1px solid black;
-    text-align:center;
-    cursor:pointer;
-}
-
-.btn-modal:hover{
-    background-color:rgb(103, 19, 248);
-    color:rgb(254, 254, 254);
-}
-
-.data{
-    opacity:0;
-    overflow:hidden;
-    width:50vw;
-}
-
-.altaInput .bajaInput{
+/* Estilos del formulario */
+.form-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    z-index:2;
 }
 
-.grupoInputs{
-    display: flex;
+/* Grupos de inputs */
+.form-group {
+    margin-bottom: 1rem;
+    display:flex ;
     flex-direction: column;
     align-items: center;
-    width:100%;
 }
 
-.grupoInputs label{
-    font-size:2em;
+/* Estilos de los inputs */
+.input-file, 
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #f5a623; /* Amarillo suave */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
 }
 
-.imgPerfil{
-    align-self: center;
-    width: 200px;
+input::placeholder {
+    color: #ff7043; /* Rojo anaranjado claro */
 }
 
-.inputFile{
-    opacity: 0;
-    overflow: hidden;
-    height:0;
+/* Estilo para el botón de enviar */
+.btn-submit {
+    text-align: center;
+    height: 36px;
+}
+.btn-prov{
+    height: 36px;
 }
 
-.grupoInputs input{
-    border-bottom: 1px solid black;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        width:40%;
-        height:3em;
-        font-size:1.5em;
-        background-color: rgb(246, 226, 196);
-        cursor: pointer;
-}
-
-.grupoInputs input:hover{
-    border-bottom: 1px solid rgb(69, 146, 82);
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    color:rgb(13, 89, 26);
-}
-
-.grupoInputs input:active{
-    border-bottom: 1px solid rgb(69, 146, 82);
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    color:rgb(13, 89, 26);
-}
-
-.btn{
-    background-color:rgb(196, 127, 7);
-    color:white;
-    font-size:1.5em;
-}
-
-.container-select{
-    margin: 2em;
-}
-
-.btn-baja{
-    display:flex;
-    justify-content:flex-end;
-}
-
-.listaModificar{
-    list-style:none;
-}
-
-.listaModificar:hover{
-    list-style:none;
-    background-color:rgb(75, 75, 249);
-    color:white;
-}
-
-.grupoInputsModificar{
-    width:50%;
-}
-
-.grupoInputsModificar input{
-    margin-top:20px;
-}
-
-.inputFileModificar{
-    display:none;
-}
-
-.grupoInputsCambiar{
-    display:flex;
-    justify-content:center;
-    width:70vw;
-}
-
-.labelInput {
-  margin:20px 0;
-  position:relative;
-  display:inline-block;
-}
-  
-.spanInput {
-  padding:10px;
-  pointer-events: none;
-  position:absolute;
-  left:0;
-  top: 17px;
-  color:rgb(221, 220, 220);
-  transition: 0.2s;
-  transition-timing-function: ease;
-  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-  opacity:0.5;
-}
-
-.labelInput
- input {
-  padding:10px;
- }
-
-.btn-submit{
-    width:100%;
-    display:flex;
-    justify-content:center;
-}
-
-.btn-modificar{
-    font-size: 20px;
-    width:80%;
-    background-color:white;
-    color:black;
-    align-self:flex-end;
-}
-
-.btn-modificar:hover{
-    background-color:rgb(76, 78, 197);
-    color:rgb(250, 250, 250);
-} 
-
-.tarjetaUsuario{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.container-listar{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    width: 200px;
-    font-size:12px;
-    border:1px solid black;
-    margin: 20px;
-    background-color:white;
-}
-
-.container-listar img{
-    width:100%;
-}
-}
-
-@media (min-width: 400px) and (max-width:800px){
-    .form{
-        width: 95%;
-        font-family: 'Dosis', sans-serif;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        padding:10px 10px 20px 10px;
-    }
-    
-    .modal{
-        background-color:rgb(89, 87, 87,0.5);
-        position:absolute;
-        top: 1300px;
-        left:0;
-        width:100vw;
-        height:100vh;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-    
-    .container-modal{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        width: 300px;
-        font-size:12px;
-        border:1px solid black;
-        margin:10px;
-        padding: 20px;
-        background-color:white;
-    }
-    
-    .btn-modal{
-        background-color:white;
-        color:black;
-        width: 100px;
-        border:1px solid black;
-        text-align:center;
-        cursor:pointer;
-    }
-    
-    .btn-modal:hover{
-        background-color:rgb(103, 19, 248);
-        color:rgb(254, 254, 254);
-    }
-
-    .data{
-        opacity:0;
-        overflow:hidden;
-        width:50vw;
-    }
-    
-    .altaInput .bajaInput{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .grupoInputs{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width:100%;
-    }
-
-    .imgPerfil{
-        align-self: center;
-        width: 200px;
-    }
-    
-    .inputFile{
-        opacity: 0;
-        overflow: hidden;
-        height:0;
-    }
-    
-    .grupoInputs input{
-        border-bottom: 1px solid black;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        width:60%;
-        height:3em;
-        font-size:1.5em;
-        background-color: rgb(246, 226, 196);
-        cursor: pointer;
-    }
-    
-    .grupoInputs input:hover{
-        border-bottom: 1px solid rgb(69, 146, 82);
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        color:rgb(13, 89, 26);
-    }
-    
-    .grupoInputs input:active{
-        border-bottom: 1px solid rgb(69, 146, 82);
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        color:rgb(13, 89, 26);
-    }
-    
-    .btn{
-        background-color:rgb(196, 127, 7);
-        color:white;
-        font-size:1.5em;
-    }
-    
-    .container-select{
-        margin: 1em;
-    }
-    
-    .btn-baja{
-        display:flex;
-        justify-content:flex-end;
-    }
-    
-    .listaModificar{
-        list-style:none;
-    }
-    
-    .listaModificar:hover{
-        list-style:none;
-        background-color:rgb(75, 75, 249);
-        color:white;
-    }
-    
-    .grupoInputsModificar{
-        width:50%;
-    }
-    
-    .grupoInputsModificar input{
-        margin-top:20px;
-    }
-    
-    .inputFileModificar{
-        display:none;
-    }
-    
-    .grupoInputsCambiar{
-        display:flex;
-        justify-content:center;
-        width:70vw;
-    }
-    
-    .labelInput {
-      margin:20px 0;
-      position:relative;
-      display:inline-block;
-    }
-      
-    .spanInput {
-      padding:10px;
-      pointer-events: none;
-      position:absolute;
-      left:0;
-      top: 17px;
-      color:rgb(221, 220, 220);
-      transition: 0.2s;
-      transition-timing-function: ease;
-      transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-      opacity:0.5;
-    }
-    
-    .labelInput
-     input {
-      padding:10px;
-     }
-    
-    .btn-submit{
-        width:100%;
-        display:flex;
-        justify-content:center;
-    }
-    
-    .btn-modificar{
-        font-size: 20px;
-        width:80%;
-        background-color:white;
-        color:black;
-        align-self:flex-end;
-    }
-    
-    .btn-modificar:hover{
-        background-color:rgb(76, 78, 197);
-        color:rgb(250, 250, 250);
-    } 
-    
-    .tarjetaUsuario{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-    
-    .container-listar{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        width: 200px;
-        font-size:12px;
-        border:1px solid black;
-        margin: 20px;
-        background-color:white;
-    }
-    
-    .container-listar img{
-        width:100%;
-    }
+.btn-submit input[type="submit"] {
+    background-color: #ffeb3b; /* Amarillo claro */
+    color: #d32f2f; /* Rojo oscuro */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     
 }
 
-@media (max-width: 400px) {
-    .form{
-        width: 95%;
-        font-family: 'Dosis', sans-serif;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        padding:10px 10px 20px 10px;
-    }
-    
-    .modal{
-        background-color:rgb(89, 87, 87,0.5);
-        position:absolute;
-        top: 1300px;
-        left:0;
-        width:100vw;
-        height:100vh;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-    
-    .container-modal{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        width: 300px;
-        font-size:12px;
-        border:1px solid black;
-        margin:10px;
-        padding: 20px;
-        background-color:white;
-    }
-    
-    .btn-modal{
-        background-color:white;
-        color:black;
-        width: 100px;
-        border:1px solid black;
-        text-align:center;
-        cursor:pointer;
-    }
-    
-    .btn-modal:hover{
-        background-color:rgb(103, 19, 248);
-        color:rgb(254, 254, 254);
-    }
+.btn-submit input[type="submit"]:hover {
+    background-color: #fbc02d; /* Amarillo más intenso */
+}
 
-    .data{
-        opacity:0;
-        overflow:hidden;
-        width:50vw;
-    }
-    
-    .altaInput .bajaInput{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .altaTitulo{
-        margin:0;
-    }
-    
-    .grupoInputs{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width:100%;
-    }
-
-    #imgPerfil{
-        align-self: center;
-        width: 150px;
-    }
-    
-    .inputFile{
-        opacity: 0;
-        overflow: hidden;
-        height:0;
-    }
-    
-    .grupoInputs input{
-        border-bottom: 1px solid black;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        width:60%;
-        font-size:1em;
-        background-color: rgb(246, 226, 196);
-        cursor: pointer;
-    }
-    
-    .grupoInputs input:hover{
-        border-bottom: 1px solid rgb(69, 146, 82);
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        color:rgb(13, 89, 26);
-    }
-    
-    .grupoInputs input:active{
-        border-bottom: 1px solid rgb(69, 146, 82);
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        color:rgb(13, 89, 26);
-    }
-    
-    .btn{
-        background-color:rgb(196, 127, 7);
-        color:white;
-        font-size:1.5em;
-    }
-    
-    .container-select{
-        margin: 1em;
-    }
-
-    .btn-baja{
-        display:flex;
-        justify-content:flex-end;
-    }
-    
-    .btn-baja input{
-        background-color:rgb(254, 254, 254);
-        color:rgb(9, 9, 9);
-        font-size:1.5em;
-    }
-
-    .btn-baja input:hover{
-        background-color:rgb(63, 55, 163);
-        color:rgb(248, 246, 246);
-        font-size:1.5em;
-    }
-    
-    .listaModificar{
-        list-style:none;
-    }
-    
-    .listaModificar:hover{
-        list-style:none;
-        background-color:rgb(75, 75, 249);
-        color:white;
-    }
-    
-    .grupoInputsModificar{
-        width:100%;
-    }
-
-    .imagenUsuario{
-        display:flex;
-        justify-content:center;
-    }
-
-    #imgPerfilModificar{
-        align-self: center;
-        width: 200px;
-    }
-    
-    .grupoInputsModificar input{
-        margin-top:10px;
-    }
-    
-    .inputFileModificar{
-        display:none;
-    }
-    
-    .grupoInputsCambiar{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        width:70vw;
-    }
-    
-    .labelInput {
-      position:relative;
-      display:inline-block;
-    }
-      
-    .spanInput {
-      padding:10px;
-      pointer-events: none;
-      position:absolute;
-      left:0;
-      top: 17px;
-      color:rgb(221, 220, 220);
-      transition: 0.2s;
-      transition-timing-function: ease;
-      transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-      opacity:0.5;
-    }
-    
-    .labelInput
-     input {
-      padding:10px;
-     }
-    
-    .btn-submit{
-        width:100%;
-        display:flex;
-        justify-content:center;
-    }
-    
-    .btn-modificar{
-        font-size: 20px;
-        width:80%;
-        background-color:white;
-        color:black;
-        align-self:flex-end;
-    }
-    
-    .btn-modificar:hover{
-        background-color:rgb(76, 78, 197);
-        color:rgb(250, 250, 250);
-    } 
-    
-    .tarjetaUsuario{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        width:100%;
-    }
-    
-    .container-listar{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        width: 200px;
-        font-size:12px;
-        border:1px solid black;
-        margin: 20px;
-        background-color:white;
-        width:100%;
-    }
-    
-    .container-listar img{
-        width:100%;
-        height:auto;
-    }
+#logo{
+    width: 130px;
+    padding-bottom: 20px;
+    padding-right: 15px;
 }
