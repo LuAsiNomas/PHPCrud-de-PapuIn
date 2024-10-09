@@ -143,23 +143,23 @@ function modificar($idl, $id2, $id3, $nom, $pro, $foto, $fototamaño) {
 }
 
 
-function listar()
-{
-    $Conexion = include("conexion.php");
-    $cadena = "SELECT * FROM equipo ";
+// function listar()
+// {
+//     $Conexion = include("conexion.php");
+//     $cadena = "SELECT * FROM equipo ";
 
-    $consulta = mysqli_query($Conexion, $cadena);
-    $htmlListar = "";
+//     $consulta = mysqli_query($Conexion, $cadena);
+//     $htmlListar = "";
 
-    while ($registro = mysqli_fetch_row($consulta)) {
-        $htmlListar = $htmlListar . '<div class="container-listar"><img src="data:image/jpeg;base64,' .
-            base64_encode($registro[4]) . '" width="200px" height="200px">
-            <h3>' . $registro[5] . '</h3>
-            <h3>' . $registro[1] . ' ' . $registro[2] . '</h3>
-            <h2>' . $registro[3] . ' </h2></div>';
-    }
+//     while ($registro = mysqli_fetch_row($consulta)) {
+//         $htmlListar = $htmlListar . '<div class="container-listar"><img src="data:image/jpeg;base64,' .
+//             base64_encode($registro[4]) . '" width="200px" height="200px">
+//             <h3>' . $registro[5] . '</h3>
+//             <h3>' . $registro[1] . ' ' . $registro[2] . '</h3>
+//             <h2>' . $registro[3] . ' </h2></div>';
+//     }
 
-    return $htmlListar;
-}
+//     return $htmlListar;
+// }
 
 ?>
