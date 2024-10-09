@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Equipo - Torneo Nacional</title>
-    <link rel="stylesheet" href="css/formAltas.css">
+    <link rel="stylesheet" href="../css/formAltas.css">
 </head>
 <body>
     <div class="form-container">
         <h3 class="form-title">TORNEO NACIONAL</h3>
         <form class="form-content" action="../server/altas.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
-                <img onclick="seleccionarArchivo()" src="IMAGENES/mm.png" id="foto" alt="Logo del equipo">
+                <img onclick="seleccionarArchivo()" src="IMAGENES/mm.png" id="logo" alt="Logo del equipo">
                 <input type="file" class="input-file" name="foto" required>
             </div>
 
@@ -36,7 +36,7 @@
             </div>
 
             <div class="form-group">
-                <select name="Provincia" id="prov" required>
+                <select name="Provincia" class="btn-prov" required>
                     <option value="Disabled">SELECCIONAR PROVINCIA</option>
                     <option value="1">Buenos Aires</option>
                     <option value="2">Catamarca</option>
@@ -71,6 +71,6 @@
         </form>
     </div>
 
-    <script src="js/form-altas.js"></script>
+    <script src="../js/form-altas.js"></script>
 </body>
 </html>
