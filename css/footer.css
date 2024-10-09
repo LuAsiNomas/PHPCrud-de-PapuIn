@@ -1,0 +1,78 @@
+/* Footer general */
+#footer {
+    background-color: #1e1e1e; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Verdana', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animación de movimiento */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Elementos del footer */
+#footer .copyright, 
+#footer .design-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+/* Información de copyright y diseño */
+#footer .copyright li,
+#footer .design-info li {
+    list-style: none;
+    margin: 0 10px;
+    color: #ffca28; /* Amarillo vibrante */
+}
+
+/* Información adicional (email o teléfono) */
+#footer .info li {
+    list-style: none;
+    color: #f44336; /* Rojo brillante */
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+/* Efecto de movimiento continuo en el texto del footer */
+#footer .scrolling-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+}
+
+#footer .scrolling-text p {
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    color: #ffeb3b; /* Amarillo claro */
+    animation: scroll 15s linear infinite; /* Animación continua */
+}
+
+/* Asegurando que sea responsivo */
+@media (max-width: 600px) {
+    #footer {
+        padding: 1rem 0;
+    }
+    #footer .copyright, 
+    #footer .design-info {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+}
