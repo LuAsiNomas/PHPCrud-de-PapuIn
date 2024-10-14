@@ -26,10 +26,11 @@
 .cambioInput, 
 input[type="text"] {
     width: 100%;
-    padding: 0.75rem;
+    margin-bottom: 1rem;
     border: 1px solid #f5a623; /* Amarillo suave */
     border-radius: 10px;
     box-sizing: border-box;
     font-size: 24px;
-    margin-bottom: 1rem;
+    background: linear-gradient(90deg,#ff7043, #ffeb3b );
 }
+
