@@ -124,36 +124,7 @@ html body{
     justify-content: center;
     align-items: center;
     overflow-x:hidden;
-}
-
-.banner{
-    height:100vh;
-    width: 100%;
-    background-image: url("../images/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 50%;
-    color: rgb(4, 4, 4);
-}
-
-.banner-cambio{
-    height:80vh;
-    width: 100%;
-    background-image: url("../images/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 50%;
-    color: rgb(4, 4, 4);
-}
-
-.banner img{
-    width: 100%;
-}
-
-.banner .container{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:50vh;
-}
+} 
 
 .titulo{
     width: 0;
