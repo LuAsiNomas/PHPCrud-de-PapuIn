@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO DE MODIFICACION</title>
+    <link rel="stylesheet" href="../css/formModificacion.css">
+</head>
+<body>
 <div class="form">
 	<h3 class="modificarTitulo">FORMULARIO DE MODIFICACION</h3>
 	<form class="modificarInput" action="../server/modificacion.php" method="POST" enctype="multipart/form-data">
