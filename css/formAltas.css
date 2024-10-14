@@ -50,14 +50,14 @@ body {
 }
 
 /* Estilos de los inputs */
-.input-file, 
+.input-file-altas, 
 input[type="text"] {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #f5a623; /* Amarillo suave */
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 24px;
 }
 
 input::placeholder {
@@ -65,14 +65,21 @@ input::placeholder {
 }
 
 /* Estilo para el botón de enviar */
-.btn-submit {
+.btn-submit-altas {
     text-align: center;
     height: 36px;
-}
-.btn-prov{
-    height: 36px;
+    font-size: 23px;
+    color: #1100ff;
+    border-radius: 10px;
+    border: 2px solid #1100ff;
 }
 
+.btn-prov{
+    color: #ff7043;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 2px solid #970303;
+}
 #logo{
     width: 130px;
     padding-bottom: 20px;
