@@ -9,7 +9,7 @@
 <body>
     <div class="form-container">
         <h3 class="form-title">TORNEO NACIONAL</h3>
-        <form class="form-content" action="../server/altas.php" method="POST" enctype="multipart/form-data">
+        <form class="form-content" action="server/altas.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <img onclick="seleccionarArchivo()" src="IMAGENES/mm.png" id="logo" alt="Logo del equipo">
                 <input type="file" class="input-file" name="foto" required>
@@ -36,7 +36,7 @@
             </div>
 
             <div class="form-group">
-                <select name="Provincia" class="btn-prov" required>
+                <select name="provincia" class="btn-prov" required>
                     <option value="Disabled">SELECCIONAR PROVINCIA</option>
                     <option value="1">Buenos Aires</option>
                     <option value="2">Catamarca</option>
