@@ -42,7 +42,7 @@ html body{
 #bajas{
     height:100vh;
     width: 100%;
-    background-color: #fff9e6;;
+    background-color: #ffffff;;
     display: flex;
     font-size:q 1em;
     flex-direction: column;
@@ -279,44 +279,6 @@ html body{
     flex-direction:row;
     justify-content:center;
     align-items:center;
-}
-
-.banner{
-    display:flex;
-    justify-content:center;
-    height:100vh;
-    width: 100%;
-    background-image: url("../images/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 50%;
-    color: rgb(4, 4, 4);
-}
-
-.banner-cambio{
-    display:flex;
-    justify-content:center;
-    height:80vh;
-    width: 100%;
-    background-image: url("../images/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 50%;
-    color: rgb(4, 4, 4);
-}
-
-.banner img{
-    width: 100%;
-}
-
-.titulo{
-    width: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 2em;
-    margin: 0 auto;
-    padding-top:100px;
-    text-align: center;
-    font-family: 'Dosis', sans-serif;
-    animation: typing 2s steps(19) 1s 1 normal both, blink 1s steps(1) infinite;
 }
 
 #altas{
