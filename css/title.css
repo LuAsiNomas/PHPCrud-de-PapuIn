@@ -1,5 +1,5 @@
 body {
-    background-color: #fff9e6; /* Amarillo muy claro */
+    background-color:  rgb(242, 231, 222); /* Amarillo muy claro */
     padding: 0;
     display: flex;
     justify-content: center;
@@ -7,8 +7,8 @@ body {
     margin: 0;
 }
 .banner {
-    height: 20%;
-    min-height: -20%;
+    height: -20%;
+    min-height: -60%;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -26,10 +26,10 @@ body {
     text-shadow: 3px 3px 0px #000, 5px 5px 0px #ff0000; /* Sombra múltiple estilo 'cartoon' */
     overflow: hidden;
     white-space: nowrap;
-    padding-top:100px;
     text-align: center;
     animation: typing 2s steps(19) 1s 1 normal both, blink 1s steps(1) infinite;
-    
+    margin-bottom: 220px;
+    text-decoration: underline;
   }
-  
+
   
