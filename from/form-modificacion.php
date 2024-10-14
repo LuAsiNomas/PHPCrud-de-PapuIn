@@ -14,7 +14,7 @@
 			<div id="modalModificar" class=""></div>
 		</div>
 
-		Campos a modificar:<br>
+		<br> Campos a modificar:</br>
 
 		<div class="grupoInputsCambiar">
 			<div class="imagenUsuario">
