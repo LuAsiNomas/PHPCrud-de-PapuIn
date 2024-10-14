@@ -16,23 +16,23 @@
             </div>
 
             <div class="form-group">
-                <input type="text" placeholder="Id de equipo" name="Equipo_ID" required>
+                <input type="text" class="input-file-altas" placeholder="Id de equipo" name="Equipo_ID" required>
             </div>
 
             <div class="form-group">
-                <input type="text" placeholder="Nombre de equipo" name="nombre_equipo" required>
+                <input type="text" class="input-file-altas" placeholder="Nombre de equipo" name="nombre_equipo" required>
             </div>
 
             <div class="form-group">
-                <input type="text" placeholder="Id líder" name="id_jug_lider" required>
+                <input type="text" class="input-file-altas" placeholder="Id líder" name="id_jug_lider" required>
             </div>
 
             <div class="form-group">
-                <input type="text" placeholder="Id jugador 2" name="idjug2" required>
+                <input type="text" class="input-file-altas" placeholder="Id jugador 2" name="idjug2" required>
             </div>
 
             <div class="form-group">
-                <input type="text" placeholder="Id jugador 3" name="idjug3" required>
+                <input type="text" class="input-file-altas" placeholder="Id jugador 3" name="idjug3" required>
             </div>
 
             <div class="form-group">
