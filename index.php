@@ -23,6 +23,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 	<link rel="stylesheet" href="css/formAltas.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/title.css">
+	<link rel="stylesheet" href="css/formBajas.css">
 
     <script src="js/index.js"></script>
 	<script src="js/form-altas.js"></script>
@@ -41,7 +42,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 				<!-- Logo -->
 				<div id="logo">
 
-					<h1 id="title">Administra Usuario</h1>
+					<h1 class="titulo">Administra Usuario</h1>
 					<p>Gestiona los usurios de este sistema</p>
 				</div>
 
