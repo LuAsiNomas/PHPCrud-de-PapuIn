@@ -47,6 +47,7 @@ body {
 .input-file-altas, 
 input[type="text"] {
     width: 100%;
+    margin-bottom: 1rem;
     padding: 0.75rem;
     border: 1px solid #f5a623; /* Amarillo suave */
     border-radius: 10px;
