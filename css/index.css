@@ -15,6 +15,7 @@
 html body{
     margin: 0;
     padding: 0;
+    
 }
 
 #contenedor{
@@ -125,10 +126,6 @@ html body{
     flex-direction:row;
     justify-content:flex-end;
     align-items:center;
-}
-
-.top{
-    padding-top:80px;
 }
 
 #altas{
