@@ -24,6 +24,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/title.css">
 	<link rel="stylesheet" href="css/formBajas.css">
+	<link rel="stylesheet" href="css/formModificacion.css">
 
     <script src="js/index.js"></script>
 	<script src="js/form-altas.js"></script>
