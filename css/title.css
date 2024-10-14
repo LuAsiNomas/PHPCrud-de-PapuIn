@@ -13,21 +13,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem; /* Elimina los márgenes para ajustar mejor */
-  }
-  
-  .container {
-    text-align: center; /* Centra el contenido dentro de la sección */
-
 
   }
-  
-  .titulo {
+.container{
+    text-align: center;
+}
+
+.titulo {
     font-family: 'Bangers', cursive; /* Fuente llamativa, ideal para una temática de Brawl Stars */
     font-size: 3.5rem; /* Tamaño más grande para resaltar el título */
     color: #ffd700; /* Color dorado que resalta */
     text-shadow: 3px 3px 0px #000, 5px 5px 0px #ff0000; /* Sombra múltiple estilo 'cartoon' */
-
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top:100px;
+    text-align: center;
+    animation: typing 2s steps(19) 1s 1 normal both, blink 1s steps(1) infinite;
     
   }
   
