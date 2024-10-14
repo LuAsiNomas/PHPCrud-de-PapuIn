@@ -1,19 +1,18 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #fff9e6; /* Amarillo muy claro */
-    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
+    margin: 0;
 }
 
 /* Contenedor del formulario */
 .form-container {
-    min-width: 100%;
+    max-width: 100%;
     background-color: #ffffff; /* Blanco para contraste */
-    padding: 2rem;
+    padding: 5rem;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(255, 105, 97, 0.3); /* Sombra en tono rojo claro */
     width: 100%;
