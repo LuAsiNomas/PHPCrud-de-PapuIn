@@ -5,8 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+    
 }
-
 /* Contenedor del formulario */
 .form-container {
     max-width: 100%;
@@ -21,6 +21,8 @@ body {
 
 .form-title{
     margin-bottom: 1rem;
+    position: relative;
+    bottom: 20px;
 }
 /* Título del formulario */
 .title {
@@ -55,6 +57,8 @@ input[type="text"] {
     box-sizing: border-box;
     font-size: 24px;
     background: linear-gradient(90deg,#ff7043, #ffeb3b );
+    position: relative;
+    bottom: 20px;
 }
 
 input::placeholder {
@@ -65,23 +69,39 @@ input::placeholder {
 }
 /* Estilo para el botón de enviar */
 .btn-submit-altas {
+    transition: transform 0.2s ease; /* Efecto de suavizado al agrandar */
+    box-shadow: 0 4px 10px rgba(148, 3, 3, 0.511);
     text-align: center;
     height: 36px;
     font-size: 24px;
     color: #000000;
     border-radius: 10px;
     border: 2px solid #701717;
+    position: relative;
+    bottom: 20px;
 }
 
+.btn-submit-altas:hover{
+    transform: scale(1.1);
+}
 .btn-prov{
+    transition: transform 0.2s ease; /* Efecto de suavizado al agrandar */
+    box-shadow: 0 4px 10px rgba(148, 3, 3, 0.511);
     color: #000000;
     font-size: 25px;
     border-radius: 10px;
     border: 2px solid #970303;
     margin-bottom: 15px;
+    position: relative;
+    bottom: 20px;
+}
+.btn-prov:hover{
+    transform: scale(1.1);
 }
 #logo{
     width: 130px;
     padding-bottom: 20px;
     padding-right: 15px;
+    position: relative;
+    bottom: 20px;
 }
