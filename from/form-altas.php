@@ -8,7 +8,9 @@
 </head>
 <body>
     <div class="form-container">
-        <h3 class="form-title">TORNEO NACIONAL</h3>
+        <div class="form-title">
+        <h3 class="title">TORNEO NACIONAL</h3>
+        </div>
         <form class="form-content" action="../server/altas.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <img class="seleccionbtn" onclick="seleccionarArchivo()" src="IMAGENES/mm.png" id="logo" alt="Logo del equipo">
