@@ -2,11 +2,13 @@
     max-width: 100%;
     background-color: #ffffff; /* Blanco para contraste */
     padding: 4rem;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 105, 97, 0.3); /* Sombra en tono rojo claro */
-    width: 100%;
+    width: 80%;
     box-sizing: border-box;
-    border: 2px solid #970303;
+    border: 2px solid hsl(0, 66%, 26%);;
+    margin-left: 10%;
+
     
 }
 
@@ -26,7 +28,7 @@
 .cambioInput, 
 input[type="text"] {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2.2rem;
     border: 1px solid #f5a623; /* Amarillo suave */
     border-radius: 10px;
     box-sizing: border-box;
@@ -34,8 +36,8 @@ input[type="text"] {
     background: linear-gradient(90deg,#ff7043, #ffeb3b );
 }
 .btn-modificar{
-    color: #ff7043;
-    font-size: 25px;
+    color: #000000;
+    font-size: 29px;
     border-radius: 10px;
     border: 2px solid #970303;
 }
