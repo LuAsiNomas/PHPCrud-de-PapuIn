@@ -25,6 +25,7 @@
     font-size: 55px;
     padding-bottom: 100px;
 }
+
 .cambioInput, 
 input[type="text"] {
     width: 100%;
@@ -36,8 +37,13 @@ input[type="text"] {
     background: linear-gradient(90deg,#ff7043, #ffeb3b );
 }
 .btn-modificar{
+    transition: transform 0.2s ease; /* Efecto de suavizado al agrandar */
+    box-shadow: 0 4px 10px rgba(148, 3, 3, 0.511);
     color: #000000;
     font-size: 29px;
     border-radius: 10px;
     border: 2px solid #970303;
+}
+.btn-modificar:hover{
+    transform: scale(1.1);
 }
