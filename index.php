@@ -96,10 +96,6 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 				</div>
 			</section>
 
-			<!-- Contact -->
-	
-
-			<!-- Footer -->
 			<footer id="footer">
     			<ul class="copyright">
         			<li>&copy; 2024 Brawl Tournament.</li>
