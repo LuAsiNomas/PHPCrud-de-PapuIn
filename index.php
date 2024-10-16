@@ -10,6 +10,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Menu general</title>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta http-equiv="Expires" content="0">
 	<meta http-equiv="Last-Modified" content="0">
 	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
@@ -25,6 +26,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 	<script src="js/form-baja.js"></script>
 	<script src="js/form-modificar.js"></script>
 	<script src="js/animacionInput.js"></script>
+	<script src="js/cursor.js"></script>
 
 </head>
 
@@ -111,6 +113,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 			</footer>
 		</div>
 	</div>
+	<div id="custom-cursor"></div>
 
 	
 </body>
