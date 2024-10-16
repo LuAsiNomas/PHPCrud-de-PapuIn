@@ -12,7 +12,9 @@
 	<h3 class="bajaTitulo">FORMULARIO DE BAJA</h3>
 	<form class="bajaInput" action="../server/bajas.php" method="POST">
 		<div class="grupoInputs">
+			<div class="caja-text">
 			<label class="text-username" for="userName">Seleccione un nombre de usuario:</label>
+			</div>
 			<div class="container-select">
 				<div id="modal" class=""></div>
 			</div>
