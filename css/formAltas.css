@@ -19,10 +19,12 @@ body {
     border: 2px solid #970303;
 }
 
+.form-title{
+    margin-bottom: 1rem;
+}
 /* Título del formulario */
-.form-title {
+.title {
     text-align: center;
-    margin-bottom: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -58,7 +60,9 @@ input[type="text"] {
 input::placeholder {
     color: #ffffff; /* Rojo anaranjado claro */
 }
-
+.seleccionbtn{
+    margin-bottom: 2rem;
+}
 /* Estilo para el botón de enviar */
 .btn-submit-altas {
     text-align: center;
@@ -70,7 +74,7 @@ input::placeholder {
 }
 
 .btn-prov{
-    color: #ff7043;
+    color: #000000;
     font-size: 25px;
     border-radius: 10px;
     border: 2px solid #970303;
