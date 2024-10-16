@@ -40,7 +40,7 @@
 					<spam class="spanInput"></spam>
 				</label>
 				
-				<div class="btn-submit">
+				<div class="btn-submit-modificar">
 					<input type="submit" class="btn-modificar" value="Modificar">
 				</div>
 			</div>
