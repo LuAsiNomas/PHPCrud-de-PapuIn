@@ -17,6 +17,16 @@ html body{
     padding: 0;
     
 }
+#custom-cursor {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    pointer-events: none;
+    z-index: 10000;
+    background: url('https://cdn-icons-png.flaticon.com/512/4399/4399761.png') no-repeat center center;
+    background-size: contain;
+    cursor: none;
+}
 
 #contenedor{
     display:flex;
@@ -38,6 +48,7 @@ html body{
     justify-content: center;
     align-items: center;
     overflow-x:hidden;
+    
 }
 
 #bajas{
