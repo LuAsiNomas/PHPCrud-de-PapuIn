@@ -14,16 +14,12 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 	<meta http-equiv="Last-Modified" content="0">
 	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
 	<meta http-equiv="Pragma" content="no-cache">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Dosis:wght@300&family=Fuggles&display=swap"
-		rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/formAltas.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/title.css">
-
+	<link rel="stylesheet" href="css/formBajas.css">
+	<link rel="stylesheet" href="css/formModificacion.css">
     <script src="js/index.js"></script>
 	<script src="js/form-altas.js"></script>
 	<script src="js/form-baja.js"></script>
@@ -33,6 +29,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 </head>
 
 <body>
+	
 	<div id="contenedor">
 
 		<div class="header">
@@ -41,7 +38,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 				<!-- Logo -->
 				<div id="logo">
 
-					<h1 id="title">Administra Usuario</h1>
+					<h1 class="titulo">Administra Usuario</h1>
 					<p>Gestiona los usurios de este sistema</p>
 				</div>
 
@@ -99,10 +96,6 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 				</div>
 			</section>
 
-			<!-- Contact -->
-	
-
-			<!-- Footer -->
 			<footer id="footer">
     			<ul class="copyright">
         			<li>&copy; 2024 Brawl Tournament.</li>
@@ -113,7 +106,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
         			<li>Email: contacto@brawltournament.com</li>
     			</ul>
     			<div class="scrolling-text">
-        			<p>¡Prepárate para la batalla final en el Torneo Nacional de Brawl Stars! Regístrate ahora y compite por premios épicos.</p>
+        			<p> ¡Prepárate para la batalla final en el Torneo Nacional de Brawl Stars! Regístrate ahora y compite por premios épicos.</p>
     			</div>
 			</footer>
 		</div>

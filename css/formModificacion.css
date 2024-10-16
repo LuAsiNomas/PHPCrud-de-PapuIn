@@ -1,0 +1,43 @@
+.form{
+    max-width: 100%;
+    background-color: #ffffff; /* Blanco para contraste */
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 105, 97, 0.3); /* Sombra en tono rojo claro */
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid hsl(0, 66%, 26%);;
+    margin-left: 10%;
+
+    
+}
+
+.modificarTitulo{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
+    background-image: linear-gradient(90deg, #e4cd00c9, #ff7043);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 50px;
+    padding-bottom: 100px;
+}
+.cambioInput, 
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 2.2rem;
+    border: 1px solid #f5a623; /* Amarillo suave */
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 24px;
+    background: linear-gradient(90deg,#ff7043, #ffeb3b );
+}
+.btn-modificar{
+    color: #000000;
+    font-size: 29px;
+    border-radius: 10px;
+    border: 2px solid #970303;
+}
