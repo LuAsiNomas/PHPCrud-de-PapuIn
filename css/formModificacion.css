@@ -16,7 +16,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
-    background-image: linear-gradient(90deg, #ffeb3b, #ff7043);
+    background-image: linear-gradient(90deg, #e4cd00c9, #ff7043);
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
@@ -33,4 +33,9 @@ input[type="text"] {
     font-size: 24px;
     background: linear-gradient(90deg,#ff7043, #ffeb3b );
 }
-
+.btn-modificar{
+    color: #ff7043;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 2px solid #970303;
+}
