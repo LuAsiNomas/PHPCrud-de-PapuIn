@@ -15,7 +15,7 @@ body{
     width: 100%;
     box-sizing: border-box;
     border: 2px solid #970303;
-
+    
 }
 
  .bajaTitulo{
@@ -45,6 +45,7 @@ body{
     background-clip: text;
     font-size: 26px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .btn-baja{
