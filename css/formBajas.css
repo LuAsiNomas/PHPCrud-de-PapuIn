@@ -43,7 +43,7 @@ body{
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 26px;
+    font-size: 31px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -52,7 +52,7 @@ body{
     transition: transform 0.2s ease; /* Efecto de suavizado al agrandar */
     box-shadow: 0 4px 10px rgba(148, 3, 3, 0.511);
     color: #000000;
-    font-size: 29px;
+    font-size: 31px;
     border-radius: 10px;
     border: 2px solid #970303;
     margin-top: 15px;
