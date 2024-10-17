@@ -13,8 +13,9 @@
 		<div class="container-select">
 			<div id="modalModificar" class=""></div>
 		</div>
-
+		<div class="campo-modificar">
 		<br> Campos a modificar:</br>
+		</div>
 
 		<div class="grupoInputsCambiar">
 			<div class="imagenUsuario">
