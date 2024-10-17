@@ -25,7 +25,19 @@
     font-size: 55px;
     padding-bottom: 100px;
 }
-
+.campo-modificar{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #e4cd00c9, #ff7043);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 26px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
+    position:relative;
+    bottom: 20px;
+}
 .cambioInput, 
 input[type="text"] {
     width: 100%;
