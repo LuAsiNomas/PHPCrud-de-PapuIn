@@ -17,6 +17,8 @@ body {
     width: 100%;
     box-sizing: border-box;
     border: 2px solid #970303;
+    position: relative;
+    align-items: center;
 }
 
 .form-title{
