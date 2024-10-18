@@ -21,7 +21,7 @@ body {
 
 .titulo {
     font-family: 'Bangers', cursive; /* Fuente llamativa, ideal para una temática de Brawl Stars */
-    font-size: 3.9rem; /* Tamaño más grande para resaltar el título */
+    font-size: 4.3rem; /* Tamaño más grande para resaltar el título */
     color: #ffd700; /* Color dorado que resalta */
     text-shadow: 3px 3px 0px #000, 5px 5px 0px #ff0000; /* Sombra múltiple estilo 'cartoon' */
     overflow: hidden;
@@ -30,7 +30,7 @@ body {
     animation: typing 2s steps(19) 1s 1 normal both, blink 1s steps(1) infinite;
     margin-bottom: 218px;
     position: relative;
-    top: 43px;
+    top: 22px;
   }
 
   
