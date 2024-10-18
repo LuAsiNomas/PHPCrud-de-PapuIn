@@ -8,7 +8,9 @@ body{
 }
 .formis-container{
     max-width: 100%;
-    background-color: #ffffff; /* Blanco para contraste */
+    background: linear-gradient(45deg, #ffeb3b, #ff5722, #42a5f5);
+    animation: gradientAnimation 10s ease infinite;
+    background-size: 400% 400%;
     padding: 4rem;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(255, 105, 97, 0.3); /* Sombra en tono rojo claro */
@@ -17,20 +19,31 @@ body{
     border: 2px solid #970303;
     
 }
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
 
  .bajaTitulo{
     position: relative;
-    bottom: 33px;
+    bottom: 65px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
-    background-image: linear-gradient(90deg, #ffeb3b, #ff7043);
+    background-image: linear-gradient(90deg, #ffe600, #ff3c00);
+    font-size: 65px;
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
-    font-size: 50px;
     padding-bottom: 100px;
 }
 .caja-text{
@@ -39,11 +52,11 @@ body{
 }
 .text-username{
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
-    background-image: linear-gradient(90deg, #ffeb3b, #ff7043);
+    background-image: linear-gradient(90deg, #ffe600, #ff3c00);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 31px;
+    font-size: 38px;
     text-transform: uppercase;
     font-weight: bold;
 }
