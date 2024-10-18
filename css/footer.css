@@ -9,11 +9,25 @@
     font-family: Arial, sans-serif;
     position: relative;
     overflow: hidden;
-    max-width: 1789px;
+    max-width: 1795px;
     margin-top: 100px;
     font-size: 2rem;
+    background: linear-gradient(45deg, #ffeb3b, #ff5722, #42a5f5);
+    animation: gradientAnimation 10s ease infinite;
+    background-size: 400% 400%;
 }
 
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
 /* Animación de movimiento */
 @keyframes scroll {
     0% {
