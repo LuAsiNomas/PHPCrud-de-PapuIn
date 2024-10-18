@@ -27,6 +27,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 	<script src="js/form-modificar.js"></script>
 	<script src="js/animacionInput.js"></script>
 	<script src="js/cursor.js"></script>
+	<script src="js/sonido.js"></script>
 
 </head>
 
@@ -70,7 +71,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 					<h2 class="titulo">Administración de Usuario</h2>
 				</div>
 			</section>
-			
+
 			<!-- Intro -->
 			<section id="altas" class="one dark cover">
 				<div class="container">
@@ -114,6 +115,8 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 		</div>
 	</div>
 	<div id="custom-cursor"></div>
+	<audio id="errorSound" src="sounds/Voicy_Tick Sound Brawl stars.mp3"></audio>
+    <audio id="successSound" src="sounds/Voicy_brawl stars win song meme.mp3"></audio>
 
 	
 </body>
