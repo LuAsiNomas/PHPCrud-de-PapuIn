@@ -72,6 +72,9 @@
             </div>
         </form>
     </div>
+    <audio id="errorSound" src="sounds/Voicy_Tick Sound Brawl stars.mp3"></audio>
+    <audio id="successSound" src="sounds/Voicy_brawl stars win song meme.mp3"></audio>
+    <script src="../js/sonido.js"></script>
     <script src="../js/form-altas.js"></script>
 </body>
 </html>
