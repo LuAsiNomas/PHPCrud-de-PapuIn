@@ -72,7 +72,6 @@
             </div>
         </form>
     </div>
-
     <script src="../js/form-altas.js"></script>
 </body>
 </html>
