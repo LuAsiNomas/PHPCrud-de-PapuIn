@@ -115,8 +115,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 		</div>
 	</div>
 	<div id="custom-cursor"></div>
-	<audio id="errorSound" src="sounds/Voicy_Tick Sound Brawl stars.mp3"></audio>
-    <audio id="successSound" src="sounds/Voicy_brawl stars win song meme.mp3"></audio>
+
 
 	
 </body>
