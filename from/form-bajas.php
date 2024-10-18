@@ -9,7 +9,7 @@
 <body>
 
 <div class="formis-container">
-	<h3 class="bajaTitulo">FORMULARIO DE BAJA</h3>
+	<h3 class="bajaTitulo" id="bajaForm">FORMULARIO DE BAJA</h3>
 	<form class="bajaInput" action="../server/bajas.php" method="POST">
 		<div class="grupoInputs">
 			<div class="caja-text">
@@ -25,6 +25,9 @@
 		</div>
 	</form>
 </div>
+	<audio id="errorSound" src="sounds/Voicy_Tick Sound Brawl stars.mp3"></audio>
+    <audio id="successSound" src="sounds/Voicy_brawl stars win song meme.mp3"></audio>
+    <script src="../js/sonido.js"></script>
 	<script src="../js/form-baja.js"></script>
 </body>
 </html>
