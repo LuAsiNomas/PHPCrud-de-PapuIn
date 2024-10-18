@@ -1,35 +1,22 @@
 .form{
     padding: 4rem;
     max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 105, 97, 0.3); /* Sombra en tono rojo claro */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
     width: 80%;
     box-sizing: border-box;
-    border: 2px solid hsl(0, 66%, 26%);;
+    border: 5px solid hsl(0, 66%, 26%);;
     margin-left: 11%;
-    background: linear-gradient(45deg, #ffeb3b, #ff5722, #42a5f5);
-    animation: gradientAnimation 10s ease infinite;
-    background-size: 400% 400%;
-    
+    background-color: rgb(246, 226, 196);
 }
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-  }
+
 .modificarTitulo{
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
-    background-image: linear-gradient(90deg, #ffe600, #ff3c00);
+    background-image: linear-gradient(90deg, #eeff00, #ff0000);
     font-size: 58px;
     background-clip: text;
     color: transparent;
@@ -47,7 +34,7 @@
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    background-image: linear-gradient(90deg, #ffe600, #ff3c00);
+    background-image: linear-gradient(90deg, #eeff00, #ff0000);
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
