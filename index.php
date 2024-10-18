@@ -70,7 +70,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 					<h2 class="titulo">Administración de Usuario</h2>
 				</div>
 			</section>
-
+			
 			<!-- Intro -->
 			<section id="altas" class="one dark cover">
 				<div class="container">
