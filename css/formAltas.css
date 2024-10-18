@@ -45,13 +45,13 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
-    background-image: linear-gradient(90deg, #ffeb3b, #ff7043);
+    background-image: linear-gradient(90deg, #ffe600, #ff3c00);
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
-    font-size: 60px;
+    font-size: 65px;
     position: relative;
-    bottom: 35px;
+    bottom: 45px;
     
 }
 
@@ -119,6 +119,6 @@ input::placeholder {
     width: 130px;
     padding-right: 15px;
     position: relative;
-    bottom: 45px;
+    bottom: 55px;
     right: 1px;
 }
