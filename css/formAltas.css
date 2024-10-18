@@ -105,5 +105,6 @@ input::placeholder {
     width: 130px;
     padding-right: 15px;
     position: relative;
-    bottom: 90px;
+    bottom: 45px;
+    right: 1px;
 }
