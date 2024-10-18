@@ -8,6 +8,9 @@
     border: 5px solid hsl(0, 66%, 26%);;
     margin-left: 11%;
     background-color: rgb(246, 226, 196);
+    position: relative;
+    right: 18px;
+    margin-bottom: 38px;
 }
 
 .modificarTitulo{
