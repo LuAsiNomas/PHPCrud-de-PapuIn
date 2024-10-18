@@ -26,7 +26,7 @@
 html body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, #ffeb3b, #9c3212, #42a5f5);
+    background: linear-gradient(45deg, #ffeb3b, #e0491b, #42a5f5);
     animation: gradientAnimation 10s ease infinite;
     background-size: 400% 400%;
 }
@@ -72,6 +72,7 @@ html body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -349,6 +350,7 @@ html body{
         align-items:center;
     }
     
+
     
     #altas .container{
         background-color: rgb(246, 226, 196);
