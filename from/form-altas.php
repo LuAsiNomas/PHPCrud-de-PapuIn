@@ -11,7 +11,7 @@
         <div class="form-title">
         <h3 class="title">TORNEO NACIONAL</h3>
         </div>
-        <form class="form-content" action="../server/altas.php" method="POST" enctype="multipart/form-data">
+        <form class="form-content" id="altaForm" action="../server/altas.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <img class="seleccionbtn" onclick="seleccionarArchivo()" src="IMAGENES/mm.png" id="logo" alt="Logo del equipo">
                 <input type="file" class="input-file-altas" name="foto" required>
