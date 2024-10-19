@@ -15,3 +15,31 @@ document.getElementById('bajaForm').addEventListener('submit', function(event) {
         this.submit();
     }
 });
+document.getElementById('altaForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const userName = document.getElementById('userName').value.trim();
+    const errorSound = document.getElementById('errorSound');
+    const successSound = document.getElementById('successSound');
+
+    if (!userName) {
+        errorSound.play();
+    } else {
+        successSound.play();
+        this.submit(); // Enviar el formulario si tiene datos
+    }
+});
+document.getElementById('modificacionForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const userName = document.getElementById('userName').value.trim();
+    const errorSound = document.getElementById('errorSound');
+    const successSound = document.getElementById('successSound');
+
+    if (!userName) {
+        errorSound.play();
+    } else {
+        successSound.play();
+        this.submit(); // Enviar el formulario si tiene datos
+    }
+});
