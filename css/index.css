@@ -26,7 +26,7 @@
 html body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, #ffeb3b, #e0491b, #42a5f5);
+    background: linear-gradient(45deg, #ecd926, #9e3616, #42a5f5);
     animation: gradientAnimation 10s ease infinite;
     background-size: 400% 400%;
     width: 100%;
