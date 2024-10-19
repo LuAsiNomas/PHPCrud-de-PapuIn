@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    
+
     
 }
 
@@ -63,6 +63,7 @@ input[type="text"] {
     position: relative;
     bottom: 20px;
     height: 63px;
+    cursor: none;
 }
 
 input::placeholder {
@@ -83,6 +84,7 @@ input::placeholder {
     border: 2px solid #701717;
     position: relative;
     bottom: 20px;
+    cursor: none;
 }
 
 .btn-submit-altas:hover{
@@ -98,6 +100,7 @@ input::placeholder {
     margin-bottom: 15px;
     position: relative;
     bottom: 20px;
+    cursor: none;
 }
 .btn-prov:hover{
     transform: scale(1.1);
