@@ -100,12 +100,12 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 
 			<footer id="footer">
     			<ul class="copyright">
-        			<li>&copy; 2024 Brawl Tournament.</li>
-        			<li>All rights reserved.</li>
+        			<li>&copy; 2024 Torneo Brawl.</li>
+        			<li>Todos los derechos reservados.</li>
     			</ul>
     			<ul class="design-info">
-        			<li>Design by Papu In.</li>
-        			<li>Email: contacto@brawltournament.com</li>
+        			<li>Diseñado por Papu In.</li>
+        			<li>Email: contacto@brawltorneos.com</li>
     			</ul>
     			<div class="scrolling-text">
         			<p> ¡Prepárate para la batalla final en el Torneo Nacional de Brawl Stars! Regístrate ahora y compite por premios épicos.</p>
