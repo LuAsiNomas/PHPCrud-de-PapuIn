@@ -38,6 +38,7 @@ body{
     -webkit-background-clip: text;
     padding-bottom: 100px;
     animation: move linear 2000ms infinite;  
+ }
     @keyframes move {
         0% {
           text-shadow:
@@ -100,7 +101,6 @@ body{
           ;
         }  
       }
-}
 .caja-text{
     position: relative;
     top: -40px;
