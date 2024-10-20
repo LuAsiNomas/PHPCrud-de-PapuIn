@@ -254,20 +254,6 @@ html body{
     align-items:center;
 }
 
-#altas{
-    height:auto;
-    width: 100%;
-    background-color: rgb(242, 231, 222);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#altas .container{
-    background-color: rgb(246, 226, 196);
-    width: 100%;
-}
 
 #listar{
     height:100vh;
