@@ -68,7 +68,7 @@
             </div>
 
             <div class="form-group">
-                <input class="btn-submit-altas" type="submit" value="REGISTRAR EQUIPO">
+                <input  class="btn-submit-altas" type="submit" value="REGISTRAR EQUIPO">
             </div>
         </form>
     </div>
