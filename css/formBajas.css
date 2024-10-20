@@ -128,4 +128,6 @@ body{
 }
 .btn-baja:hover{
     transform: scale(1.1);
+    transition:all .5s ease-in-out;
+    filter: grayscale(80%);
 }
