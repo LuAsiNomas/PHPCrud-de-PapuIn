@@ -66,10 +66,11 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 		<div class="main">
 			<div class="image-menu"><img id="menuLateral" src="images/menu.png" alt="" /></div>
 			<section class="banner">
-				<div class="container">
-					<h2 class="titulo">Administración de Usuario</h2>
-				</div>
+				<?php
+					include("from/title.php");
+					?>
 			</section>
+			
 
 			<!-- Intro -->
 			<section id="altas" class="one dark cover">
