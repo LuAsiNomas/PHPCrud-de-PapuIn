@@ -77,8 +77,8 @@ input::placeholder {
     transition: transform 0.2s ease; /* Efecto de suavizado al agrandar */
     box-shadow: 0 4px 10px rgba(148, 3, 3, 0.511);
     text-align: center;
-    height: 36px;
-    font-size: 24px;
+    height: 42px;
+    font-size: 25px;
     color: #000000;
     border-radius: 10px;
     border: 2px solid #701717;
