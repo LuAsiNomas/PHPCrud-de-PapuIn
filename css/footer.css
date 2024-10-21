@@ -34,7 +34,7 @@
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
-    background-image: linear-gradient(90deg, #eeff00, #ff0000);
+    background-image: linear-gradient(90deg,  #ffe600, #ff0000);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -64,7 +64,7 @@
     font-size: 2.7rem;
     animation: scroll 15s linear infinite; /* Animación continua */
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
-    background-image: linear-gradient(90deg, #eeff00, #ff0000);
+    background-image: linear-gradient(90deg, #ffe600, #ff0000);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
