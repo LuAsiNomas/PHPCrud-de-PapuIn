@@ -8,15 +8,10 @@
 </head>
 <body>
     <div class="form-container">
-<<<<<<< HEAD
         <div class="form-title">
         <h3 class="title">TORNEO NACIONAL</h3>
         </div>
-        <form class="form-content" id="altaForm" action="../server/altas.php" method="POST" enctype="multipart/form-data">
-=======
-        <h3 class="form-title">TORNEO NACIONAL</h3>
         <form class="form-content" action="server/altas.php" method="POST" enctype="multipart/form-data">
->>>>>>> main
             <div class="form-group">
                 <img class="seleccionbtn" onclick="seleccionarArchivo()" src="IMAGENES/mm.png" id="logo" alt="Logo del equipo">
                 <input type="file" class="input-file-altas" name="foto" required>
