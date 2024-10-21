@@ -30,7 +30,6 @@ body {
     margin-bottom: 218px;
     position: relative;
     top: 22px;
-    text-shadow: 2px 0 -1px 0 #ffe600, -2px 0 #ff3c00, -3px 0 #42a5f5;
   }
   @keyframes move {
     0% {
