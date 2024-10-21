@@ -131,6 +131,7 @@ input::placeholder {
 }
 .seleccionbtn{
     margin-bottom: 2rem;
+    cursor: none;
 }
 /* Estilo para el botón de enviar */
 .btn-submit-altas {
@@ -175,6 +176,7 @@ input::placeholder {
     position: relative;
     bottom: 54px;
     left: 4.8px;
+    cursor: none;
     
 }
 #logo:hover {
