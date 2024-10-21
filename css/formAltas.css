@@ -150,6 +150,7 @@ input::placeholder {
 .btn-submit-altas:hover{
     transform: scale(1.1);
     filter: grayscale(80%);
+    transition:all .3s ease-in-out;
 }
 .btn-prov{
     transition: transform 0.2s ease; /* Efecto de suavizado al agrandar */
@@ -166,7 +167,7 @@ input::placeholder {
 .btn-prov:hover{
     transform: scale(1.1);
     filter: grayscale(80%);
-    transition:all .5s ease-in-out;
+    transition:all .3s ease-in-out;
 }
 #logo{
     width: 155px;
