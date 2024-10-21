@@ -10,6 +10,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Menu general</title>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta http-equiv="Expires" content="0">
 	<meta http-equiv="Last-Modified" content="0">
 	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
@@ -25,6 +26,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 	<script src="js/form-baja.js"></script>
 	<script src="js/form-modificar.js"></script>
 	<script src="js/animacionInput.js"></script>
+	<script src="js/cursor.js"></script>
 
 </head>
 
@@ -64,10 +66,11 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 		<div class="main">
 			<div class="image-menu"><img id="menuLateral" src="images/menu.png" alt="" /></div>
 			<section class="banner">
-				<div class="container">
-					<h2 class="titulo">Administración de Usuario</h2>
-				</div>
+				<?php
+					include("from/title.php");
+					?>
 			</section>
+			
 
 			<!-- Intro -->
 			<section id="altas" class="one dark cover">
@@ -98,12 +101,12 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 
 			<footer id="footer">
     			<ul class="copyright">
-        			<li>&copy; 2024 Brawl Tournament.</li>
-        			<li>All rights reserved.</li>
+        			<li>&copy; 2024 Torneo Brawl.</li>
+        			<li>Todos los derechos reservados.</li>
     			</ul>
     			<ul class="design-info">
-        			<li>Design by Papu In.</li>
-        			<li>Email: contacto@brawltournament.com</li>
+        			<li>Diseñado por Papu In.</li>
+        			<li>Email: contacto@brawltorneos.com</li>
     			</ul>
     			<div class="scrolling-text">
         			<p> ¡Prepárate para la batalla final en el Torneo Nacional de Brawl Stars! Regístrate ahora y compite por premios épicos.</p>
@@ -111,8 +114,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 			</footer>
 		</div>
 	</div>
-
-	
+	<div id="custom-cursor"></div>
 </body>
 
 </html>

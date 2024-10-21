@@ -11,10 +11,36 @@
       border-color: transparent;
     }
   }
+  @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
 
 html body{
     margin: 0;
     padding: 0;
+    background: linear-gradient(45deg, #ecd926, #9e3616, #42a5f5);
+    animation: gradientAnimation 10s ease infinite;
+    background-size: 400% 400%;
+    width: 100%;
+    cursor: none;
+    position: relative;
+}
+#custom-cursor {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    pointer-events: none;
+    z-index: 10000;
+    background: url('https://cdn-icons-png.flaticon.com/512/4399/4399761.png') no-repeat center center;
+    background-size: contain;
     
 }
 
@@ -38,17 +64,18 @@ html body{
     justify-content: center;
     align-items: center;
     overflow-x:hidden;
+    
 }
 
 #bajas{
     height:100vh;
     width: 100%;
-    background-color: rgb(242, 231, 222); 
     display: flex;
     font-size:q 1em;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -131,7 +158,6 @@ html body{
 #altas{
     height:auto;
     width: 100%;
-    background-color: rgb(242, 231, 222);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,7 +165,6 @@ html body{
 }
 
 #altas .container{
-    background-color: rgb(246, 226, 196);
     width: 60%;
     border: 2px solid #970303;
 }
@@ -229,20 +254,6 @@ html body{
     align-items:center;
 }
 
-#altas{
-    height:auto;
-    width: 100%;
-    background-color: rgb(242, 231, 222);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#altas .container{
-    background-color: rgb(246, 226, 196);
-    width: 100%;
-}
 
 #listar{
     height:100vh;
@@ -328,16 +339,7 @@ html body{
         align-items:center;
     }
     
-    
-    #altas{
-        height:100vh;
-        width: 100%;
-        background-color: rgb(242, 231, 222);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+
     
     #altas .container{
         background-color: rgb(246, 226, 196);

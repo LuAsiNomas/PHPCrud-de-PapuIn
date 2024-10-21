@@ -1,14 +1,16 @@
 .form{
-    max-width: 100%;
-    background-color: #ffffff; /* Blanco para contraste */
     padding: 4rem;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 105, 97, 0.3); /* Sombra en tono rojo claro */
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
     width: 80%;
     box-sizing: border-box;
-    border: 2px solid hsl(0, 66%, 26%);;
-    margin-left: 10%;
-
+    border: 5px solid hsl(0, 66%, 26%);;
+    margin-left: 11%;
+    background-color: rgb(246, 226, 196);
+    position: relative;
+    right: 18px;
+    margin-bottom: 38px;
     
 }
 
@@ -18,26 +20,123 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
-    background-image: linear-gradient(90deg, #e4cd00c9, #ff7043);
+    background-image: linear-gradient(90deg, #eeff00, #ff0000);
+    font-size: 58px;
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
-    font-size: 50px;
     padding-bottom: 100px;
+    position: relative;
+    bottom: 43px;
+    animation: move linear 2000ms infinite;  
+}
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(180, 100%, 50%, 1), 
+      -3px -3px 0 hsla(180, 100%, 50%, 1), 
+      -2px -2px 0 hsla(180, 100%, 50%, 1), 
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1), 
+      3px 3px 0 hsla(0, 100%, 50%, 1), 
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1), 
+      -3px 3px 0 hsla(0, 100%, 50%, 1), 
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1), 
+      3px -3px 0 hsla(180, 100%, 50%, 1), 
+      2px -2px 0 hsla(180, 100%, 50%, 1), 
+      1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(180, 100%, 50%, 1), 
+      3px 3px 0 hsla(180, 100%, 50%, 1), 
+      2px 2px 0 hsla(180, 100%, 50%, 1), 
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1), 
+      -3px -3px 0 hsla(0, 100%, 50%, 1), 
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }  
+}
+.inputFileModificar{
+    position: relative;
+    bottom: 40px;
+    size: 25px;
+}
+.campo-modificar{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #eeff00, #ff0000);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 38px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
+    position:relative;
+    bottom: 65px;
 }
 .cambioInput, 
 input[type="text"] {
+    border: 5px solid #f52323; /* Amarillo suave */
     width: 100%;
     margin-bottom: 2.2rem;
-    border: 1px solid #f5a623; /* Amarillo suave */
     border-radius: 10px;
     box-sizing: border-box;
     font-size: 24px;
     background: linear-gradient(90deg,#ff7043, #ffeb3b );
+    cursor: none;
+}
+.btn-submit-modificar{
+    position: relative;
+    bottom: 16px;
+    
 }
 .btn-modificar{
+    transition: transform 0.2s ease; /* Efecto de suavizado al agrandar */
+    box-shadow: 0 4px 10px rgba(148, 3, 3, 0.511);
     color: #000000;
-    font-size: 29px;
+    font-size: 31px;
     border-radius: 10px;
     border: 2px solid #970303;
+    cursor: none;
+}
+.btn-modificar:hover{
+    transform: scale(1.1);
+    filter: grayscale(80%);
+    transition:all .5s ease-in-out;
 }

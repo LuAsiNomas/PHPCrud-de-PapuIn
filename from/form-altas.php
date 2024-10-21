@@ -8,7 +8,9 @@
 </head>
 <body>
     <div class="form-container">
-        <h3 class="form-title">TORNEO NACIONAL</h3>
+        <div class="form-title">
+        <h3 class="title">TORNEO NACIONAL</h3>
+        </div>
         <form class="form-content" action="server/altas.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <img class="seleccionbtn" onclick="seleccionarArchivo()" src="IMAGENES/mm.png" id="logo" alt="Logo del equipo">
@@ -66,11 +68,13 @@
             </div>
 
             <div class="form-group">
-                <input class="btn-submit-altas" type="submit" value="REGISTRAR EQUIPO">
+                <input  class="btn-submit-altas" type="submit" value="REGISTRAR EQUIPO">
             </div>
         </form>
     </div>
-
+    <audio id="errorSound" src="sounds/Voicy_Tick Sound Brawl stars.mp3"></audio>
+    <audio id="successSound" src="sounds/Voicy_brawl stars win song meme.mp3"></audio>
+    <script src="../js/sonido.js"></script>
     <script src="../js/form-altas.js"></script>
 </body>
 </html>
