@@ -22,7 +22,6 @@ body{
     
 }
 
-
  .bajaTitulo{
     position: relative;
     bottom: 65px;
@@ -33,9 +32,9 @@ body{
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombras para darle profundidad */
     background-image: linear-gradient(90deg, #eeff00, #ff0000);
     font-size: 65px;
-    background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     padding-bottom: 100px;
     animation: move linear 2000ms infinite;  
  }
@@ -124,7 +123,6 @@ body{
     border-radius: 10px;
     border: 2px solid #970303;
     margin-top: 15px;
-    cursor: none;
 }
 .btn-baja:hover{
     transform: scale(1.1);
