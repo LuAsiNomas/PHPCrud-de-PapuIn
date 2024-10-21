@@ -1,4 +1,3 @@
-/* Footer general */
 #footer { 
     padding: 2rem 0;
     display: flex;
@@ -14,7 +13,6 @@
     background-color: rgb(246, 226, 196);
 
 }
-/* Animación de movimiento */
 @keyframes scroll {
     0% {
         transform: translateX(100%);
