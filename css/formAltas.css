@@ -115,7 +115,7 @@ input[type="text"] {
     width: 100%;
     margin-bottom: 2.3rem;
     padding: 0.75rem;
-    border: 5px solid #f52323; /* Amarillo suave */
+    border: 5px solid #f52323; 
     border-radius: 10px;
     box-sizing: border-box;
     font-size: 24px;
@@ -127,7 +127,7 @@ input[type="text"] {
 }
 
 input::placeholder {
-    color: #ffffff; /* Rojo anaranjado claro */
+    color: #ffffff; 
 }
 .seleccionbtn{
     margin-bottom: 2rem;
