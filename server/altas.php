@@ -22,13 +22,13 @@ $foto = $_FILES['foto']['tmp_name'];
 $fototamaño = $_FILES['foto']['size'];
 
 $result = insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño);
-
+var_dump($result);
 if (strlen($result) > 5) {
     echo '<div class="Rcontainer">
     <div class="Rbox">
         <h2 class="Rtitulo">Esta es una respuesta del servidor</h2>
         <h3 class="Rcuerpo">' . $result . '</h3>
-        <a href="../from/menu.php" class="cerrar">Cerrar</a>
+        <a href="../index.php" class="cerrar">Cerrar</a>
     </div>
 </div>';
 } else {

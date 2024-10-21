@@ -10,7 +10,7 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
 
          $Conexion = include("conexion.php");
 
-         $cadena = "INSERT INTO equipos(Equipo_ID, nombre_equipo, id_jugador_lider, idjug2, idjug3, provincia, foto, fototamaño) VALUES ($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño)";
+         $cadena = "INSERT INTO equipos(equipo_id, nombre_equipo, idjug_lider, idjug2, idjug3, logo, provincia) VALUES ('$ide', '$noe', '$idl', '$id2', '$id3', '$contenido', '$pro')";
          try {
             $resultado = mysqli_query($Conexion, $cadena);
 
@@ -31,7 +31,7 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
 function getUsuarioUsersNames()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT usuario FROM persona ";
+    $cadena = "SELECT equipo_id FROM equipos ";
 
     $consulta = mysqli_query($Conexion, $cadena);
     $html = "<select class='select' style='border-bottom: 1px solid black;
@@ -53,7 +53,7 @@ function getUsuarioUsersNames()
 function getUsuarioUsersNamesModificar()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT usuario FROM persona ";
+    $cadena = "SELECT equipo_id FROM equipos ";
 
     $consulta = mysqli_query($Conexion, $cadena);
     $html = "<select class='selectModificar' style='border-bottom: 1px solid black;
@@ -116,7 +116,7 @@ function modificar($idl, $id2, $id3, $nom, $pro, $foto, $fototamaño) {
    
     $Conexion = include("conexion.php");
 
-        $cadena = "UPDATE  equipos SET idlider = '$idl', id2 = '$id2', id3 = '$id3', nombre = '$nom', WHERE provincia = '$pro', foto = '$foto', fotomaño = '$fototamaño'";
+        $cadena = "UPDATE  equipos SET idlider = '$idl', id2 = '$id2', id3 = '$id3', nombre = '$nom', provincia = '$pro', foto = '$foto', fotomaño = '$fototamaño' WHERE ID = ";
 
         try {
             $resultado = mysqli_query($Conexion, $cadena);
