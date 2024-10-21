@@ -92,16 +92,12 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    text-shadow: 2px 0 -1px 0 #ffe600, -2px 0 #ff3c00, -3px 0 #42a5f5;
-    background-image: linear-gradient(90deg, #ffe600, #ff3c00);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
     font-size: 75px;
     position: relative;
     bottom: 45px;
     overflow: hidden;
 	  animation: move linear 2000ms infinite;  
+    color: #ffd700; 
 }
 
 .form-group {
