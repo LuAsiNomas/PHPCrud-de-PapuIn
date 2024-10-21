@@ -30,18 +30,7 @@ html body{
     animation: gradientAnimation 10s ease infinite;
     background-size: 400% 400%;
     width: 100%;
-    cursor: none;
     position: relative;
-}
-#custom-cursor {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    pointer-events: none;
-    z-index: 10000;
-    background: url('https://cdn-icons-png.flaticon.com/512/4399/4399761.png') no-repeat center center;
-    background-size: contain;
-    
 }
 
 #contenedor{
