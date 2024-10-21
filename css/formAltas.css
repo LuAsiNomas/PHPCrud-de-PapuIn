@@ -17,7 +17,7 @@ body {
     box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
     width: 100%;
     box-sizing: border-box;
-    border: 5px solid #970303;
+    border: 5px solid #cc5a5a;
     position: relative;
 }
 @keyframes move {
@@ -92,16 +92,12 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    text-shadow: 2px 0 -1px 0 #ffe600, -2px 0 #ff3c00, -3px 0 #42a5f5;
-    background-image: linear-gradient(90deg, #ffe600, #ff3c00);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
     font-size: 75px;
     position: relative;
     bottom: 45px;
     overflow: hidden;
-	animation: move linear 2000ms infinite;  
+	  animation: move linear 2000ms infinite;  
+    color: #ffd700; 
 }
 
 .form-group {
@@ -115,7 +111,7 @@ input[type="text"] {
     width: 100%;
     margin-bottom: 2.3rem;
     padding: 0.75rem;
-    border: 5px solid #f52323; 
+    border: 5px solid #cc5a5a;
     border-radius: 10px;
     box-sizing: border-box;
     font-size: 24px;
