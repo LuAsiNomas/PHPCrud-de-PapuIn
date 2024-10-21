@@ -15,14 +15,14 @@ body{
     box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
     width: 100%;
     box-sizing: border-box;
-    border: 5px solid #970303;
+    border: 5px solid #cc5a5a;
     position: relative;
     right: 4px;
     bottom: 3px;
     
 }
 
- .bajaTitulo{
+.bajaTitulo{
     position: relative;
     bottom: 65px;
     text-align: center;
@@ -37,7 +37,7 @@ body{
     background-clip: text;
     padding-bottom: 100px;
     animation: move linear 2000ms infinite;  
- }
+}
     @keyframes move {
         0% {
           text-shadow:
