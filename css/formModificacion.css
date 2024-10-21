@@ -108,7 +108,7 @@
 }
 .cambioInput, 
 input[type="text"] {
-    border: 5px solid #f52323; /* Amarillo suave */
+    border: 5px solid #cc5a5a; /* Amarillo suave */
     width: 100%;
     margin-bottom: 2.2rem;
     border-radius: 10px;
