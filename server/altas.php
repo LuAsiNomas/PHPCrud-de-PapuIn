@@ -18,8 +18,8 @@ $idl = $_POST['id_jug_lider'];
 $id2 = $_POST['idjug2'];
 $id3 = $_POST['idjug3'];
 $pro = $_POST['provincia'];
-$foto = $_FILES['foto'];
-$fototamaño = $_FILES['fototamaño'];
+$foto = $_FILES['foto']['tmp_name'];
+$fototamaño = $_FILES['foto']['size'];
 
 $result = insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño);
 
