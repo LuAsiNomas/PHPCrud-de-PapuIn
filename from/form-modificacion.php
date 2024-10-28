@@ -5,6 +5,12 @@
 			<div id="modalModificar" class=""></div>
 		</div>
 
+		<?php
+		include("modelo/usuario.php");
+			echo getUsuarioUsersNamesModificar();
+		?>
+			<div id="modalModificar" class=""></div>
+
 		Campos a modificar:<br>
 
 		<div class="grupoInputsCambiar">
@@ -34,7 +40,9 @@
 					<input type="text" class="cambioInput" id="provincia" placeholder="" name="provincia" required>
 					<spam class="spanInput">Provincia</spam>
 				</label>
-				
+				<?php
+				getUsuarioUserName(2);
+				?>
 				<div class="btn-submit">
 					<input type="submit" class="btn-modificar" value="Modificar">
 				</div>

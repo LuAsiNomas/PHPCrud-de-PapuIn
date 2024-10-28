@@ -5,5 +5,14 @@ if ($json['solicitud']) {
     $user = $json['solicitud'];
     $respuesta = getUsuarioUserName($user);
 }
-echo json_encode($respuesta, true);
-?>
+echo json_encode($respuesta);
+?> 
+
+
+
+
+
+
+
+
+

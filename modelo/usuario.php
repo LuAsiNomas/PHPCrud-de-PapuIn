@@ -20,7 +20,7 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro){
 function getUsuarioUsersNames()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT idlider FROM equipos ";
+    $cadena = "SELECT equipo_id, nombre_equipo FROM equipos ";
 
     $consulta = mysqli_query($Conexion, $cadena);
     $html = "<select class='select' style='border-bottom: 1px solid black;
@@ -33,7 +33,7 @@ function getUsuarioUsersNames()
 
 
     while ($registro = mysqli_fetch_row($consulta)) {
-        $html = $html . "<option value=" . $registro[0] . ">" . $registro[0] . "</option>";
+        $html = $html . '<option value="' . $registro[0] . '">" '. $registro[0] .' ' . $registro[1] . '</option>';
     }
     $html = $html . "</select>";
     return $html;
@@ -42,10 +42,10 @@ function getUsuarioUsersNames()
 function getUsuarioUsersNamesModificar()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT idlider FROM equipos ";
+    $cadena = "SELECT equipo_id, nombre_equipo FROM equipos ";
 
     $consulta = mysqli_query($Conexion, $cadena);
-    $html = "<select class='selectModificar' style='border-bottom: 1px solid black;
+    $html = "<select class='selectModificar' onchange='cambioSelect(event)' style='border-bottom: 1px solid black;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -55,7 +55,7 @@ function getUsuarioUsersNamesModificar()
 
 
     while ($registro = mysqli_fetch_row($consulta)) {
-        $html = $html . "<option value=" . $registro[0] . ">" . $registro[0] . "</option>";
+        $html = $html . '<option value="' . $registro[0] . '"> '. $registro[0] .' ' . $registro[1] . '</option>';
     }
     $html = $html . "</select>";
     return $html;
@@ -64,11 +64,11 @@ function getUsuarioUsersNamesModificar()
 function getUsuarioUserName($userName)
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT * FROM equipos WHERE idlider ='" . $userName . "'";
+    $cadena = "SELECT * FROM equipos WHERE equipo_id =". $userName ;
     $consulta = mysqli_query($Conexion, $cadena);
     $array = array();
     while ($registro = mysqli_fetch_row($consulta)) {
-        array_push($array, array('id' => $registro[0], 'apellido' => $registro[1], 'nombre' => $registro[2], 'fecha' => $registro[3], 'foto' => base64_encode($registro[4]), 'usuario' => $registro[5], 'clave' => $registro[6]));
+        array_push($array, array('foto' => base64_encode($registro[4]), 'equipo_id' => $registro[0], 'nombre_equipo' => $registro[1], 'idjug_lider' => $registro[2], 'idjug2' => $registro[3], 'idjug3' => $registro[5], 'provincia' => $registro[6]));
     }
     return $array;
 }
@@ -76,11 +76,11 @@ function getUsuarioUserName($userName)
 function getUsuarioUserNames()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT idlider FROM equipos ";
+    $cadena = "SELECT equipo_id FROM equipos ";
     $consulta = mysqli_query($Conexion, $cadena);
     $array = array();
     while ($registro = mysqli_fetch_row($consulta)) {
-        array_push($array, array('idlider' => $registro[0]));
+        array_push($array, array('equipo_id' => $registro[0]));
     }
     return $array;
 }
@@ -88,7 +88,7 @@ function getUsuarioUserNames()
 function deleteUser($userName)
 {
     $Conexion = include("conexion.php");
-    $cadena = "DELETE FROM equipos  WHERE idlider = '$userName'";
+    $cadena = "DELETE FROM equipos  WHERE equipo_id = '$userName'";
     $resultado = mysqli_query($Conexion, $cadena);
 
     return $resultado;
@@ -98,7 +98,7 @@ function modificar($idl, $id2, $id3, $nom, $pro) {
    
     $Conexion = include("conexion.php");
 
-        $cadena = "UPDATE  equipos SET idlider = '$idl', id2 = '$id2', id3 = '$id3', nombre = '$nom', WHERE provincia = '$pro'";
+        $cadena = "UPDATE  equipos SET equipo_id = '$idl', idjug_lider = '$id2', idjug2 = '$id3', idjug3 = '$nom' = nombre_equipo, '$pro' = provincia WHERE equipo_id = '$ide'";
 
         try {
             $resultado = mysqli_query($Conexion, $cadena);
