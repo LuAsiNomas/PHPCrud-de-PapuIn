@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Equipo - Torneo Nacional</title>
-    <link rel="stylesheet" href="../css/formAltas.css">
+    <link rel="stylesheet" href="css/formAltas.css">
 </head>
 <body>
     <div class="form-container">
+<<<<<<< Updated upstream
         <div class="form-title">
         <h3 class="title">TORNEO NACIONAL</h3>
         </div>
+=======
+        <h3 class="form-title">TORNEO NACIONAL</h3>
+>>>>>>> Stashed changes
         <form class="form-content" action="server/altas.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <img class="seleccionbtn" onclick="seleccionarArchivo()" src="IMAGENES/mm.png" id="logo" alt="Logo del equipo">
@@ -72,9 +76,14 @@
             </div>
         </form>
     </div>
+<<<<<<< Updated upstream
     <audio id="errorSound" src="sounds/Voicy_Tick Sound Brawl stars.mp3"></audio>
     <audio id="successSound" src="sounds/Voicy_brawl stars win song meme.mp3"></audio>
     <script src="../js/sonido.js"></script>
     <script src="../js/form-altas.js"></script>
+=======
+
+    <script src="js/form-altas.js"></script>
+>>>>>>> Stashed changes
 </body>
 </html>
