@@ -10,7 +10,11 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
 
          $Conexion = include("conexion.php");
 
+<<<<<<< Updated upstream
          $cadena = "INSERT INTO equipos(equipo_id, nombre_equipo, idjug_lider, idjug2, idjug3, logo, provincia) VALUES ('$ide', '$noe', '$idl', '$id2', '$id3', '$contenido', '$pro')";
+=======
+         $cadena = "INSERT INTO equipos( nombre_equipo,idjug_lider, idjug2, idjug3, logo, provincia) VALUES ( '$noe', '$idl', '$id2', '$id3','$contenido', '$pro')";
+>>>>>>> Stashed changes
          try {
             $resultado = mysqli_query($Conexion, $cadena);
 
