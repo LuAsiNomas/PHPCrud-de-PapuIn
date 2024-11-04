@@ -49,7 +49,6 @@
 			</div>
 		</div>
 	</form>
-    <script src="../js/sonido.js"></script>
 </div>	
 </body>
 </html>
