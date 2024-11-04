@@ -1,0 +1,20 @@
+.fixture-container {
+    display: flex;
+    justify-content: space-between;
+}
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+}
+.team-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.team-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
