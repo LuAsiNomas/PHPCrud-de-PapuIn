@@ -10,9 +10,9 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
 
          $Conexion = include("conexion.php");
 
-         $cadena = "INSERT INTO equipos(Equipo_ID, nombre_equipo, id_jugador_lider, idjug2, idjug3, provincia, foto, fototamaño) VALUES ($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño)";
+         $cadena = "INSERT INTO equipos( nombre_equipo, idjug_lider, idjug2, idjug3,logo, provincia) VALUES ( '$noe', '$idl', '$id2', '$id3','$contenido', '$pro')";
          try {
-            $resultado = mysqli_query($Conexion, $cadena);
+      $resultado = mysqli_query($Conexion, $cadena);
 
             if ($resultado) {
                 return true;
