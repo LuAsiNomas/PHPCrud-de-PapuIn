@@ -43,7 +43,7 @@ selectedModificar.addEventListener("change", function (e) {
       nombre.value = json[0].nombre;
       fecha.value = json[0].fecha;
       foto.src = "data:image/jpeg;base64," + json[0].foto;
-      foto.style = "width:200px;height:200px;border-radius: 100%";
+            foto.style = "width:200px;height:200px;border-radius: 100%";
       clave.value = json[0].clave;
     });
 });
