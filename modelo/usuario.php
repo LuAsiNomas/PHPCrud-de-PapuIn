@@ -31,7 +31,7 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
 function getUsuarioUsersNames()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT usuario FROM persona ";
+    $cadena = "SELECT equipo_id FROM equipos ";
 
     $consulta = mysqli_query($Conexion, $cadena);
     $html = "<select class='select' style='border-bottom: 1px solid black;
@@ -53,7 +53,7 @@ function getUsuarioUsersNames()
 function getUsuarioUsersNamesModificar()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT usuario FROM persona ";
+    $cadena = "SELECT equipo_id FROM equipos ";
 
     $consulta = mysqli_query($Conexion, $cadena);
     $html = "<select class='selectModificar' style='border-bottom: 1px solid black;
@@ -75,11 +75,11 @@ function getUsuarioUsersNamesModificar()
 function getUsuarioUserName($userName)
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT * FROM persona WHERE usuario ='" . $userName . "'";
+    $cadena = "SELECT * FROM equipos WHERE equipo_id ='" . $userName . "'";
     $consulta = mysqli_query($Conexion, $cadena);
     $array = array();
     while ($registro = mysqli_fetch_row($consulta)) {
-        array_push($array, array('id' => $registro[0], 'apellido' => $registro[1], 'nombre' => $registro[2], 'fecha' => $registro[3], 'foto' => base64_encode($registro[4]), 'usuario' => $registro[5], 'clave' => $registro[6]));
+        array_push($array, array('id' => $registro[0], 'idlider' => $registro[1], 'id2' => $registro[2], 'id3' => $registro[3], 'nombre' => base64_encode($registro[4]), 'provincia' => $registro[5], 'foto' => $registro[6]));
     }
     return $array;
 }
@@ -87,11 +87,11 @@ function getUsuarioUserName($userName)
 function getUsuarioUserNames()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT usuario FROM persona ";
+    $cadena = "SELECT equipo_id FROM equipos ";
     $consulta = mysqli_query($Conexion, $cadena);
     $array = array();
     while ($registro = mysqli_fetch_row($consulta)) {
-        array_push($array, array('usuario' => $registro[0]));
+        array_push($array, array('equipo_id' => $registro[0]));
     }
     return $array;
 }
