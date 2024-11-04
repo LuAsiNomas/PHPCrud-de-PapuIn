@@ -12,9 +12,9 @@
 
 include("../modelo/usuario.php");
 
-$ide = $_POST['Equipo_ID'];
+$ide = $_POST['equipo_id'];
 $noe = $_POST['nombre_equipo'];
-$idl = $_POST['id_jug_lider'];
+$idl = $_POST['idjug_lider'];
 $id2 = $_POST['idjug2'];
 $id3 = $_POST['idjug3'];
 $pro = $_POST['provincia'];
