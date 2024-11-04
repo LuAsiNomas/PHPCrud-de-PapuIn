@@ -9,13 +9,15 @@
 <body>
 <div class="form">
 	<h3 class="modificarTitulo">FORMULARIO DE MODIFICACION</h3>
-	<form class="modificarInput" id="modificacionForm" action="../server/modificacion.php" method="POST" enctype="multipart/form-data">
+	<form class="modificarInput" id="modificacionForm" action="server/modificacion.php" method="POST" enctype="multipart/form-data">
 		<div class="container-select">
+			<<?php
+			echo getUsuarioUsersNamesModificar();
+			?>
 			<div id="modalModificar" class=""></div>
 		</div>
-		<div class="campo-modificar">
-		<br> Campos a modificar:</br>
-		</div>
+
+		Campos a modificar:<br>
 
 		<div class="grupoInputsCambiar">
 			<div class="imagenUsuario">
