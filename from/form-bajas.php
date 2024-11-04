@@ -10,7 +10,7 @@
 
 <div class="formis-container">
 	<h3 class="bajaTitulo" >FORMULARIO DE BAJA</h3>
-	<form class="bajaInput" id="bajaForm" action="../server/bajas.php" method="POST">
+	<form class="bajaInput" id="bajaForm" action="server/bajas.php" method="POST">
 		<div class="grupoInputs">
 			<div class="caja-text">
 			<label class="text-username" for="userName">Seleccione un nombre de usuario:</label>
