@@ -10,13 +10,9 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
 
          $Conexion = include("conexion.php");
 
-<<<<<<< Updated upstream
-         $cadena = "INSERT INTO equipos(equipo_id, nombre_equipo, idjug_lider, idjug2, idjug3, logo, provincia) VALUES ('$ide', '$noe', '$idl', '$id2', '$id3', '$contenido', '$pro')";
-=======
-         $cadena = "INSERT INTO equipos( nombre_equipo,idjug_lider, idjug2, idjug3, logo, provincia) VALUES ( '$noe', '$idl', '$id2', '$id3','$contenido', '$pro')";
->>>>>>> Stashed changes
+         $cadena = "INSERT INTO equipos( nombre_equipo, idjug_lider, idjug2, idjug3,logo, provincia) VALUES ( '$noe', '$idl', '$id2', '$id3','$contenido', '$pro')";
          try {
-            $resultado = mysqli_query($Conexion, $cadena);
+      $resultado = mysqli_query($Conexion, $cadena);
 
             if ($resultado) {
                 return true;
@@ -35,7 +31,7 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño) {
 function getUsuarioUsersNames()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT equipo_id FROM equipos ";
+    $cadena = "SELECT usuario FROM persona ";
 
     $consulta = mysqli_query($Conexion, $cadena);
     $html = "<select class='select' style='border-bottom: 1px solid black;
@@ -57,7 +53,7 @@ function getUsuarioUsersNames()
 function getUsuarioUsersNamesModificar()
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT equipo_id FROM equipos ";
+    $cadena = "SELECT usuario FROM persona ";
 
     $consulta = mysqli_query($Conexion, $cadena);
     $html = "<select class='selectModificar' style='border-bottom: 1px solid black;
@@ -120,7 +116,7 @@ function modificar($idl, $id2, $id3, $nom, $pro, $foto, $fototamaño) {
    
     $Conexion = include("conexion.php");
 
-        $cadena = "UPDATE  equipos SET idlider = '$idl', id2 = '$id2', id3 = '$id3', nombre = '$nom', provincia = '$pro', foto = '$foto', fotomaño = '$fototamaño' WHERE ID = ";
+        $cadena = "UPDATE  equipos SET idlider = '$idl', id2 = '$id2', id3 = '$id3', nombre = '$nom', WHERE provincia = '$pro', foto = '$foto', fotomaño = '$fototamaño'";
 
         try {
             $resultado = mysqli_query($Conexion, $cadena);
