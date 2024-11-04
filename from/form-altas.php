@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Equipo - Torneo Nacional</title>
-    <link rel="stylesheet" href="../css/formAltas.css">
+    <link rel="stylesheet" href="css/formAltas.css">
 </head>
 <body>
     <div class="form-container">
@@ -74,7 +74,6 @@
     </div>
     <audio id="errorSound" src="sounds/Voicy_Tick Sound Brawl stars.mp3"></audio>
     <audio id="successSound" src="sounds/Voicy_brawl stars win song meme.mp3"></audio>
-    <script src="../js/sonido.js"></script>
     <script src="../js/form-altas.js"></script>
 </body>
 </html>
