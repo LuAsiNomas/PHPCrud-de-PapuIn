@@ -90,6 +90,14 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 				</div>
 			</section>
 
+			<section id="fixture" class="four">
+				<div class="container">
+					<?php
+					include("from/fixture.php");
+					?>
+				</div>
+			</section>
+
 			<!-- About Me -->
 			<section id="modificacion" class="three">
 				<div class="container">
@@ -99,13 +107,6 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 				</div>
 			</section>
 
-			<section id="fixture" class="four">
-				<div class="container">
-					<?php
-					include("from/fixture.php");
-					?>
-				</div>
-			</section>
 
 			<footer id="footer">
     			<ul class="copyright">
