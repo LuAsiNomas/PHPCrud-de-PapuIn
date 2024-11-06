@@ -68,7 +68,7 @@ function getUsuarioUserName($userName)
     $consulta = mysqli_query($Conexion, $cadena);
     $array = array();
     while ($registro = mysqli_fetch_row($consulta)) {
-        array_push($array, array('foto' => base64_encode($registro[4]), 'equipo_id' => $registro[0], 'nombre_equipo' => $registro[1], 'idjug_lider' => $registro[2], 'idjug2' => $registro[3], 'idjug3' => $registro[5], 'provincia' => $registro[6]));
+        array_push($array, array( 'equipo_id' => $registro[0], 'nombre_equipo' => $registro[1], 'idjug_lider' => $registro[2], 'idjug2' => $registro[3], 'idjug3' => $registro[4],'foto' => base64_encode($registro[5]), 'provincia' => $registro[6]));
     }
     return $array;
 }

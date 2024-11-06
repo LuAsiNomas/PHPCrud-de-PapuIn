@@ -32,8 +32,9 @@ formBajaModificar.addEventListener("submit", function (e) {
       "Content-Type": "application/json",
     },
   })
-    .then((res) => {console.dir(res);res.json()})
+    .then((res) => res.json())
     .then(function (json) {
+      console.dir(json[0].foto)
       let foto = document.querySelector("#iimgPerfilModificar");
       let nombreequipo = document.querySelector("#nombre");
       let idlider = document.querySelector("#idlider");

@@ -22,13 +22,6 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/formAltas.css">
 	<link rel="stylesheet" href="css/footer.css">
-
-    <script src="js/index.js"></script>
-	<script src="js/form-altas.js"></script>
-	<script src="js/form-baja.js"></script>
-	<script src="js/form-modificar.js"></script>
-	<script src="js/animacionInput.js"></script>
-
 </head>
 
 <body>
@@ -88,13 +81,16 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 					?>
 				</div>
 			</section>
+			
 
 			<!-- About Me -->
 			<section id="modificacion" class="three">
 				<div class="container">
 					<?php
 					include("from/form-modificacion.php");
+					
 					?>
+
 				</div>
 			</section>
 
@@ -124,7 +120,11 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 		</div>
 	</div>
 
-	
+	<script src="js/index.js"></script>
+	<script src="js/form-altas.js"></script>
+	<script src="js/form-baja.js"></script>
+	<script src="js/form-modificar.js"></script>
+	<script src="js/animacionInput.js"></script>
 </body>
 
 </html>

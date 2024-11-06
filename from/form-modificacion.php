@@ -15,7 +15,7 @@
 
 		<div class="grupoInputsCambiar">
 			<div class="imagenUsuario">
-				<img onclick="seleccionarArchivoModificar()" id="imgPerfilModificar" src="../images/fotoPerfil.png"
+				<img onclick="seleccionarArchivoModificar()" id="iimgPerfilModificar" src="../images/fotoPerfil.png"
 					alt="">
 				<input type="file" name="foto" class="inputFileModificar">
 			</div>
@@ -40,9 +40,7 @@
 					<input type="text" class="cambioInput" id="provincia" placeholder="" name="provincia" required>
 					<spam class="spanInput">Provincia</spam>
 				</label>
-				<?php
-				getUsuarioUserName(2);
-				?>
+				
 				<div class="btn-submit">
 					<input type="submit" class="btn-modificar" value="Modificar">
 				</div>
