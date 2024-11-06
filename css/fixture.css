@@ -1,16 +1,41 @@
-.main{
-    font-family: Arial, sans-serif;
 
+.formis{
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: -700px;
+    top: -10px;
 }
+.fixturegroup1{
+    right: 500px;
+    position: relative;
+}
+
 .fixture-container1{
     background-color: rgb(246, 226, 196);
-    padding: 2rem;                        
+    width: 13rem;    
+    height: 13rem;                         
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
     border: 3px solid #cc5a5a;
+    margin-bottom: 10%;
+    text-align: center;
+}
+.fixturegroup2{
+    left: 500px;
     position: relative;
-    margin-bottom:2%;
-    right: 20px;
+    bottom: 590px;
+}
 
+.fixture-container2{
+    background-color: rgb(246, 226, 196);
+    width: 13rem;    
+    height: 13rem;                    
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+    border: 3px solid #cc5a5a;
+    margin-bottom: 10%;
     
+}
+h3{
+    text-align: center;
 }
