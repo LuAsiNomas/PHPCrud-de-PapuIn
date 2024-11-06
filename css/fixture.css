@@ -5,8 +5,9 @@
     bottom: -600px;
 }
 .fixturegroup1{
-    right: 500px;
+    right: 720px;
     position: relative;
+    bottom: 23px;
     
 }
 
@@ -17,23 +18,23 @@
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
     border: 3px solid #cc5a5a;
-    margin-bottom: 10%;
+    margin-bottom: 12%;
     text-align: center;
 }
-.fixturegroup2{
-    left: 500px;
+.fixturegroup4{
+    left: 720px;
     position: relative;
     bottom: 965px;
 }
 
-.fixture-container2{
+.fixture-container4{
     background-color: rgb(246, 226, 196);
     width: 13rem;    
     height: 13rem;                    
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
     border: 3px solid #cc5a5a;
-    margin-bottom: 10%;
+    margin-bottom: 12%;
     
     
 }
