@@ -71,7 +71,6 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 					include("from/title.php");
 					?>
 			</section>
-			
 
 			<!-- Intro -->
 			<section id="altas" class="one dark cover">
@@ -82,19 +81,19 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 				</div>
 			</section>
 
+			<section id="fixture" class="four">
+				<div class="container">
+					<?php
+					include("from/fixture.php");
+					?>
+				</div>
+			</section>
+
 			<!-- Portfolio -->
 			<section id="bajas" class="two">
 				<div class="container">
 					<?php
 					include("from/form-bajas.php");
-					?>
-				</div>
-			</section>
-
-			<section id="fixture" class="three">
-				<div class="container">
-					<?php
-					include("from/fixture.php");
 					?>
 				</div>
 			</section>
