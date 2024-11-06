@@ -2,12 +2,12 @@
 .formis{
     font-family: Arial, sans-serif;
     position: relative;
-    bottom: -700px;
-    top: -10px;
+    bottom: -600px;
 }
 .fixturegroup1{
     right: 500px;
     position: relative;
+    
 }
 
 .fixture-container1{
@@ -23,7 +23,7 @@
 .fixturegroup2{
     left: 500px;
     position: relative;
-    bottom: 590px;
+    bottom: 965px;
 }
 
 .fixture-container2{
@@ -34,6 +34,7 @@
     box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
     border: 3px solid #cc5a5a;
     margin-bottom: 10%;
+    
     
 }
 h3{
