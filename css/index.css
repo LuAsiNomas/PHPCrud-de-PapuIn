@@ -30,7 +30,6 @@ html body{
     animation: gradientAnimation 10s ease infinite;
     background-size: 400% 400%;
     width: 100%;
-    position: relative;
 }
 
 #contenedor{
