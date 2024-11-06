@@ -91,7 +91,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 				</div>
 			</section>
 
-			<section id="fixture" class="four">
+			<section id="fixture" class="three">
 				<div class="container">
 					<?php
 					include("from/fixture.php");
@@ -100,7 +100,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 			</section>
 
 			<!-- About Me -->
-			<section id="modificacion" class="three">
+			<section id="modificacion" class="four">
 				<div class="container">
 					<?php
 					include("from/form-modificacion.php");
