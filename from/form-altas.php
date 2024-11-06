@@ -9,7 +9,7 @@
 <body>
     <div class="form-container">
         <div class="form-title">
-        <h3 class="title">TORNEO NACIONAL</h3>
+        <h3 class="title">TORNEO NACIONAL DE BRAWL STARS</h3>
         </div>
         <form class="form-content" action="server/altas.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
