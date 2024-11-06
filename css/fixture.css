@@ -1,33 +1,16 @@
 .main{
     font-family: Arial, sans-serif;
-    padding: 0;
-    margin: 0;
 
 }
 .fixture-container1{
     background-color: rgb(246, 226, 196);
-    padding: 4rem;
+    padding: 2rem;                        
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
-    box-sizing: border-box;
     border: 3px solid #cc5a5a;
     position: relative;
     margin-bottom:2%;
-    margin-right: 80%;
-}
-.left-side, .right-side {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 45%;
-}
-.team-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-}
-.team-logo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    right: 20px;
+
+    
 }
