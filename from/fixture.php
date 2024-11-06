@@ -8,6 +8,7 @@
 <body>
     <div class="formis">
         <div class="fixturegroup1">
+            <h3 class="fase-text">Cuartos</h3>
             <div class="fixture-container1">
                 <h3>Equipo 1</h3>
             </div>
@@ -21,20 +22,23 @@
                 <h3>Equipo 1</h3>
             </div>
         </div>
-        <div class="fixturegroup1">
+        <div class="fixturegroup2">
+        <h3 class="fase-text">Cuartos</h3>
             <div class="fixture-container1">
-                <h3>Equipo 1</h3>
+                <h3>Equipo 2</h3>
             </div>
             <div class="fixture-container1">
-                <h3>Equipo 1</h3>
+                <h3>Equipo 2</h3>
+            </div>
+            <div class="fixture-container1">
+                <h3>Equipo 2</h3>
+            </div>
+            <div class="fixture-container1">
+                <h3>Equipo 2</h3>
             </div>
         </div>
-        <div class="fixturegroup1">
-            <div class="fixture-container1">
-                <h3>Equipo 1</h3>
-            </div>
-        </div>
-        <div class="fixturegroup1">
+        <div class="fixturegroup3">
+            <h3 class="fase-text">Semifinales</h3>
             <div class="fixture-container1">
                 <h3>Equipo 1</h3>
             </div>
@@ -43,17 +47,18 @@
             </div>
         </div>
         <div class="fixturegroup4">
-            <div class="fixture-container4">
-                <h3>Equipo 2</h3>
+            <h3 class="fase-text">Semifinales</h3>
+            <div class="fixture-container1">
+                <h3>Equipo 1</h3>
             </div>
-            <div class="fixture-container4">
-                <h3>Equipo 2</h3>
+            <div class="fixture-container1">
+                <h3>Equipo 1</h3>
             </div>
-            <div class="fixture-container4">
-                <h3>Equipo 2</h3>
-            </div>
-            <div class="fixture-container4">
-                <h3>Equipo 2</h3>
+        </div>
+        <div class="fixturegroup5">
+            <h3 class="fase-text">Final</h3>
+            <div class="fixture-container1">
+                <h3>Equipo 1</h3>
             </div>
         </div>
     </div>
