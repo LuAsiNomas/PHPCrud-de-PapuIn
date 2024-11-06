@@ -6,27 +6,35 @@
     <link rel="stylesheet" href="/css/fixture.css">
 </head>
 <body>
-<div class= "main">
-    <div class="fixture-container1">
-        <h3>Equipo 1</h3>
+    <div class="formis">
+        <div class="fixturegroup1">
+            <div class="fixture-container1">
+                <h3>Equipo 1</h3>
+            </div>
+            <div class="fixture-container1">
+                <h3>Equipo 1</h3>
+            </div>
+            <div class="fixture-container1">
+                <h3>Equipo 1</h3>
+            </div>
+            <div class="fixture-container1">
+                <h3>Equipo 1</h3>
+            </div>
+        </div>
+        <div class="fixturegroup2">
+            <div class="fixture-container2">
+                <h3>Equipo 2</h3>
+            </div>
+            <div class="fixture-container2">
+                <h3>Equipo 2</h3>
+            </div>
+            <div class="fixture-container2">
+                <h3>Equipo 2</h3>
+            </div>
+            <div class="fixture-container2">
+                <h3>Equipo 2</h3>
+            </div>
+        </div>
     </div>
-    <div class="fixture-container1">
-        <h3>Equipo 1</h3>
-    </div>
-    <div class="fixture-container1">
-        <h3>Equipo 1</h3>
-    </div>
-    <div class="fixture-container1">
-        <h3>Equipo 1</h3>
-    </div>
-    <div class="fixture-container2">
-    </div>
-    <div class="fixture-container2">
-    </div>
-    <div class="fixture-container2">
-    </div>
-    <div class="fixture-container2">
-    </div>
-</div>	
 </body>
 </html>
