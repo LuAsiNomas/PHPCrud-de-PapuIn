@@ -78,10 +78,225 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  font-size: 40px;
+  font-size: 38px;
   overflow: hidden;
   animation: move linear 2000ms infinite;  
   color: #ffd700;
+}
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.fase-text1{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 38px;
+  overflow: hidden;
+  animation: move linear 2000ms infinite;  
+  color: #ffd700;
+  position:relative;
+  right: 43px;
+}
+
+.linea-horizontal1 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+}
+
+.linea-horizontal2 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+  .linea-horizontal3 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontal4 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontal5 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontal6 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontal7 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+ }
+
+.linea-horizontal8 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+}
+
+.linea-horizontal9 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+
+.linea-horizontal10 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontal11 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontal12 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontal13 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-vertical1{
+  width: 30px;
+  height: 206px;
+  position: relative;
+  right: 98px;
+  bottom: 144px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-vertical2{
+  width: 30px;
+  height: 206px;
+  position: relative;
+  right: 98px;
+  bottom: 111px;
+    background-color: #3498db;
+    animation: cambioDeColor 3s infinite;
+    }
+.linea-vertical3{
+      width: 30px;
+      height: 206px;
+      position: relative;
+      left: 198px;
+      bottom: 111px;
+      background-color: #3498db;
+      animation: cambioDeColor 3s infinite;
+  }
+.linea-vertical4{
+        width: 30px;
+        height: 206px;
+        position: relative;
+        left: 198px;
+        bottom: 111px;
+        background-color: #3498db;
+        animation: cambioDeColor 3s infinite;
+        }
+  
+@keyframes cambioDeColor {
+  0% { background-color: #3498db; }   
+  25% { background-color: #2ecc71; }  
+  50% { background-color: #e74c3c; }  
+  75% { background-color: #f1c40f; }  
+  100% { background-color: #3498db; }
+}
+
+
+.fase-text2{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 38px;
+  overflow: hidden;
+  animation: move linear 2000ms infinite;  
+  color: #ffd700;
+  position:relative;
+  right: 43px;
 }
 
 .fixture-container1{
@@ -91,38 +306,46 @@
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
     border: 3px solid #cc5a5a;
-    margin-bottom: 12%;
+    margin-bottom: 13%;
+}
+.fixture-container2{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  margin-bottom: 9%;
 }
 
 .fixturegroup1{
-    right: 150px;
+    right: 165px;
     position: relative;
-    top: 100px;
+    top: 80px;
     
 }
 
 .fixturegroup3{
-    right: 272px;
+    right: 231px;
     position: relative;
-    top: 100px;
-    
+    top: 73px;
 }
 
 .fixturegroup4{
-    left: 77px;
+    left: 111px;
     position: relative;
-    top: 100px;
+    top: 81px;
 }
 
 
 .fixturegroup2{
-    left: 850px;
+    left: 915px;
     position: relative;
-    bottom: -100px;
+    bottom: -80px;
 }
 
 .fixturegroup5{
-    right: 525px;
+    right: 474px;
     position: relative;
     top: 100px;
 }
