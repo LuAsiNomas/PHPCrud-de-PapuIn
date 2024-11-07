@@ -239,12 +239,22 @@
   animation: cambioDeColor 3s infinite;
   }
 
+.linea-horizontal14 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 150px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+    }
+
 .linea-vertical1{
   width: 30px;
   height: 206px;
   position: relative;
   right: 98px;
-  bottom: 144px;
+  bottom: 215px;
   background-color: #3498db;
   animation: cambioDeColor 3s infinite;
   }
@@ -258,24 +268,46 @@
     background-color: #3498db;
     animation: cambioDeColor 3s infinite;
     }
+
 .linea-vertical3{
       width: 30px;
-      height: 206px;
+      height: 208px;
       position: relative;
-      left: 198px;
-      bottom: 111px;
+      left: 250px;
+      bottom: 146px;
       background-color: #3498db;
       animation: cambioDeColor 3s infinite;
   }
+
 .linea-vertical4{
         width: 30px;
-        height: 206px;
+        height: 208px;
         position: relative;
-        left: 198px;
-        bottom: 111px;
+        left: 250px;
+        bottom: 115px;
         background-color: #3498db;
         animation: cambioDeColor 3s infinite;
         }
+
+        .linea-vertical5{
+          width: 30px;
+          height: 208px;
+          position: relative;
+          left: 190px;
+          bottom: 115px;
+          background-color: #3498db;
+          animation: cambioDeColor 3s infinite;
+          }
+
+          .linea-vertical6{
+            width: 30px;
+            height: 426px;
+            position: relative;
+            right: 70px;
+            bottom: 293px;
+            background-color: #3498db;
+            animation: cambioDeColor 3s infinite;
+            }
   
 @keyframes cambioDeColor {
   0% { background-color: #3498db; }   
@@ -308,14 +340,45 @@
     border: 3px solid #cc5a5a;
     margin-bottom: 13%;
 }
-.fixture-container2{
+
+.fixture-containera2{
   background-color: rgb(246, 226, 196);
   width: 11rem;    
   height: 11rem;                         
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
   border: 3px solid #cc5a5a;
-  margin-bottom: 9%;
+  margin-top: 14%;
+}
+
+.fixture-containerb2{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  margin-top: 14%;
+}
+
+.fixture-containera3{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  margin-top: 14%;
+}
+
+.fixture-containerb3{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  margin-top: 14%;
 }
 
 .fixturegroup1{
@@ -328,7 +391,7 @@
 .fixturegroup3{
     right: 231px;
     position: relative;
-    top: 73px;
+    top: 175px;
 }
 
 .fixturegroup4{
@@ -341,7 +404,7 @@
 .fixturegroup2{
     left: 915px;
     position: relative;
-    bottom: -80px;
+    bottom: -85px;
 }
 
 .fixturegroup5{
