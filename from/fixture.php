@@ -61,15 +61,15 @@
             <div class="linea-vertical2"></div>
         </div>
         <div class="fixturegroup4">
-            <h3 class="fase-text">Semifinales</h3>
+            <h3 class="fase-text2">Semifinales</h3>
             <div class="fixture-containera3">
-                <h3>Equipo 1</h3>
+                <h3>Equipo 4</h3>
             </div>
             <div class="linea-horizontala11"></div>
             <div class="linea-horizontalb11"></div>
             <div class="linea-vertical3"></div>
             <div class="fixture-containerb3">
-                <h3>Equipo 1</h3>
+                <h3>Equipo 6</h3>
             </div>
             <div class="linea-horizontala12"></div>
             <div class="linea-horizontalb12"></div>
