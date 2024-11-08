@@ -188,7 +188,28 @@
   animation: cambioDeColor 3s infinite;
 }
 
-.linea-horizontal9 {
+.linea-horizontala9 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 95px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontalb9 {
+    width: 71px;
+    height: 30px;
+    position: relative;
+    right: 69px;
+    bottom: 125px;
+    background-color: #3498db;
+    animation: cambioDeColor 3s infinite;
+    }
+
+
+.linea-horizontala10 {
   width: 81px;
   height: 30px;
   position: relative;
@@ -198,18 +219,38 @@
   animation: cambioDeColor 3s infinite;
   }
 
+  .linea-horizontalb10 {
+    width: 81px;
+    height: 30px;
+    position: relative;
+    right: 132px;
+    bottom: 120px;
+    background-color: #3498db;
+    animation: cambioDeColor 3s infinite;
+    }
 
-.linea-horizontal10 {
+.linea-horizontala11 {
   width: 81px;
   height: 30px;
   position: relative;
-  left: 182px;
+  right: 82px;
   bottom: 120px;
   background-color: #3498db;
   animation: cambioDeColor 3s infinite;
   }
 
-.linea-horizontal11 {
+  .linea-horizontalb11 {
+    width: 81px;
+    height: 30px;
+    position: relative;
+    left: 82px;
+    bottom: 120px;
+    background-color: #3498db;
+    animation: cambioDeColor 3s infinite;
+    }
+  
+
+.linea-horizontala12 {
   width: 81px;
   height: 30px;
   position: relative;
@@ -219,15 +260,15 @@
   animation: cambioDeColor 3s infinite;
   }
 
-.linea-horizontal12 {
-  width: 81px;
-  height: 30px;
-  position: relative;
-  right: 82px;
-  bottom: 120px;
-  background-color: #3498db;
-  animation: cambioDeColor 3s infinite;
-  }
+  .linea-horizontalb12 {
+    width: 81px;
+    height: 30px;
+    position: relative;
+    left: 82px;
+    bottom: 120px;
+    background-color: #3498db;
+    animation: cambioDeColor 3s infinite;
+    }
 
 .linea-horizontal13 {
   width: 81px;
@@ -251,10 +292,10 @@
 
 .linea-vertical1{
   width: 30px;
-  height: 206px;
+  height: 208px;
   position: relative;
   right: 98px;
-  bottom: 215px;
+  bottom: 246px;
   background-color: #3498db;
   animation: cambioDeColor 3s infinite;
   }
@@ -264,7 +305,7 @@
   height: 206px;
   position: relative;
   right: 98px;
-  bottom: 111px;
+  bottom: 226px;
     background-color: #3498db;
     animation: cambioDeColor 3s infinite;
     }
@@ -348,7 +389,8 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
   border: 3px solid #cc5a5a;
-  margin-top: 14%;
+  position: relative;
+  top: 7px;
 }
 
 .fixture-containerb2{
@@ -358,7 +400,8 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
   border: 3px solid #cc5a5a;
-  margin-top: 14%;
+  position: relative;
+  top: 29px;
 }
 
 .fixture-containera3{
@@ -368,7 +411,8 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
   border: 3px solid #cc5a5a;
-  margin-top: 14%;
+  position: relative;
+  top: 29px;
 }
 
 .fixture-containerb3{
@@ -378,7 +422,8 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
   border: 3px solid #cc5a5a;
-  margin-top: 14%;
+  position: relative;
+  top: 29px;
 }
 
 .fixturegroup1{
