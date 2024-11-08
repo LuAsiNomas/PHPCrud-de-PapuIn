@@ -223,8 +223,8 @@
     width: 81px;
     height: 30px;
     position: relative;
-    right: 132px;
-    bottom: 120px;
+    right: 82px;
+    bottom: 100px;
     background-color: #3498db;
     animation: cambioDeColor 3s infinite;
     }
@@ -302,10 +302,10 @@
 
 .linea-vertical2{
   width: 30px;
-  height: 206px;
+  height: 208px;
   position: relative;
   right: 98px;
-  bottom: 226px;
+  bottom: 219px;
     background-color: #3498db;
     animation: cambioDeColor 3s infinite;
     }
