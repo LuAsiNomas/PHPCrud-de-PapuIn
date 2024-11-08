@@ -48,14 +48,16 @@
         <div class="fixturegroup3">
             <h3 class="fase-text1">Semifinales</h3>
             <div class="fixture-containera2">
-                <h3>Equipo 1</h3>
+                <h3>Equipo 2</h3>
             </div>
-            <div class="linea-horizontal9"></div>
+            <div class="linea-horizontala9"></div>
+            <div class="linea-horizontalb9"></div>
             <div class="linea-vertical1"></div>
             <div class="fixture-containerb2">
                 <h3>Equipo 1</h3>
             </div>
-            <div class="linea-horizontal10"></div>
+            <div class="linea-horizontala10"></div>
+            <div class="linea-horizontalb10"></div>
             <div class="linea-vertical2"></div>
         </div>
         <div class="fixturegroup4">
@@ -63,12 +65,14 @@
             <div class="fixture-containera3">
                 <h3>Equipo 1</h3>
             </div>
-            <div class="linea-horizontal11"></div>
+            <div class="linea-horizontala11"></div>
+            <div class="linea-horizontalb11"></div>
             <div class="linea-vertical3"></div>
             <div class="fixture-containerb3">
                 <h3>Equipo 1</h3>
             </div>
-            <div class="linea-horizontal12"></div>
+            <div class="linea-horizontala12"></div>
+            <div class="linea-horizontalb12"></div>
             <div class="linea-vertical4"></div>
         </div>
         <div class="fixturegroup5">
