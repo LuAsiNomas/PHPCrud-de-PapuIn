@@ -108,6 +108,19 @@
   right: 43px;
 }
 
+.fase-text2{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 38px;
+  overflow: hidden;
+  animation: move linear 2000ms infinite;  
+  color: #ffd700;
+  position:relative;
+  right: 43px;
+}
+
 .linea-horizontal1 {
   width: 81px;
   height: 30px;
@@ -214,7 +227,7 @@
   height: 30px;
   position: relative;
   left: 182px;
-  bottom: 120px;
+  bottom: 70px;
   background-color: #3498db;
   animation: cambioDeColor 3s infinite;
   }
@@ -358,20 +371,6 @@
   100% { background-color: #3498db; }
 }
 
-
-.fase-text2{
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-size: 38px;
-  overflow: hidden;
-  animation: move linear 2000ms infinite;  
-  color: #ffd700;
-  position:relative;
-  right: 43px;
-}
-
 .fixture-container1{
     background-color: rgb(246, 226, 196);
     width: 11rem;    
@@ -412,7 +411,7 @@
   box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
   border: 3px solid #cc5a5a;
   position: relative;
-  top: 29px;
+  top: 3px;
 }
 
 .fixture-containerb3{
@@ -423,7 +422,7 @@
   box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
   border: 3px solid #cc5a5a;
   position: relative;
-  top: 29px;
+  top: 30px;
 }
 
 .fixturegroup1{
