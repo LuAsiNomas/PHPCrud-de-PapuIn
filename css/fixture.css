@@ -73,6 +73,18 @@
     }  
   }
 
+  @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+
 .fase-text{
   text-align: center;
   font-weight: bold;
@@ -80,20 +92,9 @@
   letter-spacing: 0.1rem;
   font-size: 38px;
   overflow: hidden;
-  animation: move linear 2000ms infinite;  
   color: #ffd700;
 }
-@keyframes gradientAnimation {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
-}
+
 
 .fase-text1{
   text-align: center;
@@ -102,7 +103,6 @@
   letter-spacing: 0.1rem;
   font-size: 38px;
   overflow: hidden;
-  animation: move linear 2000ms infinite;  
   color: #ffd700;
   position:relative;
   right: 43px;
@@ -115,7 +115,6 @@
   letter-spacing: 0.1rem;
   font-size: 38px;
   overflow: hidden;
-  animation: move linear 2000ms infinite;  
   color: #ffd700;
   position:relative;
   right: 43px;
