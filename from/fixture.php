@@ -77,7 +77,7 @@
         </div>
         <div class="fixturegroup5">
             <h3 class="fase-text">Final</h3>
-            <div class="fixture-container1">
+            <div class="fixture-container4">
                 <h3>Equipo 1</h3>
             </div>
             <div class="linea-horizontal13"></div>
