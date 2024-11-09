@@ -247,7 +247,7 @@
   height: 30px;
   position: relative;
   right: 82px;
-  bottom: 120px;
+  bottom: 100px;
   background-color: #3498db;
   animation: cambioDeColor 3s infinite;
   }
@@ -256,8 +256,8 @@
     width: 81px;
     height: 30px;
     position: relative;
-    left: 82px;
-    bottom: 120px;
+    left: 182px;
+    bottom: 130px;
     background-color: #3498db;
     animation: cambioDeColor 3s infinite;
     }
@@ -268,7 +268,7 @@
   height: 30px;
   position: relative;
   right: 82px;
-  bottom: 120px;
+  bottom: 75px;
   background-color: #3498db;
   animation: cambioDeColor 3s infinite;
   }
@@ -277,28 +277,28 @@
     width: 81px;
     height: 30px;
     position: relative;
-    left: 82px;
-    bottom: 120px;
+    left: 184px;
+    bottom: 105px;
     background-color: #3498db;
     animation: cambioDeColor 3s infinite;
     }
 
 .linea-horizontal13 {
-  width: 81px;
+  width: 67px;
   height: 30px;
   position: relative;
-  left: 182px;
-  bottom: 120px;
+  left: 187px;
+  bottom: 100px;
   background-color: #3498db;
   animation: cambioDeColor 3s infinite;
   }
 
 .linea-horizontal14 {
-  width: 81px;
+  width: 66px;
   height: 30px;
   position: relative;
-  right: 82px;
-  bottom: 150px;
+  right: 65px;
+  bottom: 130px;
   background-color: #3498db;
   animation: cambioDeColor 3s infinite;
     }
@@ -328,7 +328,7 @@
       height: 208px;
       position: relative;
       left: 250px;
-      bottom: 146px;
+      bottom: 245px;
       background-color: #3498db;
       animation: cambioDeColor 3s infinite;
   }
@@ -338,27 +338,27 @@
         height: 208px;
         position: relative;
         left: 250px;
-        bottom: 115px;
+        bottom: 219px;
         background-color: #3498db;
         animation: cambioDeColor 3s infinite;
         }
 
         .linea-vertical5{
           width: 30px;
-          height: 428px;
+          height: 445px;
           position: relative;
           left: 230px;
-          bottom: 72px;
+          bottom: 361px;
           background-color: #3498db;
           animation: cambioDeColor 3s infinite;
           }
 
           .linea-vertical6{
             width: 30px;
-            height: 426px;
+            height: 450px;
             position: relative;
             right: 70px;
-            bottom: 293px;
+            bottom: 806px;
             background-color: #3498db;
             animation: cambioDeColor 3s infinite;
             }
@@ -423,6 +423,17 @@
   border: 3px solid #cc5a5a;
   position: relative;
   top: 30px;
+}
+
+.fixture-container4{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  position: relative;
+  left: 4px;
 }
 
 .fixturegroup1{
