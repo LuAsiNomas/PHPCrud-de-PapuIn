@@ -10,7 +10,8 @@
         <div class="fixturegroup1">
             <h3 class="fase-text">Cuartos</h3>
             <div class="fixture-container1"> 
-                <h3>Equipo 1</h3>
+            <select name="provincia" class="equipo" required>
+                    <option value="Disabled">SELECCIONAR PROVINCIA</option>
             </div>
             <div class="linea-horizontal1"></div>
             <div class="fixture-container1">
