@@ -13,13 +13,13 @@
 
 include("../modelo/usuario.php");
 
-$idl = $_POST['idlider'];
-$id2 = $_POST['id2'];
-$id3 = $_POST['id3'];
-$nom = $_POST['nombre'];
+$nom = $_POST['nombre_equipo'];
+$idl = $_POST['idjug_lider'];
+$id2 = $_POST['idjug2'];
+$id3 = $_POST['idjug3'];
 $pro = $_POST['provincia'];
 
-$result = modificar($idl, $id2, $id3, $nom, $pro);
+$result = modificar( $nom, $idl, $id2, $id3, $pro);
 
 if (!$result) {
 	echo '<div class="Rcontainer">
@@ -32,21 +32,3 @@ if (!$result) {
 } else {
 	return include("../from/respuestas-server/respuesta-modificar.php");
 }
-?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-
-<body>
-	<a href="form-modificacion.php">Volver</a>
-
-</body>
-
-</html>
