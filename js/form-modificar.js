@@ -41,11 +41,11 @@ formBajaModificar.addEventListener("submit", function (e) {
       let idjug2 = document.querySelector("#id2");
       let idjug3 = document.querySelector("#id3");
       let provincia = document.querySelector("#provincia");
-
+      
       foto.src = "data:image/jpeg;base64," + json[0].foto;
       foto.style = "width:200px;height:200px;border-radius: 100%";
-      nombreequipo.value = json[0].nombreequipo;
-      idlider.value = json[0].idlider;
+      nombreequipo.value = json[0].nombre_equipo;
+      idlider.value = json[0].idjug_lider;
       idjug2.value = json[0].idjug2;
       idjug3.value = json[0].idjug3;
       provincia.value = json[0].provincia;
