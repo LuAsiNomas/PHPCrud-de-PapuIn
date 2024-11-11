@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,13 @@
     <link rel="stylesheet" href="../css/respuesta-alta.css">
 </head>
 
+
 <?php
+
 
 include("../modelo/usuario.php");
 
-$ide = $_POST['equipo_id'];
+
 $noe = $_POST['nombre_equipo'];
 $idl = $_POST['id_jug_lider'];
 $id2 = $_POST['idjug2'];
@@ -21,7 +24,9 @@ $pro = $_POST['provincia'];
 $foto = $_FILES['foto']['tmp_name'];
 $fototamaño = $_FILES['foto']['size'];
 
-$result = insertar($ide, $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño);
+
+$result = insertar( $noe, $idl, $id2, $id3, $pro, $foto, $fototamaño);
+
 
 if (strlen($result) > 5) {
     echo '<div class="Rcontainer">
