@@ -1,12 +1,24 @@
 <?php
 
-function insertar($ide, $noe, $idl, $id2, $id3, $pro){
-    
-         $Conexion = include("conexion.php");
 
-        $cadena = "INSERT INTO equipos(equipo_id, nombre_equipo, idjug_lider, idjug2, idjug3, provincia) VALUES ($ide, $noe, $idl, $id2, $id3, $pro)";
+function insertar($noe, $idl, $id2, $id3, $pro, $foto, $fototamano)
+{
+    if ($fototamano > 0) {
+        $fp = fopen($foto, "rb");
+        $contenido = fread($fp, $fototamano);
+        $contenido = addslashes($contenido);
+        fclose($fp);
+
+
+        $Conexion = include("conexion.php");
+
+
+        $cadena = "INSERT INTO `equipos` ( `nombre_equipo`, `idjug_lider`, `idjug2`, `idjug3`,`logo` , `provincia`) VALUES ( '$noe', '$idl', ' $id2', '$id3', ' $contenido', ' $pro');";
+
+
         try {
             $resultado = mysqli_query($Conexion, $cadena);
+
 
             if ($resultado) {
                 return true;
@@ -14,13 +26,17 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro){
         } catch (Exception $e) {
             return substr($e, 22, 41);
         }
-
+    } else {
+        return false;
+    }
 }
+
 
 function getUsuarioUsersNames()
 {
     $Conexion = include("conexion.php");
     $cadena = "SELECT equipo_id, nombre_equipo FROM equipos ";
+
 
     $consulta = mysqli_query($Conexion, $cadena);
     $html = "<select class='select' style='border-bottom: 1px solid black;
@@ -32,17 +48,21 @@ function getUsuarioUsersNames()
     cursor: pointer' name='userName'><option value=''selected='true' disabled>Seleccione una opcion</option>";
 
 
+
+
     while ($registro = mysqli_fetch_row($consulta)) {
-        $html = $html . '<option value="' . $registro[0] . '">" '. $registro[0] .' ' . $registro[1] . '</option>';
+        $html = $html . '<option value="' . $registro[0] . '">" ' . $registro[0] . ' ' . $registro[1] . '</option>';
     }
     $html = $html . "</select>";
     return $html;
 }
 
+
 function getUsuarioUsersNamesModificar()
 {
     $Conexion = include("conexion.php");
     $cadena = "SELECT equipo_id, nombre_equipo FROM equipos ";
+
 
     $consulta = mysqli_query($Conexion, $cadena);
     $html = "<select class='selectModificar' onchange='cambioSelect(event)' style='border-bottom: 1px solid black;
@@ -54,24 +74,28 @@ function getUsuarioUsersNamesModificar()
     cursor: pointer' name='usuario'><option value=''selected='true' disabled>Seleccione una opcion</option>";
 
 
+
+
     while ($registro = mysqli_fetch_row($consulta)) {
-        $html = $html . '<option value="' . $registro[0] . '"> '. $registro[0] .' ' . $registro[1] . '</option>';
+        $html = $html . '<option value="' . $registro[0] . '"> ' . $registro[0] . ' ' . $registro[1] . '</option>';
     }
     $html = $html . "</select>";
     return $html;
 }
 
+
 function getUsuarioUserName($userName)
 {
     $Conexion = include("conexion.php");
-    $cadena = "SELECT * FROM equipos WHERE equipo_id =". $userName ;
+    $cadena = "SELECT * FROM equipos WHERE equipo_id =" . $userName;
     $consulta = mysqli_query($Conexion, $cadena);
     $array = array();
     while ($registro = mysqli_fetch_row($consulta)) {
-        array_push($array, array( 'equipo_id' => $registro[0], 'nombre_equipo' => $registro[1], 'idjug_lider' => $registro[2], 'idjug2' => $registro[3], 'idjug3' => $registro[4],'foto' => base64_encode($registro[5]), 'provincia' => $registro[6]));
+        array_push($array, array('equipo_id' => $registro[0], 'nombre_equipo' => $registro[1], 'idjug_lider' => $registro[2], 'idjug2' => $registro[3], 'idjug3' => $registro[4], 'foto' => base64_encode($registro[5]), 'provincia' => $registro[6]));
     }
     return $array;
 }
+
 
 function getUsuarioUserNames()
 {
@@ -85,39 +109,48 @@ function getUsuarioUserNames()
     return $array;
 }
 
+
 function deleteUser($userName)
 {
     $Conexion = include("conexion.php");
     $cadena = "DELETE FROM equipos  WHERE equipo_id = '$userName'";
     $resultado = mysqli_query($Conexion, $cadena);
 
+
     return $resultado;
 }
 
-function modificar($nom, $idl, $id2, $id3, $pro) {
-   
+
+function modificar($idl, $id2, $id3, $nom, $pro)
+{
+
+
     $Conexion = include("conexion.php");
 
-        $cadena = "UPDATE  equipos SET nombre_equipo = '$nom', idjug_lider = '$idl', idjug2 = '$id2', idjug3 = '$id3', provincia = '$pro'";
 
-        try {
-            $resultado = mysqli_query($Conexion, $cadena);
-            if ($resultado) {
-                return true;
-            }
-        } catch (Exception $e) {
-            return substr($e, 22, 41);
+    $cadena = "UPDATE  equipos SET equipo_id = '$idl', idjug_lider = '$id2', idjug2 = '$id3', idjug3 = '$nom' = nombre_equipo, '$pro' = provincia WHERE equipo_id = '$ide'";
+
+
+    try {
+        $resultado = mysqli_query($Conexion, $cadena);
+        if ($resultado) {
+            return true;
         }
-   
+    } catch (Exception $e) {
+        return substr($e, 22, 41);
+    }
 }
+
 
 function listar()
 {
     $Conexion = include("conexion.php");
     $cadena = "SELECT * FROM equipos ";
 
+
     $consulta = mysqli_query($Conexion, $cadena);
     $htmlListar = "";
+
 
     while ($registro = mysqli_fetch_row($consulta)) {
         $htmlListar = $htmlListar . '<div class="container-listar"><img src="data:image/jpeg;base64,' .
@@ -127,7 +160,7 @@ function listar()
             <h2>' . $registro[3] . ' </h2></div>';
     }
 
+
     return $htmlListar;
 }
-
 ?>
