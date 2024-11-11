@@ -16,26 +16,26 @@
                 <img class="seleccionbtn" onclick="seleccionarArchivo()" src="IMAGENES/mm.png" id="logo" alt="Logo del equipo">
                 <input type="file" class="input-file-altas" name="foto" required>
             </div>
-
-            <div class="form-group">
-                <input type="text" class="input-file-altas" placeholder="Id de equipo" name="Equipo_ID" required>
-            </div>
-
+               
             <div class="form-group">
                 <input type="text" class="input-file-altas" placeholder="Nombre de equipo" name="nombre_equipo" required>
             </div>
+
 
             <div class="form-group">
                 <input type="text" class="input-file-altas" placeholder="Id líder" name="id_jug_lider" required>
             </div>
 
+
             <div class="form-group">
                 <input type="text" class="input-file-altas" placeholder="Id jugador 2" name="idjug2" required>
             </div>
 
+
             <div class="form-group">
                 <input type="text" class="input-file-altas" placeholder="Id jugador 3" name="idjug3" required>
             </div>
+
 
             <div class="form-group">
                 <select name="provincia" class="btn-prov" required>
@@ -66,6 +66,7 @@
                     <option value="24">CABA</option>
                 </select>
             </div>
+
 
             <div class="form-group">
                 <input  class="btn-submit-altas" type="submit" value="REGISTRAR EQUIPO">
