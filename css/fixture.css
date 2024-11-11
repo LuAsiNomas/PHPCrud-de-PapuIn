@@ -95,19 +95,20 @@
   color: #ffd700;
 }
 
-.btn-prov{
+.btn-equipos{
   transition: transform 0.2s ease; /* Efecto de suavizado al agrandar */
   box-shadow: 0 4px 10px rgba(148, 3, 3, 0.511);
   color: #000000;
-  font-size: 28px;
+  font-size: 23px;
   border-radius: 10px;
   border: 2px solid #970303;
   margin-bottom: 15px;
   position: relative;
-  bottom: 20px;
+  bottom: -20px;
+  width: 136px;
 }
 
-.btn-prov:hover{
+.btn-equipos:hover{
   transform: scale(1.1);
   filter: grayscale(80%);
   transition:all .3s ease-in-out;
