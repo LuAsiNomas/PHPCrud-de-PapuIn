@@ -71,6 +71,11 @@ function getUsuarioUsersNamesModificar()
     border-right: 0;
     width:15em;
     font-size:1.5em;
+    box-shadow: 0 4px 10px rgba(148, 3, 3, 0.511);
+    color: #000000;
+    font-size: 31px;
+    border-radius: 10px;
+    border: 2px solid #970303;
     cursor: pointer' name='usuario'><option value=''selected='true' disabled>Seleccione una opcion</option>";
 
 
