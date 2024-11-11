@@ -19,10 +19,11 @@ formBajaModificar.addEventListener("submit", function (e) {
   }
 });
 
-let selectedModificar = document.querySelector(".selectModificar");
-selectedModificar.addEventListener("change", function (e) {
+
+ function cambioSelect(e) {
+  console.log(e.target.selectedOptions[0].value);
   let user = e.target.selectedOptions[0].value;
-  fetch("../server/peticiones/user.php", {
+  fetch("server/peticiones/user.php", {
     method: "POST",
     body: JSON.stringify({
       solicitud: user,
@@ -33,20 +34,23 @@ selectedModificar.addEventListener("change", function (e) {
   })
     .then((res) => res.json())
     .then(function (json) {
-      let apellido = document.querySelector("#apellido");
-      let nombre = document.querySelector("#nombre");
-      let fecha = document.querySelector("#fecha");
-      let foto = document.querySelector("#imgPerfilModificar");
-      let clave = document.querySelector("#clave");
+      console.dir(json[0].foto)
+      let foto = document.querySelector("#iimgPerfilModificar");
+      let nombreequipo = document.querySelector("#nombre");
+      let idlider = document.querySelector("#idlider");
+      let idjug2 = document.querySelector("#id2");
+      let idjug3 = document.querySelector("#id3");
+      let provincia = document.querySelector("#provincia");
 
-      apellido.value = json[0].apellido;
-      nombre.value = json[0].nombre;
-      fecha.value = json[0].fecha;
       foto.src = "data:image/jpeg;base64," + json[0].foto;
-            foto.style = "width:200px;height:200px;border-radius: 100%";
-      clave.value = json[0].clave;
+      foto.style = "width:200px;height:200px;border-radius: 100%";
+      nombreequipo.value = json[0].nombreequipo;
+      idlider.value = json[0].idlider;
+      idjug2.value = json[0].idjug2;
+      idjug3.value = json[0].idjug3;
+      provincia.value = json[0].provincia;
     });
-});
+}
 
 function cerrarModalModificar() {
   let modal = document.querySelector("#modalModificar");
