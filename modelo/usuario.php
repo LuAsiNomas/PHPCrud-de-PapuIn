@@ -4,7 +4,7 @@ function insertar($ide, $noe, $idl, $id2, $id3, $pro){
     
          $Conexion = include("conexion.php");
 
-        $cadena = "INSERT INTO equipos(Equipo_ID, nombre_equipo, id_jugador_lider, idjug2, idjug3, provincia) VALUES ($ide, $noe, $idl, $id2, $id3, $pro)";
+        $cadena = "INSERT INTO equipos(equipo_id, nombre_equipo, idjug_lider, idjug2, idjug3, provincia) VALUES ($ide, $noe, $idl, $id2, $id3, $pro)";
         try {
             $resultado = mysqli_query($Conexion, $cadena);
 
@@ -94,11 +94,11 @@ function deleteUser($userName)
     return $resultado;
 }
 
-function modificar($idl, $id2, $id3, $nom, $pro) {
+function modificar($nom, $idl, $id2, $id3, $pro) {
    
     $Conexion = include("conexion.php");
 
-        $cadena = "UPDATE  equipos SET equipo_id = '$idl', idjug_lider = '$id2', idjug2 = '$id3', idjug3 = '$nom' = nombre_equipo, '$pro' = provincia WHERE equipo_id = '$ide'";
+        $cadena = "UPDATE  equipos SET nombre_equipo = '$nom', idjug_lider = '$idl', idjug2 = '$id2', idjug3 = '$id3', provincia = '$pro'";
 
         try {
             $resultado = mysqli_query($Conexion, $cadena);
