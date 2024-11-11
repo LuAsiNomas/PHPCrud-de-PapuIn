@@ -9,7 +9,7 @@
 		include("modelo/usuario.php");
 			echo getUsuarioUsersNamesModificar();
 		?>
-			<div id="modalModificar" class=""></div>
+			<div id="modalModificar" class="registrosbtn"></div>
 
 		Campos a modificar:<br>
 
