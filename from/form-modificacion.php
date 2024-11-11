@@ -20,25 +20,20 @@
 				<input type="file" name="foto" class="inputFileModificar">
 			</div>
 			<label class="labelInput">
-					<input type="text" class="cambioInput" id="nombre" placeholder="" name="nombre" required>
-					<spam class="spanInput">Nombre de equipo</spam>
+					<input type="text" class="cambioInput" id="nombre" placeholder="Nombre de equipo" name="nombre" required>
 				</label>
 			<div class="grupoInputsModificar">
 				<label class="labelInput">
-					<input type="text" class="cambioInput" id="idlider" placeholder="" name="idlider" required>
-					<spam class="spanInput">ID Lider</spam>
+					<input type="text" class="cambioInput" id="idlider" placeholder="ID Lider" name="idlider" required>
 				</label>
 				<label class="labelInput">
-					<input type="text" class="cambioInput" id="id2" placeholder="" name="id2" required>
-					<spam class="spanInput">ID Jugador 2</spam>
+					<input type="text" class="cambioInput" id="id2" placeholder="ID Jugador 2" name="id2" required>
 				</label>
 				<label class="labelInput">
-					<input type="text" class="cambioInput" id="id3" placeholder="" name="id3" required>
-					<spam class="spanInput">ID Jugador 3</spam>
+					<input type="text" class="cambioInput" id="id3" placeholder="ID Jugador 3" name="id3" required>
 				</label>
 				<label class="labelInput">
-					<input type="text" class="cambioInput" id="provincia" placeholder="" name="provincia" required>
-					<spam class="spanInput">Provincia</spam>
+					<input type="text" class="cambioInput" id="provincia" placeholder="Provincia" name="provincia" required>
 				</label>
 				
 				<div class="btn-submit">
