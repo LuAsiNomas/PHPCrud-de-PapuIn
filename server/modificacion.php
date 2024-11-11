@@ -18,17 +18,15 @@ $id2 = $_POST['id2'];
 $id3 = $_POST['id3'];
 $nom = $_POST['nombre'];
 $pro = $_POST['provincia'];
-$foto = $_FILES['foto'];
-$fototamaño = $_FILES['fototamaño'];
 
-$result = modificar($idl, $id2, $id3, $nom, $pro, $foto, $fototamaño);
+$result = modificar($idl, $id2, $id3, $nom, $pro);
 
 if (!$result) {
 	echo '<div class="Rcontainer">
     <div class="Rbox">
         <h2 class="Rtitulo">Esta es una respuesta del servidor</h2>
         <h3 class="Rcuerpo">' . $result . '</h3>
-        <a href="../index.php" class="cerrar">Cerrar</a>
+        <a href="../from/menu.php" class="cerrar">Cerrar</a>
     </div>
 </div>';
 } else {
