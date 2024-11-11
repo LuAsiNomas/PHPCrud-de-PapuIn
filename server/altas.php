@@ -12,7 +12,7 @@
 
 include("../modelo/usuario.php");
 
-$ide = $_POST['Equipo_ID'];
+$ide = $_POST['equipo_id'];
 $noe = $_POST['nombre_equipo'];
 $idl = $_POST['id_jug_lider'];
 $id2 = $_POST['idjug2'];
@@ -35,3 +35,18 @@ if (strlen($result) > 5) {
     return include("../from/respuestas-server/respuesta-alta.php");
 }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<a href="form-altas.php">Volver</a>
+
+</body>
+
+</html>
