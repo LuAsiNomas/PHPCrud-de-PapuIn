@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Server altas</title>
+	<title>Server modificacion</title>
 	<link rel="stylesheet" href="../css/respuesta-alta.css">
 </head>
 
@@ -32,3 +32,4 @@ if (!$result) {
 } else {
 	return include("../from/respuestas-server/respuesta-modificar.php");
 }
+?>
