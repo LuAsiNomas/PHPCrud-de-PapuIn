@@ -123,6 +123,7 @@ input[type="text"] {
     bottom: 16px;
     
 }
+
 .btn-modificar{
     transition: transform 0.2s ease; /* Efecto de suavizado al agrandar */
     box-shadow: 0 4px 10px rgba(148, 3, 3, 0.511);
