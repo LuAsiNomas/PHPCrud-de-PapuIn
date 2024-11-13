@@ -16,7 +16,7 @@
 		<div class="grupoInputsCambiar">
 			<div class="imagenUsuario">
 				<img onclick="seleccionarArchivoModificar()" id="iimgPerfilModificar" src="../images/fotoPerfil.png"
-					alt="">
+					alt=""class="btn-archivo-mod">
 				<input type="file" name="foto" class="inputFileModificar">
 			</div>
 			<label class="labelInput">
