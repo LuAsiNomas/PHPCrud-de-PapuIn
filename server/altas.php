@@ -17,7 +17,7 @@ include("../modelo/usuario.php");
 
 
 $noe = $_POST['nombre_equipo'];
-$idl = $_POST['id_jug_lider'];
+$idl = $_POST['idjug_lider'];
 $id2 = $_POST['idjug2'];
 $id3 = $_POST['idjug3'];
 $pro = $_POST['provincia'];
