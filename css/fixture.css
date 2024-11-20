@@ -304,7 +304,7 @@
   width: 67px;
   height: 30px;
   position: relative;
-  left: 187px;
+  left: 123px;
   bottom: 100px;
   background-color: #3498db;
   animation: cambioDeColor 3s infinite;
@@ -335,7 +335,7 @@
   height: 208px;
   position: relative;
   right: 98px;
-  bottom: 219px;
+  bottom: 220px;
     background-color: #3498db;
     animation: cambioDeColor 3s infinite;
     }
@@ -355,24 +355,24 @@
         height: 208px;
         position: relative;
         left: 250px;
-        bottom: 219px;
+        bottom: 220px;
         background-color: #3498db;
         animation: cambioDeColor 3s infinite;
         }
 
         .linea-vertical5{
           width: 30px;
-          height: 445px;
+          height: 145px;
           position: relative;
           left: 230px;
-          bottom: 361px;
+          bottom: 455px;
           background-color: #3498db;
           animation: cambioDeColor 3s infinite;
           }
 
           .linea-vertical6{
             width: 30px;
-            height: 450px;
+            height: 145px;
             position: relative;
             right: 70px;
             bottom: 806px;
@@ -442,7 +442,7 @@
   top: 30px;
 }
 
-.fixture-container4{
+.fixture-containera4{
   background-color: rgb(246, 226, 196);
   width: 11rem;    
   height: 11rem;                         
@@ -450,7 +450,20 @@
   box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
   border: 3px solid #cc5a5a;
   position: relative;
-  left: 4px;
+  right: 150px;
+  bottom: 100px;
+}
+
+.fixture-containerb4{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  position: relative;
+  left: 150px;
+  bottom: 385px;
 }
 
 .fixturegroup1{
