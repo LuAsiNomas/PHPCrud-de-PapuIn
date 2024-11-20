@@ -1,5 +1,4 @@
-let formBajaModificar = document.querySelector(".modificarInput");
-formBajaModificar.addEventListener("submit", function (e) {
+function modal(e) {
   e.preventDefault();
   let modalModificar = document.querySelector("#modalModificar");
   let selectedModificar = document.querySelector(".selectModificar");
@@ -17,7 +16,7 @@ formBajaModificar.addEventListener("submit", function (e) {
     </div>`;
     modalModificar.innerHTML = html;
   }
-});
+}
 
 
  function cambioSelect(e) {
@@ -41,7 +40,7 @@ formBajaModificar.addEventListener("submit", function (e) {
       let idjug2 = document.querySelector("#id2");
       let idjug3 = document.querySelector("#id3");
       let provincia = document.querySelector("#provincia");
-      
+      console.dir(json);
       foto.src = "data:image/jpeg;base64," + json[0].foto;
       foto.style = "width:200px;height:200px;border-radius: 100%";
       nombreequipo.value = json[0].nombre_equipo;

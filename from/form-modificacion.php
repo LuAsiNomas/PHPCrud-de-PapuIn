@@ -1,6 +1,6 @@
 <div class="form">
 	<h3 class="modificarTitulo">FORMULARIO DE MODIFICACION</h3>
-	<form class="modificarInput" action="../server/modificacion.php" method="POST" enctype="multipart/form-data">
+	<form class="modificarInput" action="server/modificacion.php" method="POST" enctype="multipart/form-data">
 		<div class="container-select">
 			<div id="modalModificar" class=""></div>
 		</div>
@@ -20,24 +20,24 @@
 				<input type="file" name="foto" class="inputFileModificar">
 			</div>
 			<label class="labelInput">
-					<input type="text" class="cambioInput" id="nombre" placeholder="Nombre de equipo" name="nombre" required>
+					<input type="text" class="cambioInput" id="nombre" placeholder="Nombre de equipo" name="nombre_equipo" required>
 				</label>
 			<div class="grupoInputsModificar">
 				<label class="labelInput">
-					<input type="text" class="cambioInput" id="idlider" placeholder="ID Lider" name="idlider" required>
+					<input type="text" class="cambioInput" id="idlider" placeholder="ID Lider" name="idjug_lider" required>
 				</label>
 				<label class="labelInput">
-					<input type="text" class="cambioInput" id="id2" placeholder="ID Jugador 2" name="id2" required>
+					<input type="text" class="cambioInput" id="id2" placeholder="ID Jugador 2" name="idjug2" required>
 				</label>
 				<label class="labelInput">
-					<input type="text" class="cambioInput" id="id3" placeholder="ID Jugador 3" name="id3" required>
+					<input type="text" class="cambioInput" id="id3" placeholder="ID Jugador 3" name="idjug3" required>
 				</label>
 				<label class="labelInput">
 					<input type="text" class="cambioInput" id="provincia" placeholder="Provincia" name="provincia" required>
 				</label>
 				
 				<div class="btn-submit">
-					<input type="submit" class="btn-modificar" value="Modificar">
+					<input type="submit" onsubmit="modal(event)" class="btn-modificar" value="Modificar">
 				</div>
 			</div>
 		</div>

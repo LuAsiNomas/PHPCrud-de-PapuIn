@@ -135,7 +135,7 @@ function modificar($idl, $id2, $id3, $nom, $pro)
     $Conexion = include("conexion.php");
 
 
-    $cadena = "UPDATE  equipos SET equipo_id = '$idl', idjug_lider = '$id2', idjug2 = '$id3', idjug3 = '$nom' = nombre_equipo, '$pro' = provincia WHERE equipo_id = '$ide'";
+    $cadena = "UPDATE  equipos SET equipo_id = '$idl', idjug_lider = '$id2', idjug2 = '$id3', idjug3 = '$nom' = nombre_equipo, '$pro' = provincia WHERE equipo_id";
 
 
     try {
