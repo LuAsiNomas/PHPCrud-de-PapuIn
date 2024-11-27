@@ -101,7 +101,6 @@
                 <h3>Equipo 1</h3>
             </div>
             <div class="linea-horizontal13"></div>
-            <div class="linea-horizontal14"></div>
             <div class="linea-vertical5"></div>
             <div class="linea-vertical6"></div>
             <div class="linea-vertical7"></div>
