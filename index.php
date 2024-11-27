@@ -1,8 +1,3 @@
-<?php
-header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
-header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,6 +16,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 	<link rel="stylesheet" href="css/title.css">
 	<link rel="stylesheet" href="css/formBajas.css">
 	<link rel="stylesheet" href="css/formModificacion.css">
+	<link rel="stylesheet" href="css/fixture.css">
     <script src="js/index.js"></script>
 	<script src="js/form-altas.js"></script>
 	<script src="js/form-baja.js"></script>
@@ -70,13 +66,20 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 					include("from/title.php");
 					?>
 			</section>
-			
 
 			<!-- Intro -->
 			<section id="altas" class="one dark cover">
 				<div class="container">
 					<?php
 					include("from/form-altas.php");
+					?>
+				</div>
+			</section>
+
+			<section id="fixture" class="four">
+				<div class="container">
+					<?php
+					include("from/fixture.php");
 					?>
 				</div>
 			</section>
@@ -91,7 +94,7 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 			</section>
 
 			<!-- About Me -->
-			<section id="modificacion" class="three">
+			<section id="modificacion" class="four">
 				<div class="container">
 					<?php
 					include("from/form-modificacion.php");
@@ -99,7 +102,8 @@ header("Expires: Sat, 1 Jul 2000 05:00:00 GMT"); // Fecha en el pasado
 				</div>
 			</section>
 
-			<footer id="footer" class="footerz">
+
+			<footer id="footer">
     			<ul class="copyright">
         			<li>&copy; 2024 Torneo Brawl.</li>
         			<li>Todos los derechos reservados.</li>
