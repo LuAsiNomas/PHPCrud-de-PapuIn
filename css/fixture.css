@@ -94,6 +94,18 @@
   overflow: hidden;
   color: #ffd700;
 }
+.fase-text-final{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 38px;
+  overflow: hidden;
+  color: #ffd700;
+  position:relative;
+  bottom: 223px;
+}
+
 
 .btn-equipos{
   transition: transform 0.2s ease; /* Efecto de suavizado al agrandar */
@@ -365,21 +377,39 @@
           height: 145px;
           position: relative;
           left: 230px;
-          bottom: 455px;
+          bottom: 635px;
           background-color: #3498db;
           animation: cambioDeColor 3s infinite;
           }
 
           .linea-vertical6{
             width: 30px;
-            height: 145px;
+            height: 139px;
             position: relative;
             right: 70px;
-            bottom: 806px;
+            bottom: 899px;
             background-color: #3498db;
             animation: cambioDeColor 3s infinite;
             }
-  
+            .linea-vertical7{
+              width: 30px;
+              height: 139px;
+              position: relative;
+              right: 70px;
+              bottom: 500px;
+              background-color: #3498db;
+              animation: cambioDeColor 3s infinite;
+              }
+              .linea-vertical8{
+                width: 30px;
+                height: 145px;
+                position: relative;
+                left: 230px;
+                bottom: 720px;
+                background-color: #3498db;
+                animation: cambioDeColor 3s infinite;
+                }
+
 @keyframes cambioDeColor {
   0% { background-color: #3498db; }   
   25% { background-color: #2ecc71; }  
@@ -451,7 +481,7 @@
   border: 3px solid #cc5a5a;
   position: relative;
   right: 150px;
-  bottom: 100px;
+  bottom: 55px;
 }
 
 .fixture-containerb4{
@@ -463,7 +493,7 @@
   border: 3px solid #cc5a5a;
   position: relative;
   left: 150px;
-  bottom: 385px;
+  bottom: 236px;
 }
 
 .fixturegroup1{
@@ -495,8 +525,9 @@
 .fixturegroup5{
     right: 474px;
     position: relative;
-    top: 530px;
+    top: 520px;
 }
+
 
 
 h3{
