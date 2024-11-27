@@ -337,7 +337,7 @@
   height: 208px;
   position: relative;
   right: 98px;
-  bottom: 220px;
+  bottom: 219px;
     background-color: #3498db;
     animation: cambioDeColor 3s infinite;
     }
@@ -357,7 +357,7 @@
         height: 208px;
         position: relative;
         left: 250px;
-        bottom: 220px;
+        bottom: 219px;
         background-color: #3498db;
         animation: cambioDeColor 3s infinite;
         }
