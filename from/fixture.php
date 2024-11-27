@@ -105,6 +105,10 @@
             <div class="linea-vertical6"></div>
             <div class="linea-vertical7"></div>
             <div class="linea-vertical8"></div>
+            <div class="linea-vertical9"></div>
+            <div class="fixture-containerCampeon">
+                <h3>Campeon</h3>
+            </div>
         </div>
     </div>
 </body>
