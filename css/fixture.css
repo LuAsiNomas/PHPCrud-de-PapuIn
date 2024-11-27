@@ -1,0 +1,545 @@
+.formis{
+    font-family: Arial, sans-serif;
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 85px;
+    padding-top: 93px;
+}
+
+@keyframes move {
+    0% {
+      text-shadow:
+        4px -4px 0 hsla(0, 100%, 50%, 1), 
+        3px -3px 0 hsla(0, 100%, 50%, 1), 
+        2px -2px 0 hsla(0, 100%, 50%, 1), 
+        1px -1px 0 hsla(0, 100%, 50%, 1),
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    25% {    
+      text-shadow:      
+        -4px -4px 0 hsla(180, 100%, 50%, 1), 
+        -3px -3px 0 hsla(180, 100%, 50%, 1), 
+        -2px -2px 0 hsla(180, 100%, 50%, 1), 
+        -1px -1px 0 hsla(180, 100%, 50%, 1),
+        4px 4px 0 hsla(0, 100%, 50%, 1), 
+        3px 3px 0 hsla(0, 100%, 50%, 1), 
+        2px 2px 0 hsla(0, 100%, 50%, 1), 
+        1px 1px 0 hsla(0, 100%, 50%, 1)      
+      ;
+    }
+    50% {
+      text-shadow:
+        -4px 4px 0 hsla(0, 100%, 50%, 1), 
+        -3px 3px 0 hsla(0, 100%, 50%, 1), 
+        -2px 2px 0 hsla(0, 100%, 50%, 1), 
+        -1px 1px 0 hsla(0, 100%, 50%, 1),
+        4px -4px 0 hsla(180, 100%, 50%, 1), 
+        3px -3px 0 hsla(180, 100%, 50%, 1), 
+        2px -2px 0 hsla(180, 100%, 50%, 1), 
+        1px -1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    75% {
+      text-shadow:
+        4px 4px 0 hsla(180, 100%, 50%, 1), 
+        3px 3px 0 hsla(180, 100%, 50%, 1), 
+        2px 2px 0 hsla(180, 100%, 50%, 1), 
+        1px 1px 0 hsla(180, 100%, 50%, 1),
+        -4px -4px 0 hsla(0, 100%, 50%, 1), 
+        -3px -3px 0 hsla(0, 100%, 50%, 1), 
+        -2px -2px 0 hsla(0, 100%, 50%, 1), 
+        -1px -1px 0 hsla(0, 100%, 50%, 1)      
+      ;
+    }
+    100% {
+      text-shadow:
+        4px -4px 0 hsla(0, 100%, 50%, 1), 
+        3px -3px 0 hsla(0, 100%, 50%, 1), 
+        2px -2px 0 hsla(0, 100%, 50%, 1), 
+        1px -1px 0 hsla(0, 100%, 50%, 1),
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }  
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+
+.fase-text{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 38px;
+  overflow: hidden;
+  color: #ffd700;
+}
+.fase-text-final{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 38px;
+  overflow: hidden;
+  color: #ffd700;
+  position:relative;
+  bottom: -135px;
+}
+
+
+.btn-equipos{
+  transition: transform 0.2s ease; /* Efecto de suavizado al agrandar */
+  box-shadow: 0 4px 10px rgba(148, 3, 3, 0.511);
+  color: #000000;
+  font-size: 23px;
+  border-radius: 10px;
+  border: 2px solid #970303;
+  margin-bottom: 15px;
+  position: relative;
+  bottom: -20px;
+  width: 136px;
+}
+
+.btn-equipos:hover{
+  transform: scale(1.1);
+  filter: grayscale(80%);
+  transition:all .3s ease-in-out;
+}
+
+.fase-text1{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 38px;
+  overflow: hidden;
+  color: #ffd700;
+  position:relative;
+  right: 43px;
+}
+
+.fase-text2{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 38px;
+  overflow: hidden;
+  color: #ffd700;
+  position:relative;
+  right: 43px;
+}
+
+.linea-horizontal1 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+}
+
+.linea-horizontal2 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+  .linea-horizontal3 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontal4 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontal5 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontal6 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontal7 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+ }
+
+.linea-horizontal8 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 120px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+}
+
+.linea-horizontala9 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 95px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-horizontalb9 {
+    width: 71px;
+    height: 30px;
+    position: relative;
+    right: 69px;
+    bottom: 125px;
+    background-color: #3498db;
+    animation: cambioDeColor 3s infinite;
+    }
+
+
+.linea-horizontala10 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  left: 182px;
+  bottom: 70px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+  .linea-horizontalb10 {
+    width: 81px;
+    height: 30px;
+    position: relative;
+    right: 82px;
+    bottom: 100px;
+    background-color: #3498db;
+    animation: cambioDeColor 3s infinite;
+    }
+
+.linea-horizontala11 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 100px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+  .linea-horizontalb11 {
+    width: 81px;
+    height: 30px;
+    position: relative;
+    left: 182px;
+    bottom: 130px;
+    background-color: #3498db;
+    animation: cambioDeColor 3s infinite;
+    }
+  
+
+.linea-horizontala12 {
+  width: 81px;
+  height: 30px;
+  position: relative;
+  right: 82px;
+  bottom: 75px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+  .linea-horizontalb12 {
+    width: 81px;
+    height: 30px;
+    position: relative;
+    left: 184px;
+    bottom: 105px;
+    background-color: #3498db;
+    animation: cambioDeColor 3s infinite;
+    }
+
+.linea-horizontal13{
+  width: 119px;
+  height: 30px;
+  position: relative;
+  right: -32px;
+  bottom: 127px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+    }
+
+.linea-vertical1{
+  width: 30px;
+  height: 208px;
+  position: relative;
+  right: 98px;
+  bottom: 245px;
+  background-color: #3498db;
+  animation: cambioDeColor 3s infinite;
+  }
+
+.linea-vertical2{
+  width: 30px;
+  height: 208px;
+  position: relative;
+  right: 98px;
+  bottom: 220px;
+    background-color: #3498db;
+    animation: cambioDeColor 3s infinite;
+    }
+
+.linea-vertical3{
+      width: 30px;
+      height: 208px;
+      position: relative;
+      left: 250px;
+      bottom: 245px;
+      background-color: #3498db;
+      animation: cambioDeColor 3s infinite;
+  }
+
+.linea-vertical4{
+        width: 30px;
+        height: 208px;
+        position: relative;
+        left: 250px;
+        bottom: 220px;
+        background-color: #3498db;
+        animation: cambioDeColor 3s infinite;
+        }
+
+        .linea-vertical5{
+          width: 30px;
+          height: 145px;
+          position: relative;
+          left: 230px;
+          bottom: 375px;
+          background-color: #3498db;
+          animation: cambioDeColor 3s infinite;
+          }
+
+          .linea-vertical6{
+            width: 30px;
+            height: 139px;
+            position: relative;
+            right: 70px;
+            bottom: 513px;
+            background-color: #3498db;
+            animation: cambioDeColor 3s infinite;
+            }
+            .linea-vertical7{
+              width: 30px;
+              height: 139px;
+              position: relative;
+              right: 70px;
+              bottom: 335px;
+              background-color: #3498db;
+              animation: cambioDeColor 3s infinite;
+              }
+              .linea-vertical8{
+                width: 30px;
+                height: 145px;
+                position: relative;
+                left: 230px;
+                bottom: 474px;
+                background-color: #3498db;
+                animation: cambioDeColor 3s infinite;
+                }
+                .linea-vertical9{
+                  width: 30px;
+                  height: 275px;
+                  position: relative;
+                  left: 76px;
+                  bottom: 723px;
+                  background-color: #3498db;
+                  animation: cambioDeColor 3s infinite;
+                  }
+
+@keyframes cambioDeColor {
+  0% { background-color: #3498db; }   
+  25% { background-color: #2ecc71; }  
+  50% { background-color: #e74c3c; }  
+  75% { background-color: #f1c40f; }  
+  100% { background-color: #3498db; }
+}
+
+.fixture-container1{
+    background-color: rgb(246, 226, 196);
+    width: 11rem;    
+    height: 11rem;                         
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+    border: 3px solid #cc5a5a;
+    margin-bottom: 13%;
+}
+
+.fixture-containera2{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  position: relative;
+  top: 7px;
+}
+
+.fixture-containerb2{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  position: relative;
+  top: 35px;
+}
+
+.fixture-containera3{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  position: relative;
+  top: 3px;
+}
+
+.fixture-containerb3{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  position: relative;
+  top: 30px;
+}
+
+.fixture-containera4{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  position: relative;
+  right: 150px;
+  bottom: -163px;
+}
+
+.fixture-containerb4{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  position: relative;
+  left: 150px;
+  bottom: 20px;
+}
+
+.fixture-containerCampeon{
+  background-color: rgb(246, 226, 196);
+  width: 11rem;    
+  height: 11rem;                         
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(201, 0, 0, 0.808);
+  border: 3px solid #cc5a5a;
+  position: relative;
+  left: 2px;
+  bottom: 729px;
+}
+
+.fixturegroup1{
+    right: 165px;
+    position: relative;
+    top: 80px;
+    
+}
+
+.fixturegroup3{
+    right: 231px;
+    position: relative;
+    top: 175px;
+}
+
+.fixturegroup4{
+    left: 111px;
+    position: relative;
+    top: 180px;
+}
+
+
+.fixturegroup2{
+    left: 915px;
+    position: relative;
+    bottom: -85px;
+}
+
+.fixturegroup5{
+    right: 474px;
+    position: relative;
+    top: 520px;
+}
+
+
+
+h3{
+    text-align: center;
+}
