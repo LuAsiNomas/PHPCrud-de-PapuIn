@@ -93,7 +93,7 @@
             <div class="linea-vertical4"></div>
         </div>
         <div class="fixturegroup5">
-            <h3 class="fase-text">Final</h3>
+            <h3 class="fase-text-final">Final</h3>
             <div class="fixture-containera4">
                 <h3>Equipo 1</h3>
             </div>
@@ -104,6 +104,8 @@
             <div class="linea-horizontal14"></div>
             <div class="linea-vertical5"></div>
             <div class="linea-vertical6"></div>
+            <div class="linea-vertical7"></div>
+            <div class="linea-vertical8"></div>
         </div>
     </div>
 </body>
