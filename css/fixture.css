@@ -312,21 +312,11 @@
     animation: cambioDeColor 3s infinite;
     }
 
-.linea-horizontal13 {
-  width: 67px;
-  height: 30px;
-  position: relative;
-  left: 123px;
-  bottom: 100px;
-  background-color: #3498db;
-  animation: cambioDeColor 3s infinite;
-  }
-
-.linea-horizontal14 {
+.linea-horizontal13{
   width: 66px;
   height: 30px;
   position: relative;
-  right: 65px;
+  right: -55px;
   bottom: 130px;
   background-color: #3498db;
   animation: cambioDeColor 3s infinite;
@@ -377,7 +367,7 @@
           height: 145px;
           position: relative;
           left: 230px;
-          bottom: 635px;
+          bottom: 619px;
           background-color: #3498db;
           animation: cambioDeColor 3s infinite;
           }
@@ -387,7 +377,7 @@
             height: 139px;
             position: relative;
             right: 70px;
-            bottom: 899px;
+            bottom: 760px;
             background-color: #3498db;
             animation: cambioDeColor 3s infinite;
             }
@@ -396,7 +386,7 @@
               height: 139px;
               position: relative;
               right: 70px;
-              bottom: 500px;
+              bottom: 582px;
               background-color: #3498db;
               animation: cambioDeColor 3s infinite;
               }
